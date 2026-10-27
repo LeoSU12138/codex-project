@@ -25,3 +25,5 @@ node --test tests/game.test.js
 ## 故障诊断学习资料
 
 [进入深度学习、特征挖掘与结合研究学习目录](fault-diagnosis-learning/README.md)。包含3份中文入门PDF（共48页）、3份可筛选参考资料Excel（43条资料），以及可编辑文字版、CSV/JSON书目和文档构建脚本。
+
+**科研写作与工程实验：** [38篇工程科研论文库](fault-diagnosis-learning/research-papers/README.md)，按深度学习、特征挖掘、融合与解释分成3份Excel。逐篇列出完整作者、DOI、研究方法、工程验证、引用用途、实验借鉴点、复现难度和代码/数据入口；附BibTeX、RIS引文文件。

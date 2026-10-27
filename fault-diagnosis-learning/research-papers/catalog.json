@@ -1,0 +1,2178 @@
+[
+  {
+    "id": "D01",
+    "theme": "深度学习",
+    "title": "Deep neural networks: A promising tool for fault characteristic mining and intelligent diagnosis of rotating machinery with massive data",
+    "authors": "Feng Jia; Yaguo Lei; Jing Lin; Xin Zhou; Na Lu",
+    "author_structured": [
+      {
+        "given": "Feng",
+        "family": "Jia"
+      },
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Jing",
+        "family": "Lin"
+      },
+      {
+        "given": "Xin",
+        "family": "Zhou"
+      },
+      {
+        "given": "Na",
+        "family": "Lu"
+      }
+    ],
+    "year": 2016,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "72-73",
+    "issue": "",
+    "pages": "303-315",
+    "doi": "10.1016/j.ymssp.2015.10.025",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2015.10.025",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "DNN故障特征学习",
+    "engineering_object": "轴承、行星齿轮箱",
+    "research_problem": "手工特征依赖经验，难以处理大量机械信号。",
+    "method": "深层网络逐层无监督预训练，再用标签微调。",
+    "reported_validation": "四组轴承数据与一组行星齿轮箱数据，比较浅层学习方法。",
+    "citation_use": "相关工作：机械信号的自动特征学习与深层表征。",
+    "suggested_experiment": "比较浅层分类器与深层网络，并控制输入和数据划分一致。",
+    "limitations": "学习到可分类特征，不等于已经定位真实物理故障分量。",
+    "reproduction": "中高：模型可重建，完整原始数据和超参数需核对。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0888327015004859",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "D02",
+    "theme": "深度学习",
+    "title": "A New Deep Learning Model for Fault Diagnosis with Good Anti-Noise and Domain Adaptation Ability on Raw Vibration Signals",
+    "authors": "Wei Zhang; Gaoliang Peng; Chuanhao Li; Yuanhang Chen; Zhujun Zhang",
+    "author_structured": [
+      {
+        "given": "Wei",
+        "family": "Zhang"
+      },
+      {
+        "given": "Gaoliang",
+        "family": "Peng"
+      },
+      {
+        "given": "Chuanhao",
+        "family": "Li"
+      },
+      {
+        "given": "Yuanhang",
+        "family": "Chen"
+      },
+      {
+        "given": "Zhujun",
+        "family": "Zhang"
+      }
+    ],
+    "year": 2017,
+    "online_year": 2017,
+    "journal": "Sensors",
+    "volume": "17",
+    "issue": "2",
+    "pages": "425",
+    "doi": "10.3390/s17020425",
+    "source_url": "https://doi.org/10.3390/s17020425",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "WDCNN",
+    "engineering_object": "滚动轴承",
+    "research_problem": "原始振动诊断受到噪声和负载变化影响。",
+    "method": "首层宽卷积核、小卷积核堆叠和自适应批归一化AdaBN。",
+    "reported_validation": "CWRU轴承；噪声、不同负载及特征图分析。",
+    "citation_use": "方法与基线：一维CNN、宽核去噪及跨负载适应。",
+    "suggested_experiment": "比较宽核与窄核，固定划分后分开报告噪声和跨负载结果。",
+    "limitations": "AdaBN涉及目标数据统计量；不能据此宣称完全未知域泛化。",
+    "reproduction": "中：结构清楚，作者完整训练包本次未确认。",
+    "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5336047/",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "CWRU公开入口；未下载全量数据",
+    "data_url": "https://engineering.case.edu/bearingdatacenter/download-data-file",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、开放正文相关部分；未逐项复算实验。"
+  },
+  {
+    "id": "D03",
+    "theme": "深度学习",
+    "title": "A deep convolutional neural network with new training methods for bearing fault diagnosis under noisy environment and different working load",
+    "authors": "Wei Zhang; Chuanhao Li; Gaoliang Peng; Yuanhang Chen; Zhujun Zhang",
+    "author_structured": [
+      {
+        "given": "Wei",
+        "family": "Zhang"
+      },
+      {
+        "given": "Chuanhao",
+        "family": "Li"
+      },
+      {
+        "given": "Gaoliang",
+        "family": "Peng"
+      },
+      {
+        "given": "Yuanhang",
+        "family": "Chen"
+      },
+      {
+        "given": "Zhujun",
+        "family": "Zhang"
+      }
+    ],
+    "year": 2018,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "100",
+    "issue": "",
+    "pages": "439-453",
+    "doi": "10.1016/j.ymssp.2017.06.022",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2017.06.022",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "噪声与变负载CNN",
+    "engineering_object": "滚动轴承",
+    "research_problem": "提高噪声和不同负载下的识别能力。",
+    "method": "深卷积网络配合训练策略与跨负载处理。",
+    "reported_validation": "轴承振动的噪声及负载变化试验。",
+    "citation_use": "相关工作：面向复杂工况的卷积诊断。",
+    "suggested_experiment": "设置多个信噪比，分别报告同工况和跨工况表现。",
+    "limitations": "与D02属于相关研究，不能当成完全独立的两类技术证据。",
+    "reproduction": "中高：需核对训练细节及与D02的差异。",
+    "evidence_url": "https://doi.org/10.1016/j.ymssp.2017.06.022",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "CWRU公开入口；未下载全量数据",
+    "data_url": "https://engineering.case.edu/bearingdatacenter/download-data-file",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "D04",
+    "theme": "深度学习",
+    "title": "A New Convolutional Neural Network-Based Data-Driven Fault Diagnosis Method",
+    "authors": "Long Wen; Xinyu Li; Liang Gao; Yuyan Zhang",
+    "author_structured": [
+      {
+        "given": "Long",
+        "family": "Wen"
+      },
+      {
+        "given": "Xinyu",
+        "family": "Li"
+      },
+      {
+        "given": "Liang",
+        "family": "Gao"
+      },
+      {
+        "given": "Yuyan",
+        "family": "Zhang"
+      }
+    ],
+    "year": 2018,
+    "online_year": "",
+    "journal": "IEEE Transactions on Industrial Electronics",
+    "volume": "65",
+    "issue": "7",
+    "pages": "5990-5998",
+    "doi": "10.1109/tie.2017.2774777",
+    "source_url": "https://doi.org/10.1109/tie.2017.2774777",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "信号图像化CNN",
+    "engineering_object": "制造设备故障诊断",
+    "research_problem": "减少对人工设计特征的依赖。",
+    "method": "把信号转换成二维图像，再使用基于LeNet-5的CNN。",
+    "reported_validation": "论文进行诊断方法比较；具体数据划分需全文核对。",
+    "citation_use": "方法与基线：信号图像化输入的CNN诊断。",
+    "suggested_experiment": "与原始一维信号输入比较，检查重排是否改变局部关联。",
+    "limitations": "题录与出版摘要可核对，未全面核验各数据集实验细节。",
+    "reproduction": "中高：转换规则、训练配置和数据须按全文实现。",
+    "evidence_url": "https://doi.org/10.1109/TIE.2017.2774777",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "D05",
+    "theme": "深度学习",
+    "title": "Highly Accurate Machine Fault Diagnosis Using Deep Transfer Learning",
+    "authors": "Siyu Shao; Stephen McAleer; Ruqiang Yan; Pierre Baldi",
+    "author_structured": [
+      {
+        "given": "Siyu",
+        "family": "Shao"
+      },
+      {
+        "given": "Stephen",
+        "family": "McAleer"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Pierre",
+        "family": "Baldi"
+      }
+    ],
+    "year": 2019,
+    "online_year": "",
+    "journal": "IEEE Transactions on Industrial Informatics",
+    "volume": "15",
+    "issue": "4",
+    "pages": "2446-2455",
+    "doi": "10.1109/tii.2018.2864759",
+    "source_url": "https://doi.org/10.1109/tii.2018.2864759",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "深度迁移诊断",
+    "engineering_object": "机械故障数据",
+    "research_problem": "减少诊断网络训练对大量标注样本的依赖。",
+    "method": "时频表征与预训练网络迁移学习。",
+    "reported_validation": "机械数据诊断；作者提供配套数据门户。",
+    "citation_use": "相关工作：利用已有深层表征进行机械诊断。",
+    "suggested_experiment": "比较从零训练、冻结主干和微调，控制可用标签数量。",
+    "limitations": "图像预训练的有效性需要按信号转换和目标任务验证。",
+    "reproduction": "中高：数据入口明确，完整训练代码本次未确认。",
+    "evidence_url": "https://mlmechanics.ics.uci.edu/",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "作者配套数据门户；下载完整性未测试",
+    "data_url": "https://mlmechanics.ics.uci.edu/",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "D06",
+    "theme": "深度学习",
+    "title": "Deep Convolutional Transfer Learning Network: A New Method for Intelligent Fault Diagnosis of Machines With Unlabeled Data",
+    "authors": "Liang Guo; Yaguo Lei; Saibo Xing; Tao Yan; Naipeng Li",
+    "author_structured": [
+      {
+        "given": "Liang",
+        "family": "Guo"
+      },
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Saibo",
+        "family": "Xing"
+      },
+      {
+        "given": "Tao",
+        "family": "Yan"
+      },
+      {
+        "given": "Naipeng",
+        "family": "Li"
+      }
+    ],
+    "year": 2019,
+    "online_year": "",
+    "journal": "IEEE Transactions on Industrial Electronics",
+    "volume": "66",
+    "issue": "9",
+    "pages": "7316-7325",
+    "doi": "10.1109/tie.2018.2877090",
+    "source_url": "https://doi.org/10.1109/tie.2018.2877090",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "DCTLN",
+    "engineering_object": "跨设备机械故障诊断",
+    "research_problem": "源域有标签，目标域无标签，且分布不同。",
+    "method": "一维卷积特征、状态识别和域适应联合学习。",
+    "reported_validation": "机械故障跨域诊断；源/目标划分按论文定义。",
+    "citation_use": "相关工作：无标签目标域的迁移诊断。",
+    "suggested_experiment": "对照源域直接训练与域适应，单列目标标签使用规则。",
+    "limitations": "属于域适应，训练时能接触目标域数据。",
+    "reproduction": "中高：需重建联合训练流程，独立作者代码未确认。",
+    "evidence_url": "https://xplorestaging.ieee.org/document/8511076/",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "D07",
+    "theme": "深度学习",
+    "title": "Deep learning algorithms for rotating machinery intelligent diagnosis: An open source benchmark study",
+    "authors": "Zhibin Zhao; Tianfu Li; Jingyao Wu; Chuang Sun; Shibin Wang; Ruqiang Yan; Xuefeng Chen",
+    "author_structured": [
+      {
+        "given": "Zhibin",
+        "family": "Zhao"
+      },
+      {
+        "given": "Tianfu",
+        "family": "Li"
+      },
+      {
+        "given": "Jingyao",
+        "family": "Wu"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Shibin",
+        "family": "Wang"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      }
+    ],
+    "year": 2020,
+    "online_year": "",
+    "journal": "ISA Transactions",
+    "volume": "107",
+    "issue": "",
+    "pages": "224-255",
+    "doi": "10.1016/j.isatra.2020.08.010",
+    "source_url": "https://doi.org/10.1016/j.isatra.2020.08.010",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "开源深度诊断基准",
+    "engineering_object": "轴承与齿轮箱",
+    "research_problem": "不同论文使用不同数据处理流程，结果难公平比较。",
+    "method": "统一多种深度网络、数据接口与评价流程。",
+    "reported_validation": "作者仓库涵盖CWRU、PU、MFPT、SEU、XJTU-SY等接口。",
+    "citation_use": "实验设计：选基线、统一预处理和评价协议。",
+    "suggested_experiment": "先建立统一训练脚本，再加入自己的模块；重新设计独立分组划分。",
+    "limitations": "仓库包含随机切分等设置，不能不加检查地沿用；依赖较旧。",
+    "reproduction": "中：有训练脚本，需更新环境并整理数据。",
+    "evidence_url": "https://github.com/ZhaoZhibin/DL-based-Intelligent-Diagnosis-Benchmark",
+    "priority": "优先阅读",
+    "code_status": "已确认作者仓库",
+    "code_url": "https://github.com/ZhaoZhibin/DL-based-Intelligent-Diagnosis-Benchmark",
+    "code_scope": "模型、数据加载和训练脚本；未运行",
+    "data_status": "多个公开数据集，其他入口见作者README",
+    "data_url": "https://engineering.case.edu/bearingdatacenter/download-data-file",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已阅读作者仓库README，核对代码范围；未执行。"
+  },
+  {
+    "id": "D08",
+    "theme": "深度学习",
+    "title": "Diesel engine fault diagnosis for multiple industrial scenarios based on transfer learning",
+    "authors": "Junhong Zhang; Guobin Pei; Xiaolong Zhu; Xin Gou; Linlong Deng; Lang Gao; Zewei Liu; Qing Ni; Jiewei Lin",
+    "author_structured": [
+      {
+        "given": "Junhong",
+        "family": "Zhang"
+      },
+      {
+        "given": "Guobin",
+        "family": "Pei"
+      },
+      {
+        "given": "Xiaolong",
+        "family": "Zhu"
+      },
+      {
+        "given": "Xin",
+        "family": "Gou"
+      },
+      {
+        "given": "Linlong",
+        "family": "Deng"
+      },
+      {
+        "given": "Lang",
+        "family": "Gao"
+      },
+      {
+        "given": "Zewei",
+        "family": "Liu"
+      },
+      {
+        "given": "Qing",
+        "family": "Ni"
+      },
+      {
+        "given": "Jiewei",
+        "family": "Lin"
+      }
+    ],
+    "year": 2024,
+    "online_year": "",
+    "journal": "Measurement",
+    "volume": "228",
+    "issue": "",
+    "pages": "114338",
+    "doi": "10.1016/j.measurement.2024.114338",
+    "source_url": "https://doi.org/10.1016/j.measurement.2024.114338",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "柴油机跨场景迁移",
+    "engineering_object": "柴油机",
+    "research_problem": "样本有限且工业场景变化时的诊断迁移。",
+    "method": "宽卷积核CNN-LSTM（WCL）与深度迁移学习。",
+    "reported_validation": "论文报告多场景柴油机诊断；完整原始数据本次未确认。",
+    "citation_use": "相关工作：柴油机低信噪比与跨场景诊断。",
+    "suggested_experiment": "划分转速、负载、设备等迁移方向，分别测试各方向。",
+    "limitations": "多场景试验不意味着对任意柴油机或喷油器故障都适用。",
+    "reproduction": "高：模型可参考，完整数据获取是主要障碍。",
+    "evidence_url": "https://opus.lib.uts.edu.au/handle/10453/186632",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "D09",
+    "theme": "深度学习",
+    "title": "A Multiple Attention Convolutional Neural Networks for Diesel Engine Fault Diagnosis",
+    "authors": "Xiao Yang; Fengrong Bi; Jiangang Cheng; Daijie Tang; Pengfei Shen; Xiaoyang Bi",
+    "author_structured": [
+      {
+        "given": "Xiao",
+        "family": "Yang"
+      },
+      {
+        "given": "Fengrong",
+        "family": "Bi"
+      },
+      {
+        "given": "Jiangang",
+        "family": "Cheng"
+      },
+      {
+        "given": "Daijie",
+        "family": "Tang"
+      },
+      {
+        "given": "Pengfei",
+        "family": "Shen"
+      },
+      {
+        "given": "Xiaoyang",
+        "family": "Bi"
+      }
+    ],
+    "year": 2024,
+    "online_year": 2024,
+    "journal": "Sensors",
+    "volume": "24",
+    "issue": "9",
+    "pages": "2708",
+    "doi": "10.3390/s24092708",
+    "source_url": "https://doi.org/10.3390/s24092708",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "MACNN柴油机诊断",
+    "engineering_object": "柴油机振动",
+    "research_problem": "端到端识别多个故障类型及不同程度。",
+    "method": "CNN、改进卷积块注意力、自注意力与特征序列重组。",
+    "reported_validation": "故障设置包括气门间隙、轨压、供油不足；多转速八类任务。",
+    "citation_use": "工程案例：柴油机振动诊断的注意力网络设计。",
+    "suggested_experiment": "分别去掉通道、空间、自注意力模块，并报告推理耗时。",
+    "limitations": "人工设置故障的试验结论不能直接等同长期现场性能。",
+    "reproduction": "中高：全文开放，完整数据与作者训练包未确认。",
+    "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086139/",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、开放正文相关部分；未逐项复算实验。"
+  },
+  {
+    "id": "D10",
+    "theme": "深度学习",
+    "title": "A Novel Fault Diagnosis Method for Rotating Machinery Based on a Convolutional Neural Network",
+    "authors": "Sheng Guo; Tao Yang; Wei Gao; Chen Zhang",
+    "author_structured": [
+      {
+        "given": "Sheng",
+        "family": "Guo"
+      },
+      {
+        "given": "Tao",
+        "family": "Yang"
+      },
+      {
+        "given": "Wei",
+        "family": "Gao"
+      },
+      {
+        "given": "Chen",
+        "family": "Zhang"
+      }
+    ],
+    "year": 2018,
+    "online_year": 2018,
+    "journal": "Sensors",
+    "volume": "18",
+    "issue": "5",
+    "pages": "1429",
+    "doi": "10.3390/s18051429",
+    "source_url": "https://doi.org/10.3390/s18051429",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "CWT时频图CNN",
+    "engineering_object": "转子设备",
+    "research_problem": "人工统计特征可能丢失信号信息。",
+    "method": "连续小波变换得到时频图，由CNN分类。",
+    "reported_validation": "转子实验台，并在另一台转子设备上验证。",
+    "citation_use": "方法与工程案例：时频表征结合CNN。",
+    "suggested_experiment": "比较原始波形、频谱和CWT输入；验证不同设备迁移。",
+    "limitations": "时频图准确率不直接解释模型关注的物理成分。",
+    "reproduction": "中高：方法与全文可读，原实验台数据未确认公开。",
+    "evidence_url": "https://doi.org/10.3390/s18051429",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、开放正文相关部分；未逐项复算实验。"
+  },
+  {
+    "id": "F01",
+    "theme": "特征挖掘",
+    "title": "An Intelligent Fault Diagnosis Method Using Unsupervised Feature Learning Towards Mechanical Big Data",
+    "authors": "Yaguo Lei; Feng Jia; Jing Lin; Saibo Xing; Steven X. Ding",
+    "author_structured": [
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Feng",
+        "family": "Jia"
+      },
+      {
+        "given": "Jing",
+        "family": "Lin"
+      },
+      {
+        "given": "Saibo",
+        "family": "Xing"
+      },
+      {
+        "given": "Steven X.",
+        "family": "Ding"
+      }
+    ],
+    "year": 2016,
+    "online_year": "",
+    "journal": "IEEE Transactions on Industrial Electronics",
+    "volume": "63",
+    "issue": "5",
+    "pages": "3137-3147",
+    "doi": "10.1109/tie.2016.2519325",
+    "source_url": "https://doi.org/10.1109/tie.2016.2519325",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "稀疏过滤特征学习",
+    "engineering_object": "电机与机车轴承",
+    "research_problem": "用自动学习替代劳动密集的人工特征工程。",
+    "method": "两层稀疏过滤网络学习特征，再用softmax分类。",
+    "reported_validation": "电机轴承与机车轴承两组数据。",
+    "citation_use": "相关工作：无监督机械特征学习。",
+    "suggested_experiment": "比较原始特征、人工特征及学习特征的下游分类表现。",
+    "limitations": "无监督特征学习与训练后解释是不同任务。",
+    "reproduction": "中高：网络较简洁，完整数据和实现需核对。",
+    "evidence_url": "https://scholar.xjtu.edu.cn/en/publications/an-intelligent-fault-diagnosis-method-using-unsupervised-feature-/",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "F02",
+    "theme": "特征挖掘",
+    "title": "The spectral kurtosis: a useful tool for characterising non-stationary signals",
+    "authors": "Jérôme Antoni",
+    "author_structured": [
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      }
+    ],
+    "year": 2006,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "20",
+    "issue": "2",
+    "pages": "282-307",
+    "doi": "10.1016/j.ymssp.2004.09.001",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2004.09.001",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "谱峭度理论",
+    "engineering_object": "非平稳信号",
+    "research_problem": "定位瞬态成分所在的频带。",
+    "method": "谱峭度的统计定义与估计。",
+    "reported_validation": "非平稳信号方法研究；不是独立深度分类项目。",
+    "citation_use": "方法依据：为什么用谱峭度衡量频带中的瞬态性。",
+    "suggested_experiment": "在已知冲击频带的模拟信号上检验频带定位。",
+    "limitations": "高峭度可能来自偶发干扰，不能单独判定周期故障。",
+    "reproduction": "中：数学理解有门槛，信号示例可自行构造。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0888327004001517",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "F03",
+    "theme": "特征挖掘",
+    "title": "Fast computation of the kurtogram for the detection of transient faults",
+    "authors": "Jérôme Antoni",
+    "author_structured": [
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      }
+    ],
+    "year": 2007,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "21",
+    "issue": "1",
+    "pages": "108-124",
+    "doi": "10.1016/j.ymssp.2005.12.002",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2005.12.002",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "Fast Kurtogram",
+    "engineering_object": "瞬态机械故障信号",
+    "research_problem": "高效寻找适合解调的中心频率和带宽。",
+    "method": "滤波器组上的快速峭度图计算。",
+    "reported_validation": "瞬态检测方法及信号示例；作者发布MATLAB实现。",
+    "citation_use": "方法与基线：解调频带选择。",
+    "suggested_experiment": "对比手选频带和自动选频带，再观察包络谱故障周期。",
+    "limitations": "所选带宽依赖滤波器和分辨率设置，也可能受脉冲噪声影响。",
+    "reproduction": "中：作者代码可用；参数解释与结果判断仍需信号知识。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0888327005002414",
+    "priority": "优先阅读",
+    "code_status": "已确认作者代码页",
+    "code_url": "https://www.mathworks.com/matlabcentral/fileexchange/48912-fast-kurtogram",
+    "code_scope": "MATLAB函数与演示；未运行",
+    "data_status": "提供信号演示；完整原论文数据未确认",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已核对作者代码页说明；未执行。"
+  },
+  {
+    "id": "F04",
+    "theme": "特征挖掘",
+    "title": "Maximum correlated Kurtosis deconvolution and application on gear tooth chip fault detection",
+    "authors": "Geoff L. McDonald; Qing Zhao; Ming J. Zuo",
+    "author_structured": [
+      {
+        "given": "Geoff L.",
+        "family": "McDonald"
+      },
+      {
+        "given": "Qing",
+        "family": "Zhao"
+      },
+      {
+        "given": "Ming J.",
+        "family": "Zuo"
+      }
+    ],
+    "year": 2012,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "33",
+    "issue": "",
+    "pages": "237-255",
+    "doi": "10.1016/j.ymssp.2012.06.010",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2012.06.010",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "MCKD",
+    "engineering_object": "齿轮齿面缺损",
+    "research_problem": "从振动混合信号中增强重复冲击。",
+    "method": "最大相关峭度目标下的盲解卷积。",
+    "reported_validation": "有/无齿缺损的齿轮箱振动比较。",
+    "citation_use": "方法与基线：周期冲击提取和盲解卷积。",
+    "suggested_experiment": "比较MED与MCKD，并扰动预设故障周期和滤波器长度。",
+    "limitations": "周期先验与滤波器长度会影响结果；输出不是自动获得的真实源。",
+    "reproduction": "中：作者提供MATLAB函数，完整实验数据需核对。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0888327012002452",
+    "priority": "按课题选读",
+    "code_status": "原论文链接作者代码",
+    "code_url": "https://www.mathworks.com/matlabcentral/fileexchange/31326",
+    "code_scope": "MCKD MATLAB实现；未下载核验",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "F05",
+    "theme": "特征挖掘",
+    "title": "Multipoint Optimal Minimum Entropy Deconvolution and Convolution Fix: Application to vibration fault detection",
+    "authors": "Geoff L. McDonald; Qing Zhao",
+    "author_structured": [
+      {
+        "given": "Geoff L.",
+        "family": "McDonald"
+      },
+      {
+        "given": "Qing",
+        "family": "Zhao"
+      }
+    ],
+    "year": 2017,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "82",
+    "issue": "",
+    "pages": "461-477",
+    "doi": "10.1016/j.ymssp.2016.05.036",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2016.05.036",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "MOMEDA",
+    "engineering_object": "齿轮箱",
+    "research_problem": "避免只增强单次冲击，提取与故障周期一致的冲击列。",
+    "method": "用目标冲击向量构建解卷积问题，直接求解滤波器。",
+    "reported_validation": "仿真和有/无人工齿缺损齿轮箱试验。",
+    "citation_use": "方法与基线：非迭代滤波求解及周期冲击提取。",
+    "suggested_experiment": "扫描候选故障周期，比较输出包络谱与已知齿轮周期。",
+    "limitations": "非迭代指给定目标下的滤波求解，周期和参数选择仍需设计。",
+    "reproduction": "中：作者MATLAB代码可得。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0888327016301297",
+    "priority": "优先阅读",
+    "code_status": "已确认作者代码页",
+    "code_url": "https://www.mathworks.com/matlabcentral/fileexchange/53483-multipoint-optimal-minimum-entropy-deconvolution-with-convolution-adjustment-momeda",
+    "code_scope": "MOMEDA MATLAB函数；未运行",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已核对作者代码页说明；未执行。"
+  },
+  {
+    "id": "F06",
+    "theme": "特征挖掘",
+    "title": "Fast computation of the spectral correlation",
+    "authors": "Jérôme Antoni; Ge Xin; Nacer Hamzaoui",
+    "author_structured": [
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      },
+      {
+        "given": "Ge",
+        "family": "Xin"
+      },
+      {
+        "given": "Nacer",
+        "family": "Hamzaoui"
+      }
+    ],
+    "year": 2017,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "92",
+    "issue": "",
+    "pages": "248-277",
+    "doi": "10.1016/j.ymssp.2017.01.011",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2017.01.011",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "Fast Spectral Correlation",
+    "engineering_object": "轴承循环平稳信号",
+    "research_problem": "降低循环谱分析的计算开销。",
+    "method": "基于STFT的快速谱相关估计。",
+    "reported_validation": "弱轴承特征和转速变化场景。",
+    "citation_use": "方法依据：载频与调制频率的二维描述。",
+    "suggested_experiment": "把循环谱与普通频谱、包络谱并列分析；检查分辨率。",
+    "limitations": "循环频率不等于载频；两轴含义必须区分。",
+    "reproduction": "中高：作者代码有模拟演示，理论与参数门槛较高。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0888327017300134",
+    "priority": "优先阅读",
+    "code_status": "已确认作者代码页",
+    "code_url": "https://www.mathworks.com/matlabcentral/fileexchange/60561-fast_sc-x-nw-alpha_max-fs-opt",
+    "code_scope": "Fast_SC与模拟演示；未运行",
+    "data_status": "作者模拟信号演示；原试验数据未确认",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已核对作者代码页说明；未执行。"
+  },
+  {
+    "id": "F07",
+    "theme": "特征挖掘",
+    "title": "Variational Mode Decomposition",
+    "authors": "Konstantin Dragomiretskiy; Dominique Zosso",
+    "author_structured": [
+      {
+        "given": "Konstantin",
+        "family": "Dragomiretskiy"
+      },
+      {
+        "given": "Dominique",
+        "family": "Zosso"
+      }
+    ],
+    "year": 2014,
+    "online_year": "",
+    "journal": "IEEE Transactions on Signal Processing",
+    "volume": "62",
+    "issue": "3",
+    "pages": "531-544",
+    "doi": "10.1109/tsp.2013.2288675",
+    "source_url": "https://doi.org/10.1109/tsp.2013.2288675",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "VMD",
+    "engineering_object": "信号模态分解",
+    "research_problem": "同时估计若干带限模态及其中心频率。",
+    "method": "变分优化与交替方向乘子法。",
+    "reported_validation": "方法论文及作者信号示例。",
+    "citation_use": "方法依据：VMD分解算法的原始出处。",
+    "suggested_experiment": "与原信号或其他分解法比较，对K与惩罚参数做敏感性分析。",
+    "limitations": "算法原文不是某种设备的通用故障验证；模态不保证对应物理源。",
+    "reproduction": "中：作者MATLAB实现公开，模式数选择需学习。",
+    "evidence_url": "https://math.montana.edu/dzosso/code/",
+    "priority": "按课题选读",
+    "code_status": "已确认作者代码页",
+    "code_url": "https://math.montana.edu/dzosso/code/",
+    "code_scope": "原始VMD MATLAB代码；未运行",
+    "data_status": "作者示例；不是特定机械故障数据库",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已核对作者代码页说明；未执行。"
+  },
+  {
+    "id": "F08",
+    "theme": "特征挖掘",
+    "title": "Feature Mode Decomposition: New Decomposition Theory for Rotating Machinery Fault Diagnosis",
+    "authors": "Yonghao Miao; Boyao Zhang; Chenhui Li; Jing Lin; Dayi Zhang",
+    "author_structured": [
+      {
+        "given": "Yonghao",
+        "family": "Miao"
+      },
+      {
+        "given": "Boyao",
+        "family": "Zhang"
+      },
+      {
+        "given": "Chenhui",
+        "family": "Li"
+      },
+      {
+        "given": "Jing",
+        "family": "Lin"
+      },
+      {
+        "given": "Dayi",
+        "family": "Zhang"
+      }
+    ],
+    "year": 2023,
+    "online_year": "",
+    "journal": "IEEE Transactions on Industrial Electronics",
+    "volume": "70",
+    "issue": "2",
+    "pages": "1949-1960",
+    "doi": "10.1109/tie.2022.3156156",
+    "source_url": "https://doi.org/10.1109/tie.2022.3156156",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "FMD",
+    "engineering_object": "旋转机械冲击故障",
+    "research_problem": "用冲击性和周期性目标提取故障模态。",
+    "method": "以机械故障特征为目标的自适应滤波分解。",
+    "reported_validation": "旋转机械诊断；作者代码可复现部分论文结果。",
+    "citation_use": "方法与基线：面向故障特征的模态分解。",
+    "suggested_experiment": "与VMD、MCKD比较，并检验滤波长度和模态数。",
+    "limitations": "目标函数偏好特定信号结构，不能把每个模态直接命名为真实故障。",
+    "reproduction": "中：有作者MATLAB包，完整结果需核对数据与参数。",
+    "evidence_url": "https://www.mathworks.com/matlabcentral/fileexchange/108099-feature-mode-decomposition-fmd",
+    "priority": "优先阅读",
+    "code_status": "已确认作者代码页",
+    "code_url": "https://www.mathworks.com/matlabcentral/fileexchange/108099-feature-mode-decomposition-fmd",
+    "code_scope": "可复现部分论文结果；未运行",
+    "data_status": "作者包中的示例范围需下载后核验",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已核对作者代码页说明；未执行。"
+  },
+  {
+    "id": "F09",
+    "theme": "特征挖掘",
+    "title": "Priori-distribution-guided adaptive sparse attention for cross-domain feature mining in diesel engine fault diagnosis",
+    "authors": "He Li; Jinjie Zhang; Zhenjing Zhang; Zhinong Jiang; Zhiwei Mao",
+    "author_structured": [
+      {
+        "given": "He",
+        "family": "Li"
+      },
+      {
+        "given": "Jinjie",
+        "family": "Zhang"
+      },
+      {
+        "given": "Zhenjing",
+        "family": "Zhang"
+      },
+      {
+        "given": "Zhinong",
+        "family": "Jiang"
+      },
+      {
+        "given": "Zhiwei",
+        "family": "Mao"
+      }
+    ],
+    "year": 2024,
+    "online_year": "",
+    "journal": "Engineering Applications of Artificial Intelligence",
+    "volume": "132",
+    "issue": "",
+    "pages": "107975",
+    "doi": "10.1016/j.engappai.2024.107975",
+    "source_url": "https://doi.org/10.1016/j.engappai.2024.107975",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "柴油机自适应稀疏注意力",
+    "engineering_object": "柴油机",
+    "research_problem": "筛选跨域故障敏感特征并降低模型复杂度。",
+    "method": "结合热力学/动力学先验，从时域、频域、包络域构造特征并用稀疏注意力学习。",
+    "reported_validation": "柴油机故障诊断；完整原始数据未确认公开。",
+    "citation_use": "工程案例：有物理含义的特征集与自适应特征加权。",
+    "suggested_experiment": "比较不同信号域、筛选前后特征和不同工况下的重要性。",
+    "limitations": "权重是模型内选择依据；仍需遮蔽和独立工况实验。",
+    "reproduction": "高：特征定义和采集条件必须对齐，数据获取受限。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0952197624001337",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "F10",
+    "theme": "特征挖掘",
+    "title": "Investigation of logarithmic signatures for feature extraction and application to marine engine fault diagnosis",
+    "authors": "Chaitanya Patil; Gerasimos Theotokatos; Yue Wu; Terry Lyons",
+    "author_structured": [
+      {
+        "given": "Chaitanya",
+        "family": "Patil"
+      },
+      {
+        "given": "Gerasimos",
+        "family": "Theotokatos"
+      },
+      {
+        "given": "Yue",
+        "family": "Wu"
+      },
+      {
+        "given": "Terry",
+        "family": "Lyons"
+      }
+    ],
+    "year": 2024,
+    "online_year": "",
+    "journal": "Engineering Applications of Artificial Intelligence",
+    "volume": "138",
+    "issue": "",
+    "pages": "109299",
+    "doi": "10.1016/j.engappai.2024.109299",
+    "source_url": "https://doi.org/10.1016/j.engappai.2024.109299",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "船用发动机对数签名",
+    "engineering_object": "大型四冲程船用柴油机",
+    "research_problem": "从缸压序列中提取故障表征。",
+    "method": "路径对数签名特征用于故障诊断。",
+    "reported_validation": "经验证的物理数字孪生产生缸压，覆盖故障组合、程度和工况。",
+    "citation_use": "工程案例：动力学仿真数据与时序特征构造。",
+    "suggested_experiment": "改变故障程度与工况，检验特征的稳定性和区分性。",
+    "limitations": "核心数据由数字孪生产生，不能写成全部来自现场实测。",
+    "reproduction": "高：需要数字孪生、参数和缸压数据。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S095219762401457X",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "F11",
+    "theme": "特征挖掘",
+    "title": "Refined composite hierarchical bidirectional diversity entropy and its application in fault type diagnosis and fault degree diagnosis of diesel engine fuel injectors",
+    "authors": "Yun Ke; Enzhe Song; Chong Yao; Shunliang Ding; Yilin Ning; Rui Li",
+    "author_structured": [
+      {
+        "given": "Yun",
+        "family": "Ke"
+      },
+      {
+        "given": "Enzhe",
+        "family": "Song"
+      },
+      {
+        "given": "Chong",
+        "family": "Yao"
+      },
+      {
+        "given": "Shunliang",
+        "family": "Ding"
+      },
+      {
+        "given": "Yilin",
+        "family": "Ning"
+      },
+      {
+        "given": "Rui",
+        "family": "Li"
+      }
+    ],
+    "year": 2024,
+    "online_year": 2023,
+    "journal": "Journal of Vibration and Control",
+    "volume": "30",
+    "issue": "21-22",
+    "pages": "5047-5059",
+    "doi": "10.1177/10775463231217530",
+    "source_url": "https://doi.org/10.1177/10775463231217530",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "喷油器类型与程度识别",
+    "engineering_object": "柴油机喷油器",
+    "research_problem": "同时描述喷油器故障类型和故障程度。",
+    "method": "精细复合层次双向散布熵RCHBDE与海鸥算法优化SVM。",
+    "reported_validation": "模拟信号和喷油器故障试验数据。",
+    "citation_use": "工程案例：故障敏感特征及故障程度分析。",
+    "suggested_experiment": "用不同故障程度作趋势分析，并把工况变化作为混杂因素控制。",
+    "limitations": "它是特征工程加SVM，不属于深度网络事后解释。",
+    "reproduction": "高：原数据未确认公开；熵定义及参数需逐式核对。",
+    "evidence_url": "https://journals.sagepub.com/doi/10.1177/10775463231217530",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "F12",
+    "theme": "特征挖掘",
+    "title": "Rolling element bearing diagnostics using the Case Western Reserve University data: A benchmark study",
+    "authors": "Wade A. Smith; Robert B. Randall",
+    "author_structured": [
+      {
+        "given": "Wade A.",
+        "family": "Smith"
+      },
+      {
+        "given": "Robert B.",
+        "family": "Randall"
+      }
+    ],
+    "year": 2015,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "64-65",
+    "issue": "",
+    "pages": "100-131",
+    "doi": "10.1016/j.ymssp.2015.04.021",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2015.04.021",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "CWRU诊断基准分析",
+    "engineering_object": "滚动轴承",
+    "research_problem": "明确常用公开数据中的可诊断信号和困难情况。",
+    "method": "对CWRU数据进行机械信号诊断分析与基准评估。",
+    "reported_validation": "CWRU公开轴承数据。",
+    "citation_use": "数据说明与讨论：基准数据的特点、适用性和限制。",
+    "suggested_experiment": "先检查原始频谱、包络谱与故障标签，避免直接切片训练。",
+    "limitations": "这是数据与诊断基准研究，不能代替现场有效性证据。",
+    "reproduction": "中：公开数据可用，信号分析需要机理知识。",
+    "evidence_url": "https://doi.org/10.1016/j.ymssp.2015.04.021",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "CWRU公开入口；未下载全量数据",
+    "data_url": "https://engineering.case.edu/bearingdatacenter/download-data-file",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "C01",
+    "theme": "融合与解释",
+    "title": "TFN: An interpretable neural network with time-frequency transform embedded for intelligent fault diagnosis",
+    "authors": "Qian Chen; Xingjian Dong; Guowei Tu; Dong Wang; Changming Cheng; Baoxuan Zhao; Zhike Peng",
+    "author_structured": [
+      {
+        "given": "Qian",
+        "family": "Chen"
+      },
+      {
+        "given": "Xingjian",
+        "family": "Dong"
+      },
+      {
+        "given": "Guowei",
+        "family": "Tu"
+      },
+      {
+        "given": "Dong",
+        "family": "Wang"
+      },
+      {
+        "given": "Changming",
+        "family": "Cheng"
+      },
+      {
+        "given": "Baoxuan",
+        "family": "Zhao"
+      },
+      {
+        "given": "Zhike",
+        "family": "Peng"
+      }
+    ],
+    "year": 2024,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "207",
+    "issue": "",
+    "pages": "110952",
+    "doi": "10.1016/j.ymssp.2023.110952",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2023.110952",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "TFN",
+    "engineering_object": "机械振动故障诊断",
+    "research_problem": "让卷积前端的响应具有时频意义。",
+    "method": "把可学习时频变换嵌入卷积层。",
+    "reported_validation": "三项机械诊断实验；仓库提供CWRU完整准确率流程。",
+    "citation_use": "方法与相关工作：可解释滤波前端。",
+    "suggested_experiment": "对比随机核、普通CNN及参数化核，展示频率响应与分类表现。",
+    "limitations": "前端可解释不意味着所有后续层透明；复现包不覆盖全部实验。",
+    "reproduction": "中：作者有CWRU训练流程与模型。",
+    "evidence_url": "https://github.com/ChenQian0618/TFN",
+    "priority": "优先阅读",
+    "code_status": "已确认作者仓库",
+    "code_url": "https://github.com/ChenQian0618/TFN",
+    "code_scope": "核心模型、CWRU训练及统计流程；未运行",
+    "data_status": "CWRU公开；其余论文数据未确认全部开放",
+    "data_url": "https://engineering.case.edu/bearingdatacenter/download-data-file",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已阅读作者仓库README，核对代码范围；未执行。"
+  },
+  {
+    "id": "C02",
+    "theme": "融合与解释",
+    "title": "一种面向机械设备故障诊断的可解释卷积神经网络",
+    "authors": "陈钱; 陈康康; 董兴建; 皇甫一樊; 彭志科; 孟光",
+    "author_structured": [
+      {
+        "name": "陈钱"
+      },
+      {
+        "name": "陈康康"
+      },
+      {
+        "name": "董兴建"
+      },
+      {
+        "name": "皇甫一樊"
+      },
+      {
+        "name": "彭志科"
+      },
+      {
+        "name": "孟光"
+      }
+    ],
+    "year": 2024,
+    "online_year": "",
+    "journal": "机械工程学报",
+    "volume": "60",
+    "issue": "12",
+    "pages": "65-76",
+    "doi": "10.3901/jme.2024.12.065",
+    "source_url": "https://doi.org/10.3901/jme.2024.12.065",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。 中文题名、完整作者及65–76页据期刊原页补全。",
+    "short_name": "Chirplet可解释CNN",
+    "engineering_object": "机械设备",
+    "research_problem": "为卷积核赋予可辨识的信号处理含义。",
+    "method": "基于Chirplet参数化核的卷积特征提取。",
+    "reported_validation": "机械故障诊断案例；本次未确认独立完整复现包。",
+    "citation_use": "中文相关工作：物理可解释卷积网络。",
+    "suggested_experiment": "从卷积核参数、频率响应和故障谱结构建立对应关系。",
+    "limitations": "TFN相关仓库不能自动当作本论文完整代码。",
+    "reproduction": "中高：中文易读，完整代码和数据未确认。",
+    "evidence_url": "https://qikan.cmes.org/jxgcxb/CN/10.3901/JME.2024.12.065",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI、期刊原页题录及摘要；完整实验须读全文。"
+  },
+  {
+    "id": "C03",
+    "theme": "融合与解释",
+    "title": "WaveletKernelNet: An Interpretable Deep Neural Network for Industrial Intelligent Diagnosis",
+    "authors": "Tianfu Li; Zhibin Zhao; Chuang Sun; Li Cheng; Xuefeng Chen; Ruqiang Yan; Robert X. Gao",
+    "author_structured": [
+      {
+        "given": "Tianfu",
+        "family": "Li"
+      },
+      {
+        "given": "Zhibin",
+        "family": "Zhao"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Li",
+        "family": "Cheng"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Robert X.",
+        "family": "Gao"
+      }
+    ],
+    "year": 2022,
+    "online_year": "",
+    "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+    "volume": "52",
+    "issue": "4",
+    "pages": "2302-2312",
+    "doi": "10.1109/tsmc.2020.3048950",
+    "source_url": "https://doi.org/10.1109/tsmc.2020.3048950",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "WaveletKernelNet",
+    "engineering_object": "工业机械诊断",
+    "research_problem": "使第一层特征提取具有小波分析含义。",
+    "method": "可学习小波卷积核与后续深层网络。",
+    "reported_validation": "论文机械诊断实验；作者模型可接入D07基准。",
+    "citation_use": "方法与基线：小波参数化卷积核。",
+    "suggested_experiment": "比较不同母小波、普通卷积和固定小波参数。",
+    "limitations": "公开仓库主要提供模型，完整训练与数据流程需另行接入。",
+    "reproduction": "中：模型公开，训练需整合基准工程。",
+    "evidence_url": "https://github.com/HazeDT/WaveletKernelNet",
+    "priority": "优先阅读",
+    "code_status": "已确认作者仓库",
+    "code_url": "https://github.com/HazeDT/WaveletKernelNet",
+    "code_scope": "主要为模型，需接D07基准；未运行",
+    "data_status": "建议接公开数据复现；不等于已复现原论文全部数据",
+    "data_url": "https://engineering.case.edu/bearingdatacenter/download-data-file",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已阅读作者仓库README，核对代码范围；未执行。"
+  },
+  {
+    "id": "C04",
+    "theme": "融合与解释",
+    "title": "An Explainable Neural Network for Fault Diagnosis With a Frequency Activation Map",
+    "authors": "Min Su Kim; Jong Pil Yun; Poogyeon Park",
+    "author_structured": [
+      {
+        "given": "Min Su",
+        "family": "Kim"
+      },
+      {
+        "given": "Jong Pil",
+        "family": "Yun"
+      },
+      {
+        "given": "Poogyeon",
+        "family": "Park"
+      }
+    ],
+    "year": 2021,
+    "online_year": "",
+    "journal": "IEEE Access",
+    "volume": "9",
+    "issue": "",
+    "pages": "98962-98972",
+    "doi": "10.1109/access.2021.3095565",
+    "source_url": "https://doi.org/10.1109/access.2021.3095565",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "Frequency Activation Map",
+    "engineering_object": "机械故障诊断",
+    "research_problem": "把分类依据映射为可读的频率区域。",
+    "method": "可解释网络及频率激活图FAM。",
+    "reported_validation": "论文故障诊断实验；完整数据和代码本次未确认。",
+    "citation_use": "方法与相关工作：频域解释的网络设计。",
+    "suggested_experiment": "检查高激活频段是否对应已知故障频率，并做频带干预。",
+    "limitations": "频率图是模型依据的证据，不是物理因果证明。",
+    "reproduction": "中高：需要实现网络约束与频率映射。",
+    "evidence_url": "https://doi.org/10.1109/ACCESS.2021.3095565",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "C05",
+    "theme": "融合与解释",
+    "title": "Interpreting what typical fault signals look like via prototype-matching",
+    "authors": "Qian Chen; Xingjian Dong; Zhike Peng",
+    "author_structured": [
+      {
+        "given": "Qian",
+        "family": "Chen"
+      },
+      {
+        "given": "Xingjian",
+        "family": "Dong"
+      },
+      {
+        "given": "Zhike",
+        "family": "Peng"
+      }
+    ],
+    "year": 2024,
+    "online_year": "",
+    "journal": "Advanced Engineering Informatics",
+    "volume": "62",
+    "issue": "",
+    "pages": "102849",
+    "doi": "10.1016/j.aei.2024.102849",
+    "source_url": "https://doi.org/10.1016/j.aei.2024.102849",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "原型匹配解释",
+    "engineering_object": "典型故障频谱",
+    "research_problem": "展示模型认为典型的故障信号形态。",
+    "method": "原型匹配、编码/重构及重要区域分析。",
+    "reported_validation": "故障信号原型解释实验；完整原数据与官方代码未确认。",
+    "citation_use": "方法与相关工作：案例式/原型式可解释诊断。",
+    "suggested_experiment": "比较原型与真实样本，检查是否包含故障频率及侧频结构。",
+    "limitations": "原型是模型学习的代表模式，不一定就是物理源或真实测量样本。",
+    "reproduction": "中高：需复现原型构造及训练细节。",
+    "evidence_url": "https://arxiv.org/abs/2403.07033",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "C06",
+    "theme": "融合与解释",
+    "title": "CS-SHAP: Extending SHAP to cyclic-spectral domain for better interpretability of intelligent fault diagnosis",
+    "authors": "Qian Chen; Xingjian Dong; Kui Hu; Kangkang Chen; Zhike Peng; Guang Meng",
+    "author_structured": [
+      {
+        "given": "Qian",
+        "family": "Chen"
+      },
+      {
+        "given": "Xingjian",
+        "family": "Dong"
+      },
+      {
+        "given": "Kui",
+        "family": "Hu"
+      },
+      {
+        "given": "Kangkang",
+        "family": "Chen"
+      },
+      {
+        "given": "Zhike",
+        "family": "Peng"
+      },
+      {
+        "given": "Guang",
+        "family": "Meng"
+      }
+    ],
+    "year": 2026,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "257",
+    "issue": "",
+    "pages": "114495",
+    "doi": "10.1016/j.ymssp.2026.114495",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2026.114495",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。 采用2026年正式期刊版；保留全部六位作者，包括Guang Meng。",
+    "short_name": "CS-SHAP",
+    "engineering_object": "已训练机械诊断网络",
+    "research_problem": "原始时域归因难同时展示载频和调制特征。",
+    "method": "将SHAP归因扩展到循环谱域。",
+    "reported_validation": "三个数据集；作者提供模拟数据和CWRU演示。",
+    "citation_use": "方法与核心相关工作：冻结模型后的故障特征归因。",
+    "suggested_experiment": "先用已知真值模拟信号，比较时间、频率、包络、时频和循环谱归因。",
+    "limitations": "归因依赖背景样本和扰动方式；它解释预测，不自动证明因果。",
+    "reproduction": "中高：有演示代码，但SHAP版本与计算开销需处理。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0888327026006527",
+    "priority": "优先阅读",
+    "code_status": "已确认作者仓库",
+    "code_url": "https://github.com/ChenQian0618/CS-SHAP",
+    "code_scope": "多信号域SHAP与模拟/CWRU演示；未运行",
+    "data_status": "模拟与CWRU可开始；第三组数据完整获取未核验",
+    "data_url": "https://engineering.case.edu/bearingdatacenter/download-data-file",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已阅读作者仓库README，核对代码范围；未执行。"
+  },
+  {
+    "id": "C07",
+    "theme": "融合与解释",
+    "title": "Classifier-guided neural blind deconvolution: A physics-informed denoising module for bearing fault diagnosis under noisy conditions",
+    "authors": "Jing-Xiao Liao; Chao He; Jipu Li; Jinwei Sun; Shiping Zhang; Xiaoge Zhang",
+    "author_structured": [
+      {
+        "given": "Jing-Xiao",
+        "family": "Liao"
+      },
+      {
+        "given": "Chao",
+        "family": "He"
+      },
+      {
+        "given": "Jipu",
+        "family": "Li"
+      },
+      {
+        "given": "Jinwei",
+        "family": "Sun"
+      },
+      {
+        "given": "Shiping",
+        "family": "Zhang"
+      },
+      {
+        "given": "Xiaoge",
+        "family": "Zhang"
+      }
+    ],
+    "year": 2025,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "222",
+    "issue": "",
+    "pages": "111750",
+    "doi": "10.1016/j.ymssp.2024.111750",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2024.111750",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "ClassBD",
+    "engineering_object": "噪声下的轴承故障",
+    "research_problem": "在噪声中提取有利于诊断的重复冲击。",
+    "method": "时域二次滤波、频域线性滤波与分类器联合训练。",
+    "reported_validation": "作者工程包含PU与JNU数据处理和训练入口。",
+    "citation_use": "方法与基线：故障成分增强和分类联合优化。",
+    "suggested_experiment": "比较无解卷积、传统解卷积、联合训练，并检查包络谱和消融结果。",
+    "limitations": "属于联合训练框架，不能表述为对任意冻结模型的纯事后解释。",
+    "reproduction": "中高：完整代码可见，需整理数据并配置损失权重。",
+    "evidence_url": "https://github.com/asdvfghg/ClassBD",
+    "priority": "优先阅读",
+    "code_status": "已确认作者仓库",
+    "code_url": "https://github.com/asdvfghg/ClassBD",
+    "code_scope": "train_local.py、模型与数据处理；未运行",
+    "data_status": "PU公开，JNU及重组链接见作者README",
+    "data_url": "https://mb.uni-paderborn.de/kat/forschung/bearing-datacenter/data-sets-and-download",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已阅读作者仓库README，核对代码范围；未执行。"
+  },
+  {
+    "id": "C08",
+    "theme": "融合与解释",
+    "title": "Multi-channel neural blind deconvolution:A physically interpretable network for impulsive mode extraction",
+    "authors": "Liu He; Wen Li; Qiuyang Zhou; Cai Yi; Dong Wang",
+    "author_structured": [
+      {
+        "given": "Liu",
+        "family": "He"
+      },
+      {
+        "given": "Wen",
+        "family": "Li"
+      },
+      {
+        "given": "Qiuyang",
+        "family": "Zhou"
+      },
+      {
+        "given": "Cai",
+        "family": "Yi"
+      },
+      {
+        "given": "Dong",
+        "family": "Wang"
+      }
+    ],
+    "year": 2025,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "238",
+    "issue": "",
+    "pages": "113210",
+    "doi": "10.1016/j.ymssp.2025.113210",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2025.113210",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "多通道神经盲解卷积",
+    "engineering_object": "冲击模态与复合故障",
+    "research_problem": "从信号中提取不同冲击模态。",
+    "method": "将多通道滤波和信号处理步骤构造成可解释网络。",
+    "reported_validation": "论文冲击模态提取实验；完整数据和实现未确认。",
+    "citation_use": "方法与相关工作：多分量提取与神经盲解卷积。",
+    "suggested_experiment": "检查各通道的周期、包络谱、冗余和跨随机种子稳定性。",
+    "limitations": "提取多个模态不等于识别了多个真实独立物理源。",
+    "reproduction": "高：原始实现与完整数据未确认。",
+    "evidence_url": "https://doi.org/10.1016/j.ymssp.2025.113210",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "C09",
+    "theme": "融合与解释",
+    "title": "Multilayer Grad-CAM: An effective tool towards explainable deep neural networks for intelligent fault diagnosis",
+    "authors": "Sinan Li; Tianfu Li; Chuang Sun; Ruqiang Yan; Xuefeng Chen",
+    "author_structured": [
+      {
+        "given": "Sinan",
+        "family": "Li"
+      },
+      {
+        "given": "Tianfu",
+        "family": "Li"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      }
+    ],
+    "year": 2023,
+    "online_year": "",
+    "journal": "Journal of Manufacturing Systems",
+    "volume": "69",
+    "issue": "",
+    "pages": "20-30",
+    "doi": "10.1016/j.jmsy.2023.05.027",
+    "source_url": "https://doi.org/10.1016/j.jmsy.2023.05.027",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "Multilayer Grad-CAM",
+    "engineering_object": "已训练深层诊断网络",
+    "research_problem": "只解释单一卷积层可能漏掉重要信息。",
+    "method": "组合多层Grad-CAM信息解释诊断决策。",
+    "reported_validation": "智能故障诊断实验；完整作者复现包未确认。",
+    "citation_use": "方法与核心相关工作：多层事后归因。",
+    "suggested_experiment": "比较单层与多层解释，并检验重要区域遮蔽后的预测变化。",
+    "limitations": "上采样后的热图分辨率不等于原网络的真实定位分辨率。",
+    "reproduction": "中高：需要核对层选择、融合和上采样规则。",
+    "evidence_url": "https://doi.org/10.1016/j.jmsy.2023.05.027",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "C10",
+    "theme": "融合与解释",
+    "title": "Explainable AI Algorithms for Vibration Data-Based Fault Detection: Use Case-Adadpted Methods and Critical Evaluation",
+    "authors": "Oliver Mey; Deniz Neufeld",
+    "author_structured": [
+      {
+        "given": "Oliver",
+        "family": "Mey"
+      },
+      {
+        "given": "Deniz",
+        "family": "Neufeld"
+      }
+    ],
+    "year": 2022,
+    "online_year": 2022,
+    "journal": "Sensors",
+    "volume": "22",
+    "issue": "23",
+    "pages": "9037",
+    "doi": "10.3390/s22239037",
+    "source_url": "https://doi.org/10.3390/s22239037",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。 原题名中的Adadpted拼写按出版记录保留。",
+    "short_name": "振动解释方法评估",
+    "engineering_object": "变转速电机不平衡",
+    "research_problem": "判断解释图是否真正突出类别相关特征。",
+    "method": "GradCAM、LRP和修改扰动的LIME，结合频率/阶次-RPM图。",
+    "reported_validation": "已知类别特征的合成数据与实测电机不平衡数据。",
+    "citation_use": "实验设计与讨论：解释质量需要有真值或可检验对照。",
+    "suggested_experiment": "设计可控模拟信号，分别评估相关区域命中与无关区域抑制。",
+    "limitations": "原文发现各方法仅部分成功；不能只根据热图好看来评价解释。",
+    "reproduction": "中：作者公开分析代码和notebook，环境需核对。",
+    "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9736871/",
+    "priority": "优先阅读",
+    "code_status": "已确认作者仓库",
+    "code_url": "https://github.com/o-mey/xai-vibration-fault-detection",
+    "code_scope": "分析代码与notebook；未运行",
+    "data_status": "合成与电机数据的来源见正文和仓库；下载完整性未验证",
+    "data_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9736871/",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、开放正文相关部分；未逐项复算实验。"
+  },
+  {
+    "id": "C11",
+    "theme": "融合与解释",
+    "title": "Signal processing- and physics-informed neural network for explainable bearing condition monitoring",
+    "authors": "N. Herwig; P. Borghesani; W. Smith; Z. Peng",
+    "author_structured": [
+      {
+        "given": "N.",
+        "family": "Herwig"
+      },
+      {
+        "given": "P.",
+        "family": "Borghesani"
+      },
+      {
+        "given": "W.",
+        "family": "Smith"
+      },
+      {
+        "given": "Z.",
+        "family": "Peng"
+      }
+    ],
+    "year": 2025,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "235",
+    "issue": "",
+    "pages": "112925",
+    "doi": "10.1016/j.ymssp.2025.112925",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2025.112925",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "BearingNet",
+    "engineering_object": "轴承状态监测",
+    "research_problem": "把诊断计算过程与信号处理及轴承机理关联。",
+    "method": "信号处理与物理信息融入结构化神经网络。",
+    "reported_validation": "论文轴承状态监测实验；完整官方代码入口未确认。",
+    "citation_use": "方法与相关工作：信号处理和物理可解释网络。",
+    "suggested_experiment": "逐层解释输入输出，并检验参数与故障频率之间的关系。",
+    "limitations": "physics-informed在本文语境不自动等于PDE残差型PINN。",
+    "reproduction": "高：需轴承信号背景，原始实现获取未确认。",
+    "evidence_url": "https://doi.org/10.1016/j.ymssp.2025.112925",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "C12",
+    "theme": "融合与解释",
+    "title": "Ex-SPGCAN: Signal-Prior-Guided Channel Attention for Explainable Fault Diagnosis of Diesel Engine Under Variable Operating Conditions",
+    "authors": "Yuyang Chen; Shilong Chu; Shude Ji; Likai Ye; Zhinong Jiang; Fuzhou Feng; Zhiwei Mao",
+    "author_structured": [
+      {
+        "given": "Yuyang",
+        "family": "Chen"
+      },
+      {
+        "given": "Shilong",
+        "family": "Chu"
+      },
+      {
+        "given": "Shude",
+        "family": "Ji"
+      },
+      {
+        "given": "Likai",
+        "family": "Ye"
+      },
+      {
+        "given": "Zhinong",
+        "family": "Jiang"
+      },
+      {
+        "given": "Fuzhou",
+        "family": "Feng"
+      },
+      {
+        "given": "Zhiwei",
+        "family": "Mao"
+      }
+    ],
+    "year": 2026,
+    "online_year": "",
+    "journal": "Chinese Journal of Mechanical Engineering",
+    "volume": "",
+    "issue": "",
+    "pages": "100327",
+    "doi": "10.1016/j.cjme.2026.100327",
+    "source_url": "https://doi.org/10.1016/j.cjme.2026.100327",
+    "type": "方法/应用/基准研究",
+    "publication_status": "期刊在线预校样（In Press）",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。 出版页标注In Press, Journal Pre-proof，2026-05-20在线；题录未提供卷期，不推测补写。",
+    "short_name": "Ex-SPGCAN",
+    "engineering_object": "变工况柴油机",
+    "research_problem": "区分耦合振动冲击，并增强跨工况解释性。",
+    "method": "由角域信息和冲击能量先验引导通道注意力。",
+    "reported_validation": "TBD234柴油机实验台变工况研究，另有核电应急柴油发电机喷油器故障工程案例。",
+    "citation_use": "工程案例与相关工作：把重要特征对应到发动机工作事件。",
+    "suggested_experiment": "把归因窗口映射到曲轴角和机械事件，比较工况变化前后的解释。",
+    "limitations": "已核对出版页摘要/章节片段，未获得完整工程数据；页面仍标注期刊预校样。",
+    "reproduction": "高：工程数据和先验标定是主要门槛。",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S1000934526001161",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "Crossref题录与出版页摘要/章节片段；未获取全文和工程数据。"
+  },
+  {
+    "id": "S01",
+    "theme": "深度学习",
+    "title": "Deep learning and its applications to machine health monitoring",
+    "authors": "Rui Zhao; Ruqiang Yan; Zhenghua Chen; Kezhi Mao; Peng Wang; Robert X. Gao",
+    "author_structured": [
+      {
+        "given": "Rui",
+        "family": "Zhao"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Zhenghua",
+        "family": "Chen"
+      },
+      {
+        "given": "Kezhi",
+        "family": "Mao"
+      },
+      {
+        "given": "Peng",
+        "family": "Wang"
+      },
+      {
+        "given": "Robert X.",
+        "family": "Gao"
+      }
+    ],
+    "year": 2019,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "115",
+    "issue": "",
+    "pages": "213-237",
+    "doi": "10.1016/j.ymssp.2018.05.050",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2018.05.050",
+    "type": "综述/教程",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "机器健康监测深度学习综述",
+    "engineering_object": "机器健康监测",
+    "research_problem": "梳理深度学习在机器健康监测中的应用。",
+    "method": "分类总结AE、DBN、CNN、RNN等方法。",
+    "reported_validation": "综述，不是单一复现实验。",
+    "citation_use": "引言：领域方法发展与已有应用。",
+    "suggested_experiment": "按综述的引用追踪原始方法论文。",
+    "limitations": "适合领域背景；具体算法创新应同时引用原始论文。",
+    "reproduction": "不适用：综述。",
+    "evidence_url": "https://arxiv.org/abs/1612.07640",
+    "priority": "按课题选读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "S02",
+    "theme": "深度学习",
+    "title": "Applications of machine learning to machine fault diagnosis: A review and roadmap",
+    "authors": "Yaguo Lei; Bin Yang; Xinwei Jiang; Feng Jia; Naipeng Li; Asoke K. Nandi",
+    "author_structured": [
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Bin",
+        "family": "Yang"
+      },
+      {
+        "given": "Xinwei",
+        "family": "Jiang"
+      },
+      {
+        "given": "Feng",
+        "family": "Jia"
+      },
+      {
+        "given": "Naipeng",
+        "family": "Li"
+      },
+      {
+        "given": "Asoke K.",
+        "family": "Nandi"
+      }
+    ],
+    "year": 2020,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "138",
+    "issue": "",
+    "pages": "106587",
+    "doi": "10.1016/j.ymssp.2019.106587",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2019.106587",
+    "type": "综述/教程",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "机器故障诊断路线图",
+    "engineering_object": "机械故障诊断",
+    "research_problem": "概括机器学习诊断技术与挑战。",
+    "method": "传统学习、深度学习和迁移学习路线综述。",
+    "reported_validation": "综述，不是单一实验。",
+    "citation_use": "引言：研究现状、数据与泛化挑战。",
+    "suggested_experiment": "用其分类框架组织自己的相关工作。",
+    "limitations": "不能代替具体算法、数据集和实验结论的原文。",
+    "reproduction": "不适用：综述。",
+    "evidence_url": "https://doi.org/10.1016/j.ymssp.2019.106587",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "S03",
+    "theme": "特征挖掘",
+    "title": "Rolling element bearing diagnostics—A tutorial",
+    "authors": "Robert B. Randall; Jérôme Antoni",
+    "author_structured": [
+      {
+        "given": "Robert B.",
+        "family": "Randall"
+      },
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      }
+    ],
+    "year": 2011,
+    "online_year": "",
+    "journal": "Mechanical Systems and Signal Processing",
+    "volume": "25",
+    "issue": "2",
+    "pages": "485-520",
+    "doi": "10.1016/j.ymssp.2010.07.017",
+    "source_url": "https://doi.org/10.1016/j.ymssp.2010.07.017",
+    "type": "综述/教程",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "轴承诊断机理教程论文",
+    "engineering_object": "滚动轴承",
+    "research_problem": "把故障机理与振动信号处理连接起来。",
+    "method": "轴承振动、调制、包络及诊断方法的系统讲解。",
+    "reported_validation": "期刊教程/综述，包含机理与诊断分析。",
+    "citation_use": "机理依据：解释轴承特征频率与解调结果。",
+    "suggested_experiment": "先由几何和转速确定预期故障频率，再检查模型关注频带。",
+    "limitations": "轴承机理不能原样套到柴油机燃烧与喷油故障。",
+    "reproduction": "中高：阅读理论，不是统一训练复现任务。",
+    "evidence_url": "https://doi.org/10.1016/j.ymssp.2010.07.017",
+    "priority": "优先阅读",
+    "code_status": "本次未确认作者代码",
+    "code_url": "",
+    "code_scope": "未核验完整实现",
+    "data_status": "本次未确认可独立下载的完整论文数据",
+    "data_url": "",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。"
+  },
+  {
+    "id": "S04",
+    "theme": "深度学习",
+    "title": "Applications of Unsupervised Deep Transfer Learning to Intelligent Fault Diagnosis: A Survey and Comparative Study",
+    "authors": "Zhibin Zhao; Qiyang Zhang; Xiaolei Yu; Chuang Sun; Shibin Wang; Ruqiang Yan; Xuefeng Chen",
+    "author_structured": [
+      {
+        "given": "Zhibin",
+        "family": "Zhao"
+      },
+      {
+        "given": "Qiyang",
+        "family": "Zhang"
+      },
+      {
+        "given": "Xiaolei",
+        "family": "Yu"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Shibin",
+        "family": "Wang"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      }
+    ],
+    "year": 2021,
+    "online_year": "",
+    "journal": "IEEE Transactions on Instrumentation and Measurement",
+    "volume": "70",
+    "issue": "",
+    "pages": "1-28",
+    "doi": "10.1109/tim.2021.3116309",
+    "source_url": "https://doi.org/10.1109/tim.2021.3116309",
+    "type": "综述与基准比较",
+    "publication_status": "期刊卷期已登记",
+    "checked": "2026-10-27",
+    "metadata_note": "Crossref DOI题录；优先使用卷期年，在线年另列。",
+    "short_name": "UDTL综述与比较",
+    "engineering_object": "跨域机械故障诊断",
+    "research_problem": "统一比较无监督深度迁移诊断方法。",
+    "method": "综述与统一基准，含映射式、对抗式及AdaBN等方法。",
+    "reported_validation": "公开代码包括CWRU、PU、PHM2009、SEU、JNU数据接口。",
+    "citation_use": "引言与实验设计：迁移设定、基线和标签可见性。",
+    "suggested_experiment": "用统一网络和划分比较迁移损失，固定目标标签使用规则。",
+    "limitations": "不要把所有迁移设置都概括成未知工况泛化。",
+    "reproduction": "中高：作者工程完整但依赖老旧，需记录环境迁移。",
+    "evidence_url": "https://github.com/ZhaoZhibin/UDTL",
+    "priority": "优先阅读",
+    "code_status": "已确认作者仓库",
+    "code_url": "https://github.com/ZhaoZhibin/UDTL",
+    "code_scope": "多种迁移方法与训练入口；未运行",
+    "data_status": "多个公开数据集，见作者README",
+    "data_url": "https://mb.uni-paderborn.de/kat/forschung/bearing-datacenter/data-sets-and-download",
+    "reading_status": "未读",
+    "run_status": "未运行论文实验",
+    "verification": "DOI题录、出版摘要/可见正文片段；未完成逐页全文复核。 已阅读作者仓库README，核对代码范围；未执行。"
+  }
+]

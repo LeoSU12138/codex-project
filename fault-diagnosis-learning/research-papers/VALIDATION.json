@@ -1,0 +1,87 @@
+{
+  "checked": "2026-10-27",
+  "result": "passed",
+  "papers": 38,
+  "unique_doi": 38,
+  "bibtex_entries": 38,
+  "ris_entries": 38,
+  "csv_records": 38,
+  "model_experiments_run": false,
+  "checks": [
+    {
+      "file": "01_深度学习科研论文.xlsx",
+      "records": 13,
+      "sheets": 2,
+      "all_cells_match_catalog": true,
+      "error_cells": 0,
+      "filters": true,
+      "frozen_rows_columns": true
+    },
+    {
+      "file": "02_特征挖掘科研论文.xlsx",
+      "records": 13,
+      "sheets": 2,
+      "all_cells_match_catalog": true,
+      "error_cells": 0,
+      "filters": true,
+      "frozen_rows_columns": true
+    },
+    {
+      "file": "03_融合与解释科研论文.xlsx",
+      "records": 12,
+      "sheets": 2,
+      "all_cells_match_catalog": true,
+      "error_cells": 0,
+      "filters": true,
+      "frozen_rows_columns": true
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "01_深度学习科研论文.xlsx",
+      "bytes": 16102,
+      "sha256": "52dcddba40c0bef4b629567001fedc0c3cb17f569c7a6c35d75b2b6e4f10589c"
+    },
+    {
+      "file": "02_特征挖掘科研论文.xlsx",
+      "bytes": 16207,
+      "sha256": "f6cb6177e218a2dce70aca206dafab9edc4675d9f6990e88612c1592e48791da"
+    },
+    {
+      "file": "03_融合与解释科研论文.xlsx",
+      "bytes": 16148,
+      "sha256": "1b8965ab577a316da4fb3dfe81490c0d34002a41e4ed05dbc97c2eca48239c53"
+    },
+    {
+      "file": "README.md",
+      "bytes": 60897,
+      "sha256": "0a87b5fc5eca52858ef9109429680540e15f25571966f354645561b2f7b2f555"
+    },
+    {
+      "file": "catalog.json",
+      "bytes": 87958,
+      "sha256": "de3f9bf15094ae4e887d2c84e4c25bfe747ed729e5571c1bb0fec68bcd9f614f"
+    },
+    {
+      "file": "engineering_references.bib",
+      "bytes": 16074,
+      "sha256": "79450f10c3a4010194564dd2d157315d600025d1db41439c3d37fef5e85c2d9e"
+    },
+    {
+      "file": "engineering_references.ris",
+      "bytes": 14621,
+      "sha256": "a516a54b8b020509e50c308cf6cba5d832330b590265d62d64db34647845121f"
+    },
+    {
+      "file": "source_metadata.json",
+      "bytes": 36369,
+      "sha256": "1ba8263985a08bac0b0f098711b6f81e87d1707a24a9b71e04f230ba5e2ebef5"
+    },
+    {
+      "file": "工程科研论文.csv",
+      "bytes": 47483,
+      "sha256": "155b1a4b2326840bf475e462707510467b006d0f79e07845339b3b72a95ec2c4"
+    }
+  ],
+  "limits": "Document and metadata consistency only; no model training, external dataset download or native Excel/Zotero execution."
+}

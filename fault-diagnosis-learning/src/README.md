@@ -37,3 +37,20 @@ python validate_artifacts.py
 ```
 
 最终版另做了逐页PDF视觉检查和Excel预览检查。修改文字或列宽后，应重新渲染检查。
+
+## 工程科研论文库（2026-10-27增补）
+
+`research_annotations.py`维护原创中文导读，`../research-papers/source_metadata.json`保留Crossref必要题录字段。`build_research_catalog.py`统一生成README、JSON、CSV、BibTeX和RIS。C02的中文题名、作者及页码按期刊原页补全，修正逻辑集中在生成器内；C12保留在线预校样状态。
+
+```bash
+python build_research_catalog.py
+python validate_research.py
+```
+
+Excel生成器`build_research_workbooks.mjs`接受三个绝对路径：输入JSON、输出目录、预览目录。它使用本次制作环境中的`@oai/artifact-tool`。在该环境中，将脚本复制到独立临时目录，并在该临时目录建立`node_modules`到运行环境依赖目录的链接，再执行；不要在仓库提交依赖文件或链接。
+
+```bash
+node /absolute/tmp/build_research_workbooks.mjs /absolute/repo/fault-diagnosis-learning/research-papers/catalog.json /absolute/repo/fault-diagnosis-learning/research-papers /absolute/tmp/previews
+```
+
+无该工具的环境可以直接使用发布的Excel，或导入CSV继续编辑。`validate_research.py`只用Python标准库，检查书目完整性、DOI去重、BibTeX/RIS与JSON一致性、Excel单元格/编号/表结构/筛选/冻结窗格/日期类型，以及本目录的Markdown相对链接。它不执行论文模型，也不能替代全文阅读和实验复现。

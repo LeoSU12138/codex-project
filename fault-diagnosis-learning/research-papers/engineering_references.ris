@@ -1,0 +1,630 @@
+TY  - JOUR
+ID  - FD_D01
+TI  - Deep neural networks: A promising tool for fault characteristic mining and intelligent diagnosis of rotating machinery with massive data
+AU  - Jia, Feng
+AU  - Lei, Yaguo
+AU  - Lin, Jing
+AU  - Zhou, Xin
+AU  - Lu, Na
+JO  - Mechanical Systems and Signal Processing
+PY  - 2016
+VL  - 72-73
+SP  - 303
+EP  - 315
+DO  - 10.1016/j.ymssp.2015.10.025
+UR  - https://doi.org/10.1016/j.ymssp.2015.10.025
+ER  - 
+
+TY  - JOUR
+ID  - FD_D02
+TI  - A New Deep Learning Model for Fault Diagnosis with Good Anti-Noise and Domain Adaptation Ability on Raw Vibration Signals
+AU  - Zhang, Wei
+AU  - Peng, Gaoliang
+AU  - Li, Chuanhao
+AU  - Chen, Yuanhang
+AU  - Zhang, Zhujun
+JO  - Sensors
+PY  - 2017
+VL  - 17
+IS  - 2
+SP  - 425
+DO  - 10.3390/s17020425
+UR  - https://doi.org/10.3390/s17020425
+ER  - 
+
+TY  - JOUR
+ID  - FD_D03
+TI  - A deep convolutional neural network with new training methods for bearing fault diagnosis under noisy environment and different working load
+AU  - Zhang, Wei
+AU  - Li, Chuanhao
+AU  - Peng, Gaoliang
+AU  - Chen, Yuanhang
+AU  - Zhang, Zhujun
+JO  - Mechanical Systems and Signal Processing
+PY  - 2018
+VL  - 100
+SP  - 439
+EP  - 453
+DO  - 10.1016/j.ymssp.2017.06.022
+UR  - https://doi.org/10.1016/j.ymssp.2017.06.022
+ER  - 
+
+TY  - JOUR
+ID  - FD_D04
+TI  - A New Convolutional Neural Network-Based Data-Driven Fault Diagnosis Method
+AU  - Wen, Long
+AU  - Li, Xinyu
+AU  - Gao, Liang
+AU  - Zhang, Yuyan
+JO  - IEEE Transactions on Industrial Electronics
+PY  - 2018
+VL  - 65
+IS  - 7
+SP  - 5990
+EP  - 5998
+DO  - 10.1109/tie.2017.2774777
+UR  - https://doi.org/10.1109/tie.2017.2774777
+ER  - 
+
+TY  - JOUR
+ID  - FD_D05
+TI  - Highly Accurate Machine Fault Diagnosis Using Deep Transfer Learning
+AU  - Shao, Siyu
+AU  - McAleer, Stephen
+AU  - Yan, Ruqiang
+AU  - Baldi, Pierre
+JO  - IEEE Transactions on Industrial Informatics
+PY  - 2019
+VL  - 15
+IS  - 4
+SP  - 2446
+EP  - 2455
+DO  - 10.1109/tii.2018.2864759
+UR  - https://doi.org/10.1109/tii.2018.2864759
+ER  - 
+
+TY  - JOUR
+ID  - FD_D06
+TI  - Deep Convolutional Transfer Learning Network: A New Method for Intelligent Fault Diagnosis of Machines With Unlabeled Data
+AU  - Guo, Liang
+AU  - Lei, Yaguo
+AU  - Xing, Saibo
+AU  - Yan, Tao
+AU  - Li, Naipeng
+JO  - IEEE Transactions on Industrial Electronics
+PY  - 2019
+VL  - 66
+IS  - 9
+SP  - 7316
+EP  - 7325
+DO  - 10.1109/tie.2018.2877090
+UR  - https://doi.org/10.1109/tie.2018.2877090
+ER  - 
+
+TY  - JOUR
+ID  - FD_D07
+TI  - Deep learning algorithms for rotating machinery intelligent diagnosis: An open source benchmark study
+AU  - Zhao, Zhibin
+AU  - Li, Tianfu
+AU  - Wu, Jingyao
+AU  - Sun, Chuang
+AU  - Wang, Shibin
+AU  - Yan, Ruqiang
+AU  - Chen, Xuefeng
+JO  - ISA Transactions
+PY  - 2020
+VL  - 107
+SP  - 224
+EP  - 255
+DO  - 10.1016/j.isatra.2020.08.010
+UR  - https://doi.org/10.1016/j.isatra.2020.08.010
+ER  - 
+
+TY  - JOUR
+ID  - FD_D08
+TI  - Diesel engine fault diagnosis for multiple industrial scenarios based on transfer learning
+AU  - Zhang, Junhong
+AU  - Pei, Guobin
+AU  - Zhu, Xiaolong
+AU  - Gou, Xin
+AU  - Deng, Linlong
+AU  - Gao, Lang
+AU  - Liu, Zewei
+AU  - Ni, Qing
+AU  - Lin, Jiewei
+JO  - Measurement
+PY  - 2024
+VL  - 228
+SP  - 114338
+DO  - 10.1016/j.measurement.2024.114338
+UR  - https://doi.org/10.1016/j.measurement.2024.114338
+ER  - 
+
+TY  - JOUR
+ID  - FD_D09
+TI  - A Multiple Attention Convolutional Neural Networks for Diesel Engine Fault Diagnosis
+AU  - Yang, Xiao
+AU  - Bi, Fengrong
+AU  - Cheng, Jiangang
+AU  - Tang, Daijie
+AU  - Shen, Pengfei
+AU  - Bi, Xiaoyang
+JO  - Sensors
+PY  - 2024
+VL  - 24
+IS  - 9
+SP  - 2708
+DO  - 10.3390/s24092708
+UR  - https://doi.org/10.3390/s24092708
+ER  - 
+
+TY  - JOUR
+ID  - FD_D10
+TI  - A Novel Fault Diagnosis Method for Rotating Machinery Based on a Convolutional Neural Network
+AU  - Guo, Sheng
+AU  - Yang, Tao
+AU  - Gao, Wei
+AU  - Zhang, Chen
+JO  - Sensors
+PY  - 2018
+VL  - 18
+IS  - 5
+SP  - 1429
+DO  - 10.3390/s18051429
+UR  - https://doi.org/10.3390/s18051429
+ER  - 
+
+TY  - JOUR
+ID  - FD_F01
+TI  - An Intelligent Fault Diagnosis Method Using Unsupervised Feature Learning Towards Mechanical Big Data
+AU  - Lei, Yaguo
+AU  - Jia, Feng
+AU  - Lin, Jing
+AU  - Xing, Saibo
+AU  - Ding, Steven X.
+JO  - IEEE Transactions on Industrial Electronics
+PY  - 2016
+VL  - 63
+IS  - 5
+SP  - 3137
+EP  - 3147
+DO  - 10.1109/tie.2016.2519325
+UR  - https://doi.org/10.1109/tie.2016.2519325
+ER  - 
+
+TY  - JOUR
+ID  - FD_F02
+TI  - The spectral kurtosis: a useful tool for characterising non-stationary signals
+AU  - Antoni, Jérôme
+JO  - Mechanical Systems and Signal Processing
+PY  - 2006
+VL  - 20
+IS  - 2
+SP  - 282
+EP  - 307
+DO  - 10.1016/j.ymssp.2004.09.001
+UR  - https://doi.org/10.1016/j.ymssp.2004.09.001
+ER  - 
+
+TY  - JOUR
+ID  - FD_F03
+TI  - Fast computation of the kurtogram for the detection of transient faults
+AU  - Antoni, Jérôme
+JO  - Mechanical Systems and Signal Processing
+PY  - 2007
+VL  - 21
+IS  - 1
+SP  - 108
+EP  - 124
+DO  - 10.1016/j.ymssp.2005.12.002
+UR  - https://doi.org/10.1016/j.ymssp.2005.12.002
+ER  - 
+
+TY  - JOUR
+ID  - FD_F04
+TI  - Maximum correlated Kurtosis deconvolution and application on gear tooth chip fault detection
+AU  - McDonald, Geoff L.
+AU  - Zhao, Qing
+AU  - Zuo, Ming J.
+JO  - Mechanical Systems and Signal Processing
+PY  - 2012
+VL  - 33
+SP  - 237
+EP  - 255
+DO  - 10.1016/j.ymssp.2012.06.010
+UR  - https://doi.org/10.1016/j.ymssp.2012.06.010
+ER  - 
+
+TY  - JOUR
+ID  - FD_F05
+TI  - Multipoint Optimal Minimum Entropy Deconvolution and Convolution Fix: Application to vibration fault detection
+AU  - McDonald, Geoff L.
+AU  - Zhao, Qing
+JO  - Mechanical Systems and Signal Processing
+PY  - 2017
+VL  - 82
+SP  - 461
+EP  - 477
+DO  - 10.1016/j.ymssp.2016.05.036
+UR  - https://doi.org/10.1016/j.ymssp.2016.05.036
+ER  - 
+
+TY  - JOUR
+ID  - FD_F06
+TI  - Fast computation of the spectral correlation
+AU  - Antoni, Jérôme
+AU  - Xin, Ge
+AU  - Hamzaoui, Nacer
+JO  - Mechanical Systems and Signal Processing
+PY  - 2017
+VL  - 92
+SP  - 248
+EP  - 277
+DO  - 10.1016/j.ymssp.2017.01.011
+UR  - https://doi.org/10.1016/j.ymssp.2017.01.011
+ER  - 
+
+TY  - JOUR
+ID  - FD_F07
+TI  - Variational Mode Decomposition
+AU  - Dragomiretskiy, Konstantin
+AU  - Zosso, Dominique
+JO  - IEEE Transactions on Signal Processing
+PY  - 2014
+VL  - 62
+IS  - 3
+SP  - 531
+EP  - 544
+DO  - 10.1109/tsp.2013.2288675
+UR  - https://doi.org/10.1109/tsp.2013.2288675
+ER  - 
+
+TY  - JOUR
+ID  - FD_F08
+TI  - Feature Mode Decomposition: New Decomposition Theory for Rotating Machinery Fault Diagnosis
+AU  - Miao, Yonghao
+AU  - Zhang, Boyao
+AU  - Li, Chenhui
+AU  - Lin, Jing
+AU  - Zhang, Dayi
+JO  - IEEE Transactions on Industrial Electronics
+PY  - 2023
+VL  - 70
+IS  - 2
+SP  - 1949
+EP  - 1960
+DO  - 10.1109/tie.2022.3156156
+UR  - https://doi.org/10.1109/tie.2022.3156156
+ER  - 
+
+TY  - JOUR
+ID  - FD_F09
+TI  - Priori-distribution-guided adaptive sparse attention for cross-domain feature mining in diesel engine fault diagnosis
+AU  - Li, He
+AU  - Zhang, Jinjie
+AU  - Zhang, Zhenjing
+AU  - Jiang, Zhinong
+AU  - Mao, Zhiwei
+JO  - Engineering Applications of Artificial Intelligence
+PY  - 2024
+VL  - 132
+SP  - 107975
+DO  - 10.1016/j.engappai.2024.107975
+UR  - https://doi.org/10.1016/j.engappai.2024.107975
+ER  - 
+
+TY  - JOUR
+ID  - FD_F10
+TI  - Investigation of logarithmic signatures for feature extraction and application to marine engine fault diagnosis
+AU  - Patil, Chaitanya
+AU  - Theotokatos, Gerasimos
+AU  - Wu, Yue
+AU  - Lyons, Terry
+JO  - Engineering Applications of Artificial Intelligence
+PY  - 2024
+VL  - 138
+SP  - 109299
+DO  - 10.1016/j.engappai.2024.109299
+UR  - https://doi.org/10.1016/j.engappai.2024.109299
+ER  - 
+
+TY  - JOUR
+ID  - FD_F11
+TI  - Refined composite hierarchical bidirectional diversity entropy and its application in fault type diagnosis and fault degree diagnosis of diesel engine fuel injectors
+AU  - Ke, Yun
+AU  - Song, Enzhe
+AU  - Yao, Chong
+AU  - Ding, Shunliang
+AU  - Ning, Yilin
+AU  - Li, Rui
+JO  - Journal of Vibration and Control
+PY  - 2024
+VL  - 30
+IS  - 21-22
+SP  - 5047
+EP  - 5059
+DO  - 10.1177/10775463231217530
+UR  - https://doi.org/10.1177/10775463231217530
+ER  - 
+
+TY  - JOUR
+ID  - FD_F12
+TI  - Rolling element bearing diagnostics using the Case Western Reserve University data: A benchmark study
+AU  - Smith, Wade A.
+AU  - Randall, Robert B.
+JO  - Mechanical Systems and Signal Processing
+PY  - 2015
+VL  - 64-65
+SP  - 100
+EP  - 131
+DO  - 10.1016/j.ymssp.2015.04.021
+UR  - https://doi.org/10.1016/j.ymssp.2015.04.021
+ER  - 
+
+TY  - JOUR
+ID  - FD_C01
+TI  - TFN: An interpretable neural network with time-frequency transform embedded for intelligent fault diagnosis
+AU  - Chen, Qian
+AU  - Dong, Xingjian
+AU  - Tu, Guowei
+AU  - Wang, Dong
+AU  - Cheng, Changming
+AU  - Zhao, Baoxuan
+AU  - Peng, Zhike
+JO  - Mechanical Systems and Signal Processing
+PY  - 2024
+VL  - 207
+SP  - 110952
+DO  - 10.1016/j.ymssp.2023.110952
+UR  - https://doi.org/10.1016/j.ymssp.2023.110952
+ER  - 
+
+TY  - JOUR
+ID  - FD_C02
+TI  - 一种面向机械设备故障诊断的可解释卷积神经网络
+AU  - 陈钱
+AU  - 陈康康
+AU  - 董兴建
+AU  - 皇甫一樊
+AU  - 彭志科
+AU  - 孟光
+JO  - 机械工程学报
+PY  - 2024
+VL  - 60
+IS  - 12
+SP  - 65
+EP  - 76
+DO  - 10.3901/jme.2024.12.065
+UR  - https://doi.org/10.3901/jme.2024.12.065
+ER  - 
+
+TY  - JOUR
+ID  - FD_C03
+TI  - WaveletKernelNet: An Interpretable Deep Neural Network for Industrial Intelligent Diagnosis
+AU  - Li, Tianfu
+AU  - Zhao, Zhibin
+AU  - Sun, Chuang
+AU  - Cheng, Li
+AU  - Chen, Xuefeng
+AU  - Yan, Ruqiang
+AU  - Gao, Robert X.
+JO  - IEEE Transactions on Systems, Man, and Cybernetics: Systems
+PY  - 2022
+VL  - 52
+IS  - 4
+SP  - 2302
+EP  - 2312
+DO  - 10.1109/tsmc.2020.3048950
+UR  - https://doi.org/10.1109/tsmc.2020.3048950
+ER  - 
+
+TY  - JOUR
+ID  - FD_C04
+TI  - An Explainable Neural Network for Fault Diagnosis With a Frequency Activation Map
+AU  - Kim, Min Su
+AU  - Yun, Jong Pil
+AU  - Park, Poogyeon
+JO  - IEEE Access
+PY  - 2021
+VL  - 9
+SP  - 98962
+EP  - 98972
+DO  - 10.1109/access.2021.3095565
+UR  - https://doi.org/10.1109/access.2021.3095565
+ER  - 
+
+TY  - JOUR
+ID  - FD_C05
+TI  - Interpreting what typical fault signals look like via prototype-matching
+AU  - Chen, Qian
+AU  - Dong, Xingjian
+AU  - Peng, Zhike
+JO  - Advanced Engineering Informatics
+PY  - 2024
+VL  - 62
+SP  - 102849
+DO  - 10.1016/j.aei.2024.102849
+UR  - https://doi.org/10.1016/j.aei.2024.102849
+ER  - 
+
+TY  - JOUR
+ID  - FD_C06
+TI  - CS-SHAP: Extending SHAP to cyclic-spectral domain for better interpretability of intelligent fault diagnosis
+AU  - Chen, Qian
+AU  - Dong, Xingjian
+AU  - Hu, Kui
+AU  - Chen, Kangkang
+AU  - Peng, Zhike
+AU  - Meng, Guang
+JO  - Mechanical Systems and Signal Processing
+PY  - 2026
+VL  - 257
+SP  - 114495
+DO  - 10.1016/j.ymssp.2026.114495
+UR  - https://doi.org/10.1016/j.ymssp.2026.114495
+ER  - 
+
+TY  - JOUR
+ID  - FD_C07
+TI  - Classifier-guided neural blind deconvolution: A physics-informed denoising module for bearing fault diagnosis under noisy conditions
+AU  - Liao, Jing-Xiao
+AU  - He, Chao
+AU  - Li, Jipu
+AU  - Sun, Jinwei
+AU  - Zhang, Shiping
+AU  - Zhang, Xiaoge
+JO  - Mechanical Systems and Signal Processing
+PY  - 2025
+VL  - 222
+SP  - 111750
+DO  - 10.1016/j.ymssp.2024.111750
+UR  - https://doi.org/10.1016/j.ymssp.2024.111750
+ER  - 
+
+TY  - JOUR
+ID  - FD_C08
+TI  - Multi-channel neural blind deconvolution:A physically interpretable network for impulsive mode extraction
+AU  - He, Liu
+AU  - Li, Wen
+AU  - Zhou, Qiuyang
+AU  - Yi, Cai
+AU  - Wang, Dong
+JO  - Mechanical Systems and Signal Processing
+PY  - 2025
+VL  - 238
+SP  - 113210
+DO  - 10.1016/j.ymssp.2025.113210
+UR  - https://doi.org/10.1016/j.ymssp.2025.113210
+ER  - 
+
+TY  - JOUR
+ID  - FD_C09
+TI  - Multilayer Grad-CAM: An effective tool towards explainable deep neural networks for intelligent fault diagnosis
+AU  - Li, Sinan
+AU  - Li, Tianfu
+AU  - Sun, Chuang
+AU  - Yan, Ruqiang
+AU  - Chen, Xuefeng
+JO  - Journal of Manufacturing Systems
+PY  - 2023
+VL  - 69
+SP  - 20
+EP  - 30
+DO  - 10.1016/j.jmsy.2023.05.027
+UR  - https://doi.org/10.1016/j.jmsy.2023.05.027
+ER  - 
+
+TY  - JOUR
+ID  - FD_C10
+TI  - Explainable AI Algorithms for Vibration Data-Based Fault Detection: Use Case-Adadpted Methods and Critical Evaluation
+AU  - Mey, Oliver
+AU  - Neufeld, Deniz
+JO  - Sensors
+PY  - 2022
+VL  - 22
+IS  - 23
+SP  - 9037
+DO  - 10.3390/s22239037
+UR  - https://doi.org/10.3390/s22239037
+ER  - 
+
+TY  - JOUR
+ID  - FD_C11
+TI  - Signal processing- and physics-informed neural network for explainable bearing condition monitoring
+AU  - Herwig, N.
+AU  - Borghesani, P.
+AU  - Smith, W.
+AU  - Peng, Z.
+JO  - Mechanical Systems and Signal Processing
+PY  - 2025
+VL  - 235
+SP  - 112925
+DO  - 10.1016/j.ymssp.2025.112925
+UR  - https://doi.org/10.1016/j.ymssp.2025.112925
+ER  - 
+
+TY  - JOUR
+ID  - FD_C12
+TI  - Ex-SPGCAN: Signal-Prior-Guided Channel Attention for Explainable Fault Diagnosis of Diesel Engine Under Variable Operating Conditions
+AU  - Chen, Yuyang
+AU  - Chu, Shilong
+AU  - Ji, Shude
+AU  - Ye, Likai
+AU  - Jiang, Zhinong
+AU  - Feng, Fuzhou
+AU  - Mao, Zhiwei
+JO  - Chinese Journal of Mechanical Engineering
+PY  - 2026
+SP  - 100327
+DO  - 10.1016/j.cjme.2026.100327
+UR  - https://doi.org/10.1016/j.cjme.2026.100327
+ER  - 
+
+TY  - JOUR
+ID  - FD_S01
+TI  - Deep learning and its applications to machine health monitoring
+AU  - Zhao, Rui
+AU  - Yan, Ruqiang
+AU  - Chen, Zhenghua
+AU  - Mao, Kezhi
+AU  - Wang, Peng
+AU  - Gao, Robert X.
+JO  - Mechanical Systems and Signal Processing
+PY  - 2019
+VL  - 115
+SP  - 213
+EP  - 237
+DO  - 10.1016/j.ymssp.2018.05.050
+UR  - https://doi.org/10.1016/j.ymssp.2018.05.050
+ER  - 
+
+TY  - JOUR
+ID  - FD_S02
+TI  - Applications of machine learning to machine fault diagnosis: A review and roadmap
+AU  - Lei, Yaguo
+AU  - Yang, Bin
+AU  - Jiang, Xinwei
+AU  - Jia, Feng
+AU  - Li, Naipeng
+AU  - Nandi, Asoke K.
+JO  - Mechanical Systems and Signal Processing
+PY  - 2020
+VL  - 138
+SP  - 106587
+DO  - 10.1016/j.ymssp.2019.106587
+UR  - https://doi.org/10.1016/j.ymssp.2019.106587
+ER  - 
+
+TY  - JOUR
+ID  - FD_S03
+TI  - Rolling element bearing diagnostics—A tutorial
+AU  - Randall, Robert B.
+AU  - Antoni, Jérôme
+JO  - Mechanical Systems and Signal Processing
+PY  - 2011
+VL  - 25
+IS  - 2
+SP  - 485
+EP  - 520
+DO  - 10.1016/j.ymssp.2010.07.017
+UR  - https://doi.org/10.1016/j.ymssp.2010.07.017
+ER  - 
+
+TY  - JOUR
+ID  - FD_S04
+TI  - Applications of Unsupervised Deep Transfer Learning to Intelligent Fault Diagnosis: A Survey and Comparative Study
+AU  - Zhao, Zhibin
+AU  - Zhang, Qiyang
+AU  - Yu, Xiaolei
+AU  - Sun, Chuang
+AU  - Wang, Shibin
+AU  - Yan, Ruqiang
+AU  - Chen, Xuefeng
+JO  - IEEE Transactions on Instrumentation and Measurement
+PY  - 2021
+VL  - 70
+SP  - 1
+EP  - 28
+DO  - 10.1109/tim.2021.3116309
+UR  - https://doi.org/10.1109/tim.2021.3116309
+ER  - 

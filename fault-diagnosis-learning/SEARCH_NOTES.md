@@ -1,5 +1,7 @@
 # 检索与核验说明
 
+以下先保留原入门包的检索记录；2026-10-27新增的[38篇工程科研论文库](research-papers/README.md)见本文末尾“工程科研论文版增补”。正式引用与代码状态以新库更新记录为准。
+
 ## 目的与范围
 
 回答三个学习问题：深度学习故障诊断如何入门；特征挖掘要学什么；怎样把模型预测、事后解释和物理验证结合。目标是选择适合分阶段阅读和复现的资源，而不是追求引用量排名或穷尽全部论文。
@@ -40,3 +42,19 @@
 ## 资料复用
 
 这里只保存原创导读、书目元数据和外部链接。第三方论文全文、作者代码、数据集、图表及其许可证不由本仓库重新授权。使用代码或下载数据时请按原站的许可、引用和版本要求执行。
+# 工程科研论文版增补（2026-10-27）
+
+在原入门资料已发布的基础上，新增`research-papers/`，用于后续科研引用和工程实验设计。原PDF与入门工作簿不重复生成；新库38篇，包括34篇方法/应用/基准研究和4篇综述、教程或综述与比较研究。这里的D/F/C/S编号只在新库有效。
+
+检索覆盖出版社、期刊原页、Crossref、开放正文、大学机构页面及作者GitHub/MATLAB代码页。先按题名识别候选，随后对38个DOI逐条取得Crossref记录，核对作者、卷期、页码和年份。必要题录保存在`source_metadata.json`，没有公开全文摘要、作者联系方式或机构详情。中文文章C02的Crossref缺作者，依据期刊原页补齐。来源URL逐篇列在JSON、Excel及目录中。
+
+代表性检索组合包括：`deep learning rotating machinery fault diagnosis benchmark`、`fault characteristic mining deep neural networks`、`diesel engine fault diagnosis transfer learning`、`diesel injector diversity entropy diagnosis`、`spectral kurtosis MCKD MOMEDA FMD`、`interpretable fault diagnosis TFN WaveletKernelNet`、`CS-SHAP cyclic spectral`、`Multilayer Grad-CAM fault diagnosis`、`Ex-SPGCAN`，并用精确题名或DOI定位原始来源。检索结果按工程相关性、原始方法价值、可解释性问题和资源可获得性定向筛选，不声称穷尽检索，未统计系统综述式初筛/排除数量。
+
+新库的题录与资源更新包括：CS-SHAP采用2026年正式期刊DOI `10.1016/j.ymssp.2026.114495`及六位作者；C10确认作者仓库`o-mey/xai-vibration-fault-detection`；MCKD DOI采用`10.1016/j.ymssp.2012.06.010`；UDTL综述与比较研究DOI采用`10.1109/TIM.2021.3116309`；F11区分2023在线和2024卷期年。C12的出版页面仍为In Press / Journal Pre-proof，日期2026-05-20，保留预校样状态并留空卷期。
+
+工程验证范围有意分开：公开轴承基准、人工设置故障的实验台、物理数字孪生，以及原文报告的工程案例。F10的核心数据是数字孪生缸压，不能称为全现场数据；C12公开章节包含TBD234实验台与核电应急柴油发电机喷油器故障案例，不把它推广成任意柴油机验证。
+
+作者代码核验以仓库README和作者发布页为限；TFN示例主要为CWRU，WaveletKernelNet主要为模型，ClassBD包含训练入口，CS-SHAP包含模拟/CWRU演示。未执行训练或复算论文结果，也未审计完整依赖、数据和许可。建议实验由整理者提出，已与原文报告的实验分列。
+
+---
+

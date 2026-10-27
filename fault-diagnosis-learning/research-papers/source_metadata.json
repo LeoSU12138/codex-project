@@ -1,0 +1,1942 @@
+{
+  "D01": {
+    "DOI": "10.1016/j.ymssp.2015.10.025",
+    "title": [
+      "Deep neural networks: A promising tool for fault characteristic mining and intelligent diagnosis of rotating machinery with massive data"
+    ],
+    "author": [
+      {
+        "given": "Feng",
+        "family": "Jia"
+      },
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Jing",
+        "family": "Lin"
+      },
+      {
+        "given": "Xin",
+        "family": "Zhou"
+      },
+      {
+        "given": "Na",
+        "family": "Lu"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "volume": "72-73",
+    "issue": null,
+    "page": "303-315",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D02": {
+    "DOI": "10.3390/s17020425",
+    "title": [
+      "A New Deep Learning Model for Fault Diagnosis with Good Anti-Noise and Domain Adaptation Ability on Raw Vibration Signals"
+    ],
+    "author": [
+      {
+        "given": "Wei",
+        "family": "Zhang"
+      },
+      {
+        "given": "Gaoliang",
+        "family": "Peng"
+      },
+      {
+        "given": "Chuanhao",
+        "family": "Li"
+      },
+      {
+        "given": "Yuanhang",
+        "family": "Chen"
+      },
+      {
+        "given": "Zhujun",
+        "family": "Zhang"
+      }
+    ],
+    "container-title": [
+      "Sensors"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          22
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          22
+        ]
+      ]
+    },
+    "published-print": null,
+    "volume": "17",
+    "issue": "2",
+    "page": "425",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D03": {
+    "DOI": "10.1016/j.ymssp.2017.06.022",
+    "title": [
+      "A deep convolutional neural network with new training methods for bearing fault diagnosis under noisy environment and different working load"
+    ],
+    "author": [
+      {
+        "given": "Wei",
+        "family": "Zhang"
+      },
+      {
+        "given": "Chuanhao",
+        "family": "Li"
+      },
+      {
+        "given": "Gaoliang",
+        "family": "Peng"
+      },
+      {
+        "given": "Yuanhang",
+        "family": "Chen"
+      },
+      {
+        "given": "Zhujun",
+        "family": "Zhang"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          2
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          2
+        ]
+      ]
+    },
+    "volume": "100",
+    "issue": null,
+    "page": "439-453",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D04": {
+    "DOI": "10.1109/tie.2017.2774777",
+    "title": [
+      "A New Convolutional Neural Network-Based Data-Driven Fault Diagnosis Method"
+    ],
+    "author": [
+      {
+        "given": "Long",
+        "family": "Wen"
+      },
+      {
+        "given": "Xinyu",
+        "family": "Li"
+      },
+      {
+        "given": "Liang",
+        "family": "Gao"
+      },
+      {
+        "given": "Yuyan",
+        "family": "Zhang"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Industrial Electronics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    },
+    "volume": "65",
+    "issue": "7",
+    "page": "5990-5998",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D05": {
+    "DOI": "10.1109/tii.2018.2864759",
+    "title": [
+      "Highly Accurate Machine Fault Diagnosis Using Deep Transfer Learning"
+    ],
+    "author": [
+      {
+        "given": "Siyu",
+        "family": "Shao"
+      },
+      {
+        "given": "Stephen",
+        "family": "McAleer"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Pierre",
+        "family": "Baldi"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Industrial Informatics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          4
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          4
+        ]
+      ]
+    },
+    "volume": "15",
+    "issue": "4",
+    "page": "2446-2455",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D06": {
+    "DOI": "10.1109/tie.2018.2877090",
+    "title": [
+      "Deep Convolutional Transfer Learning Network: A New Method for Intelligent Fault Diagnosis of Machines With Unlabeled Data"
+    ],
+    "author": [
+      {
+        "given": "Liang",
+        "family": "Guo"
+      },
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Saibo",
+        "family": "Xing"
+      },
+      {
+        "given": "Tao",
+        "family": "Yan"
+      },
+      {
+        "given": "Naipeng",
+        "family": "Li"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Industrial Electronics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          9
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          9
+        ]
+      ]
+    },
+    "volume": "66",
+    "issue": "9",
+    "page": "7316-7325",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D07": {
+    "DOI": "10.1016/j.isatra.2020.08.010",
+    "title": [
+      "Deep learning algorithms for rotating machinery intelligent diagnosis: An open source benchmark study"
+    ],
+    "author": [
+      {
+        "given": "Zhibin",
+        "family": "Zhao"
+      },
+      {
+        "given": "Tianfu",
+        "family": "Li"
+      },
+      {
+        "given": "Jingyao",
+        "family": "Wu"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Shibin",
+        "family": "Wang"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      }
+    ],
+    "container-title": [
+      "ISA Transactions"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          12
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          12
+        ]
+      ]
+    },
+    "volume": "107",
+    "issue": null,
+    "page": "224-255",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D08": {
+    "DOI": "10.1016/j.measurement.2024.114338",
+    "title": [
+      "Diesel engine fault diagnosis for multiple industrial scenarios based on transfer learning"
+    ],
+    "author": [
+      {
+        "given": "Junhong",
+        "family": "Zhang"
+      },
+      {
+        "given": "Guobin",
+        "family": "Pei"
+      },
+      {
+        "given": "Xiaolong",
+        "family": "Zhu"
+      },
+      {
+        "given": "Xin",
+        "family": "Gou"
+      },
+      {
+        "given": "Linlong",
+        "family": "Deng"
+      },
+      {
+        "given": "Lang",
+        "family": "Gao"
+      },
+      {
+        "given": "Zewei",
+        "family": "Liu"
+      },
+      {
+        "given": "Qing",
+        "family": "Ni"
+      },
+      {
+        "given": "Jiewei",
+        "family": "Lin"
+      }
+    ],
+    "container-title": [
+      "Measurement"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          3
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          3
+        ]
+      ]
+    },
+    "volume": "228",
+    "issue": null,
+    "page": "114338",
+    "article-number": "114338",
+    "type": "journal-article"
+  },
+  "D09": {
+    "DOI": "10.3390/s24092708",
+    "title": [
+      "A Multiple Attention Convolutional Neural Networks for Diesel Engine Fault Diagnosis"
+    ],
+    "author": [
+      {
+        "given": "Xiao",
+        "family": "Yang"
+      },
+      {
+        "given": "Fengrong",
+        "family": "Bi"
+      },
+      {
+        "given": "Jiangang",
+        "family": "Cheng"
+      },
+      {
+        "given": "Daijie",
+        "family": "Tang"
+      },
+      {
+        "given": "Pengfei",
+        "family": "Shen"
+      },
+      {
+        "given": "Xiaoyang",
+        "family": "Bi"
+      }
+    ],
+    "container-title": [
+      "Sensors"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          24
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          24
+        ]
+      ]
+    },
+    "published-print": null,
+    "volume": "24",
+    "issue": "9",
+    "page": "2708",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "D10": {
+    "DOI": "10.3390/s18051429",
+    "title": [
+      "A Novel Fault Diagnosis Method for Rotating Machinery Based on a Convolutional Neural Network"
+    ],
+    "author": [
+      {
+        "given": "Sheng",
+        "family": "Guo"
+      },
+      {
+        "given": "Tao",
+        "family": "Yang"
+      },
+      {
+        "given": "Wei",
+        "family": "Gao"
+      },
+      {
+        "given": "Chen",
+        "family": "Zhang"
+      }
+    ],
+    "container-title": [
+      "Sensors"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          5,
+          4
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          5,
+          4
+        ]
+      ]
+    },
+    "published-print": null,
+    "volume": "18",
+    "issue": "5",
+    "page": "1429",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F01": {
+    "DOI": "10.1109/tie.2016.2519325",
+    "title": [
+      "An Intelligent Fault Diagnosis Method Using Unsupervised Feature Learning Towards Mechanical Big Data"
+    ],
+    "author": [
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Feng",
+        "family": "Jia"
+      },
+      {
+        "given": "Jing",
+        "family": "Lin"
+      },
+      {
+        "given": "Saibo",
+        "family": "Xing"
+      },
+      {
+        "given": "Steven X.",
+        "family": "Ding"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Industrial Electronics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "volume": "63",
+    "issue": "5",
+    "page": "3137-3147",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F02": {
+    "DOI": "10.1016/j.ymssp.2004.09.001",
+    "title": [
+      "The spectral kurtosis: a useful tool for characterising non-stationary signals"
+    ],
+    "author": [
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          2
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          2
+        ]
+      ]
+    },
+    "volume": "20",
+    "issue": "2",
+    "page": "282-307",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F03": {
+    "DOI": "10.1016/j.ymssp.2005.12.002",
+    "title": [
+      "Fast computation of the kurtogram for the detection of transient faults"
+    ],
+    "author": [
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "volume": "21",
+    "issue": "1",
+    "page": "108-124",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F04": {
+    "DOI": "10.1016/j.ymssp.2012.06.010",
+    "title": [
+      "Maximum correlated Kurtosis deconvolution and application on gear tooth chip fault detection"
+    ],
+    "author": [
+      {
+        "given": "Geoff L.",
+        "family": "McDonald"
+      },
+      {
+        "given": "Qing",
+        "family": "Zhao"
+      },
+      {
+        "given": "Ming J.",
+        "family": "Zuo"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          11
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          11
+        ]
+      ]
+    },
+    "volume": "33",
+    "issue": null,
+    "page": "237-255",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F05": {
+    "DOI": "10.1016/j.ymssp.2016.05.036",
+    "title": [
+      "Multipoint Optimal Minimum Entropy Deconvolution and Convolution Fix: Application to vibration fault detection"
+    ],
+    "author": [
+      {
+        "given": "Geoff L.",
+        "family": "McDonald"
+      },
+      {
+        "given": "Qing",
+        "family": "Zhao"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "volume": "82",
+    "issue": null,
+    "page": "461-477",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F06": {
+    "DOI": "10.1016/j.ymssp.2017.01.011",
+    "title": [
+      "Fast computation of the spectral correlation"
+    ],
+    "author": [
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      },
+      {
+        "given": "Ge",
+        "family": "Xin"
+      },
+      {
+        "given": "Nacer",
+        "family": "Hamzaoui"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          8
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          8
+        ]
+      ]
+    },
+    "volume": "92",
+    "issue": null,
+    "page": "248-277",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F07": {
+    "DOI": "10.1109/tsp.2013.2288675",
+    "title": [
+      "Variational Mode Decomposition"
+    ],
+    "author": [
+      {
+        "given": "Konstantin",
+        "family": "Dragomiretskiy"
+      },
+      {
+        "given": "Dominique",
+        "family": "Zosso"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          2
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          2
+        ]
+      ]
+    },
+    "volume": "62",
+    "issue": "3",
+    "page": "531-544",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F08": {
+    "DOI": "10.1109/tie.2022.3156156",
+    "title": [
+      "Feature Mode Decomposition: New Decomposition Theory for Rotating Machinery Fault Diagnosis"
+    ],
+    "author": [
+      {
+        "given": "Yonghao",
+        "family": "Miao"
+      },
+      {
+        "given": "Boyao",
+        "family": "Zhang"
+      },
+      {
+        "given": "Chenhui",
+        "family": "Li"
+      },
+      {
+        "given": "Jing",
+        "family": "Lin"
+      },
+      {
+        "given": "Dayi",
+        "family": "Zhang"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Industrial Electronics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "volume": "70",
+    "issue": "2",
+    "page": "1949-1960",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F09": {
+    "DOI": "10.1016/j.engappai.2024.107975",
+    "title": [
+      "Priori-distribution-guided adaptive sparse attention for cross-domain feature mining in diesel engine fault diagnosis"
+    ],
+    "author": [
+      {
+        "given": "He",
+        "family": "Li"
+      },
+      {
+        "given": "Jinjie",
+        "family": "Zhang"
+      },
+      {
+        "given": "Zhenjing",
+        "family": "Zhang"
+      },
+      {
+        "given": "Zhinong",
+        "family": "Jiang"
+      },
+      {
+        "given": "Zhiwei",
+        "family": "Mao"
+      }
+    ],
+    "container-title": [
+      "Engineering Applications of Artificial Intelligence"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          6
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          6
+        ]
+      ]
+    },
+    "volume": "132",
+    "issue": null,
+    "page": "107975",
+    "article-number": "107975",
+    "type": "journal-article"
+  },
+  "F10": {
+    "DOI": "10.1016/j.engappai.2024.109299",
+    "title": [
+      "Investigation of logarithmic signatures for feature extraction and application to marine engine fault diagnosis"
+    ],
+    "author": [
+      {
+        "given": "Chaitanya",
+        "family": "Patil"
+      },
+      {
+        "given": "Gerasimos",
+        "family": "Theotokatos"
+      },
+      {
+        "given": "Yue",
+        "family": "Wu"
+      },
+      {
+        "given": "Terry",
+        "family": "Lyons"
+      }
+    ],
+    "container-title": [
+      "Engineering Applications of Artificial Intelligence"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "volume": "138",
+    "issue": null,
+    "page": "109299",
+    "article-number": "109299",
+    "type": "journal-article"
+  },
+  "F11": {
+    "DOI": "10.1177/10775463231217530",
+    "title": [
+      "Refined composite hierarchical bidirectional diversity entropy and its application in fault type diagnosis and fault degree diagnosis of diesel engine fuel injectors"
+    ],
+    "author": [
+      {
+        "given": "Yun",
+        "family": "Ke"
+      },
+      {
+        "given": "Enzhe",
+        "family": "Song"
+      },
+      {
+        "given": "Chong",
+        "family": "Yao"
+      },
+      {
+        "given": "Shunliang",
+        "family": "Ding"
+      },
+      {
+        "given": "Yilin",
+        "family": "Ning"
+      },
+      {
+        "given": "Rui",
+        "family": "Li"
+      }
+    ],
+    "container-title": [
+      "Journal of Vibration and Control"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          23
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          23
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          11
+        ]
+      ]
+    },
+    "volume": "30",
+    "issue": "21-22",
+    "page": "5047-5059",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "F12": {
+    "DOI": "10.1016/j.ymssp.2015.04.021",
+    "title": [
+      "Rolling element bearing diagnostics using the Case Western Reserve University data: A benchmark study"
+    ],
+    "author": [
+      {
+        "given": "Wade A.",
+        "family": "Smith"
+      },
+      {
+        "given": "Robert B.",
+        "family": "Randall"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "volume": "64-65",
+    "issue": null,
+    "page": "100-131",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "C01": {
+    "DOI": "10.1016/j.ymssp.2023.110952",
+    "title": [
+      "TFN: An interpretable neural network with time-frequency transform embedded for intelligent fault diagnosis"
+    ],
+    "author": [
+      {
+        "given": "Qian",
+        "family": "Chen"
+      },
+      {
+        "given": "Xingjian",
+        "family": "Dong"
+      },
+      {
+        "given": "Guowei",
+        "family": "Tu"
+      },
+      {
+        "given": "Dong",
+        "family": "Wang"
+      },
+      {
+        "given": "Changming",
+        "family": "Cheng"
+      },
+      {
+        "given": "Baoxuan",
+        "family": "Zhao"
+      },
+      {
+        "given": "Zhike",
+        "family": "Peng"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          1
+        ]
+      ]
+    },
+    "volume": "207",
+    "issue": null,
+    "page": "110952",
+    "article-number": "110952",
+    "type": "journal-article"
+  },
+  "C02": {
+    "DOI": "10.3901/jme.2024.12.065",
+    "title": [
+      "Interpretable Convolutional Neural Network for Mechanical Equipment Fault Diagnosis"
+    ],
+    "author": [],
+    "container-title": [
+      "Journal of Mechanical Engineering"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "volume": "60",
+    "issue": "12",
+    "page": "65",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "C03": {
+    "DOI": "10.1109/tsmc.2020.3048950",
+    "title": [
+      "WaveletKernelNet: An Interpretable Deep Neural Network for Industrial Intelligent Diagnosis"
+    ],
+    "author": [
+      {
+        "given": "Tianfu",
+        "family": "Li"
+      },
+      {
+        "given": "Zhibin",
+        "family": "Zhao"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Li",
+        "family": "Cheng"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Robert X.",
+        "family": "Gao"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          4
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          4
+        ]
+      ]
+    },
+    "volume": "52",
+    "issue": "4",
+    "page": "2302-2312",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "C04": {
+    "DOI": "10.1109/access.2021.3095565",
+    "title": [
+      "An Explainable Neural Network for Fault Diagnosis With a Frequency Activation Map"
+    ],
+    "author": [
+      {
+        "given": "Min Su",
+        "family": "Kim"
+      },
+      {
+        "given": "Jong Pil",
+        "family": "Yun"
+      },
+      {
+        "given": "Poogyeon",
+        "family": "Park"
+      }
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "volume": "9",
+    "issue": null,
+    "page": "98962-98972",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "C05": {
+    "DOI": "10.1016/j.aei.2024.102849",
+    "title": [
+      "Interpreting what typical fault signals look like via prototype-matching"
+    ],
+    "author": [
+      {
+        "given": "Qian",
+        "family": "Chen"
+      },
+      {
+        "given": "Xingjian",
+        "family": "Dong"
+      },
+      {
+        "given": "Zhike",
+        "family": "Peng"
+      }
+    ],
+    "container-title": [
+      "Advanced Engineering Informatics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "volume": "62",
+    "issue": null,
+    "page": "102849",
+    "article-number": "102849",
+    "type": "journal-article"
+  },
+  "C06": {
+    "DOI": "10.1016/j.ymssp.2026.114495",
+    "title": [
+      "CS-SHAP: Extending SHAP to cyclic-spectral domain for better interpretability of intelligent fault diagnosis"
+    ],
+    "author": [
+      {
+        "given": "Qian",
+        "family": "Chen"
+      },
+      {
+        "given": "Xingjian",
+        "family": "Dong"
+      },
+      {
+        "given": "Kui",
+        "family": "Hu"
+      },
+      {
+        "given": "Kangkang",
+        "family": "Chen"
+      },
+      {
+        "given": "Zhike",
+        "family": "Peng"
+      },
+      {
+        "given": "Guang",
+        "family": "Meng"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          8
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          8
+        ]
+      ]
+    },
+    "volume": "257",
+    "issue": null,
+    "page": "114495",
+    "article-number": "114495",
+    "type": "journal-article"
+  },
+  "C07": {
+    "DOI": "10.1016/j.ymssp.2024.111750",
+    "title": [
+      "Classifier-guided neural blind deconvolution: A physics-informed denoising module for bearing fault diagnosis under noisy conditions"
+    ],
+    "author": [
+      {
+        "given": "Jing-Xiao",
+        "family": "Liao"
+      },
+      {
+        "given": "Chao",
+        "family": "He"
+      },
+      {
+        "given": "Jipu",
+        "family": "Li"
+      },
+      {
+        "given": "Jinwei",
+        "family": "Sun"
+      },
+      {
+        "given": "Shiping",
+        "family": "Zhang"
+      },
+      {
+        "given": "Xiaoge",
+        "family": "Zhang"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "volume": "222",
+    "issue": null,
+    "page": "111750",
+    "article-number": "111750",
+    "type": "journal-article"
+  },
+  "C08": {
+    "DOI": "10.1016/j.ymssp.2025.113210",
+    "title": [
+      "Multi-channel neural blind deconvolution:A physically interpretable network for impulsive mode extraction"
+    ],
+    "author": [
+      {
+        "given": "Liu",
+        "family": "He"
+      },
+      {
+        "given": "Wen",
+        "family": "Li"
+      },
+      {
+        "given": "Qiuyang",
+        "family": "Zhou"
+      },
+      {
+        "given": "Cai",
+        "family": "Yi"
+      },
+      {
+        "given": "Dong",
+        "family": "Wang"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "volume": "238",
+    "issue": null,
+    "page": "113210",
+    "article-number": "113210",
+    "type": "journal-article"
+  },
+  "C09": {
+    "DOI": "10.1016/j.jmsy.2023.05.027",
+    "title": [
+      "Multilayer Grad-CAM: An effective tool towards explainable deep neural networks for intelligent fault diagnosis"
+    ],
+    "author": [
+      {
+        "given": "Sinan",
+        "family": "Li"
+      },
+      {
+        "given": "Tianfu",
+        "family": "Li"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      }
+    ],
+    "container-title": [
+      "Journal of Manufacturing Systems"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    },
+    "volume": "69",
+    "issue": null,
+    "page": "20-30",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "C10": {
+    "DOI": "10.3390/s22239037",
+    "title": [
+      "Explainable AI Algorithms for Vibration Data-Based Fault Detection: Use Case-Adadpted Methods and Critical Evaluation"
+    ],
+    "author": [
+      {
+        "given": "Oliver",
+        "family": "Mey"
+      },
+      {
+        "given": "Deniz",
+        "family": "Neufeld"
+      }
+    ],
+    "container-title": [
+      "Sensors"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          22
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          22
+        ]
+      ]
+    },
+    "published-print": null,
+    "volume": "22",
+    "issue": "23",
+    "page": "9037",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "C11": {
+    "DOI": "10.1016/j.ymssp.2025.112925",
+    "title": [
+      "Signal processing- and physics-informed neural network for explainable bearing condition monitoring"
+    ],
+    "author": [
+      {
+        "given": "N.",
+        "family": "Herwig"
+      },
+      {
+        "given": "P.",
+        "family": "Borghesani"
+      },
+      {
+        "given": "W.",
+        "family": "Smith"
+      },
+      {
+        "given": "Z.",
+        "family": "Peng"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          7
+        ]
+      ]
+    },
+    "volume": "235",
+    "issue": null,
+    "page": "112925",
+    "article-number": "112925",
+    "type": "journal-article"
+  },
+  "C12": {
+    "DOI": "10.1016/j.cjme.2026.100327",
+    "title": [
+      "Ex-SPGCAN: Signal-Prior-Guided Channel Attention for Explainable Fault Diagnosis of Diesel Engine Under Variable Operating Conditions"
+    ],
+    "author": [
+      {
+        "given": "Yuyang",
+        "family": "Chen"
+      },
+      {
+        "given": "Shilong",
+        "family": "Chu"
+      },
+      {
+        "given": "Shude",
+        "family": "Ji"
+      },
+      {
+        "given": "Likai",
+        "family": "Ye"
+      },
+      {
+        "given": "Zhinong",
+        "family": "Jiang"
+      },
+      {
+        "given": "Fuzhou",
+        "family": "Feng"
+      },
+      {
+        "given": "Zhiwei",
+        "family": "Mao"
+      }
+    ],
+    "container-title": [
+      "Chinese Journal of Mechanical Engineering"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "100327",
+    "article-number": "100327",
+    "type": "journal-article"
+  },
+  "S01": {
+    "DOI": "10.1016/j.ymssp.2018.05.050",
+    "title": [
+      "Deep learning and its applications to machine health monitoring"
+    ],
+    "author": [
+      {
+        "given": "Rui",
+        "family": "Zhao"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Zhenghua",
+        "family": "Chen"
+      },
+      {
+        "given": "Kezhi",
+        "family": "Mao"
+      },
+      {
+        "given": "Peng",
+        "family": "Wang"
+      },
+      {
+        "given": "Robert X.",
+        "family": "Gao"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "volume": "115",
+    "issue": null,
+    "page": "213-237",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "S02": {
+    "DOI": "10.1016/j.ymssp.2019.106587",
+    "title": [
+      "Applications of machine learning to machine fault diagnosis: A review and roadmap"
+    ],
+    "author": [
+      {
+        "given": "Yaguo",
+        "family": "Lei"
+      },
+      {
+        "given": "Bin",
+        "family": "Yang"
+      },
+      {
+        "given": "Xinwei",
+        "family": "Jiang"
+      },
+      {
+        "given": "Feng",
+        "family": "Jia"
+      },
+      {
+        "given": "Naipeng",
+        "family": "Li"
+      },
+      {
+        "given": "Asoke K.",
+        "family": "Nandi"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          4
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          4
+        ]
+      ]
+    },
+    "volume": "138",
+    "issue": null,
+    "page": "106587",
+    "article-number": "106587",
+    "type": "journal-article"
+  },
+  "S03": {
+    "DOI": "10.1016/j.ymssp.2010.07.017",
+    "title": [
+      "Rolling element bearing diagnostics—A tutorial"
+    ],
+    "author": [
+      {
+        "given": "Robert B.",
+        "family": "Randall"
+      },
+      {
+        "given": "Jérôme",
+        "family": "Antoni"
+      }
+    ],
+    "container-title": [
+      "Mechanical Systems and Signal Processing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          2
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          2
+        ]
+      ]
+    },
+    "volume": "25",
+    "issue": "2",
+    "page": "485-520",
+    "article-number": null,
+    "type": "journal-article"
+  },
+  "S04": {
+    "DOI": "10.1109/tim.2021.3116309",
+    "title": [
+      "Applications of Unsupervised Deep Transfer Learning to Intelligent Fault Diagnosis: A Survey and Comparative Study"
+    ],
+    "author": [
+      {
+        "given": "Zhibin",
+        "family": "Zhao"
+      },
+      {
+        "given": "Qiyang",
+        "family": "Zhang"
+      },
+      {
+        "given": "Xiaolei",
+        "family": "Yu"
+      },
+      {
+        "given": "Chuang",
+        "family": "Sun"
+      },
+      {
+        "given": "Shibin",
+        "family": "Wang"
+      },
+      {
+        "given": "Ruqiang",
+        "family": "Yan"
+      },
+      {
+        "given": "Xuefeng",
+        "family": "Chen"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Instrumentation and Measurement"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "published-online": null,
+    "published-print": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "volume": "70",
+    "issue": null,
+    "page": "1-28",
+    "article-number": null,
+    "type": "journal-article"
+  }
+}
