@@ -21,3 +21,7 @@ python3 main.py
 ```bash
 node --test tests/game.test.js
 ```
+
+## 故障诊断学习资料
+
+[进入深度学习、特征挖掘与结合研究学习目录](fault-diagnosis-learning/README.md)。包含3份中文入门PDF（共48页）、3份可筛选参考资料Excel（43条资料），以及可编辑文字版、CSV/JSON书目和文档构建脚本。

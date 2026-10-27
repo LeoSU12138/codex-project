@@ -1,0 +1,46 @@
+{
+  "checked": "2026-10-27",
+  "literature_entries": 43,
+  "model_experiments_run": false,
+  "artifacts": [
+    {
+      "file": "guides/01_故障诊断深度学习入门.pdf",
+      "pages": 24,
+      "links": 29,
+      "sha256": "c3d43d7238ef194177e983a2cf8fb83def830b7f27c93fbca7043ca80eeea304"
+    },
+    {
+      "file": "guides/02_特征挖掘入门.pdf",
+      "pages": 13,
+      "links": 14,
+      "sha256": "d897dd809eeb3645131feacfdb01cf0251252ba5be16bbc2e0ddb110bcf79976"
+    },
+    {
+      "file": "guides/03_深度学习与特征挖掘结合.pdf",
+      "pages": 11,
+      "links": 17,
+      "sha256": "df39c8a420c0dae0cddab2a6df998ae284a59659c56d69c4ba4fd5cd430f4ab9"
+    },
+    {
+      "file": "references/01_深度学习参考文献.xlsx",
+      "entries": 18,
+      "sheets": 3,
+      "error_cells": 0,
+      "sha256": "ef54c9f490fd11122e60c78ee78d53233db72ff74b50c82d2370595276b4e61c"
+    },
+    {
+      "file": "references/02_特征挖掘参考文献.xlsx",
+      "entries": 14,
+      "sheets": 3,
+      "error_cells": 0,
+      "sha256": "bd8ca5dec8e63c5ee2592dcc19e014589bae4dd05440cf28f3a904d9476b40aa"
+    },
+    {
+      "file": "references/03_融合研究参考文献.xlsx",
+      "entries": 11,
+      "sheets": 3,
+      "error_cells": 0,
+      "sha256": "7e31b692b9c693352a62fef4166fd04f82a5f03d0288abd94a29e5edebd2f088"
+    }
+  ]
+}
