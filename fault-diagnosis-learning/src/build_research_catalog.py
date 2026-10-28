@@ -6,6 +6,7 @@ import csv
 import json
 from pathlib import Path
 from research_annotations import R
+from research_audit import audit_fields, DETAILS
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'research-papers'
@@ -22,7 +23,8 @@ def bib_escape(value):
 
 def main():
     metadata = json.loads((OUT / 'source_metadata.json').read_text())
-    assert set(metadata) == set(R), 'Annotation and metadata IDs differ'
+    assert set(metadata) == set(R) == set(DETAILS), 'Annotation and metadata IDs differ'
+    evidence = json.loads((OUT / 'AUDIT_EVIDENCE.json').read_text())
     records = []
     for id, annotation in R.items():
         m = metadata[id]
@@ -69,12 +71,13 @@ def main():
             r['verification'] = 'DOI、期刊原页题录及摘要；完整实验须读全文。'
         if id == 'C12':
             r['verification'] = 'Crossref题录与出版页摘要/章节片段；未获取全文和工程数据。'
+        r.update(audit_fields(id, evidence))
         records.append(r)
 
     (OUT / 'catalog.json').write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n')
     flatkeys = [k for k in records[0] if k != 'author_structured']
     with (OUT / '工程科研论文.csv').open('w', encoding='utf-8-sig', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=flatkeys, extrasaction='ignore')
+        writer = csv.DictWriter(f, fieldnames=flatkeys, extrasaction='ignore', lineterminator='\n')
         writer.writeheader()
         writer.writerows(records)
 
@@ -110,6 +113,14 @@ def main():
     intro = '''# 故障诊断工程科研论文库
 
 **面向后续科研写作和工程实验的38篇期刊论文，核对日期：2026-10-27。** 其中34篇为方法、应用或基准研究，4篇为综述、教程或综述与比较研究。这里围绕“研究问题—方法—工程验证—可引用内容”整理；[原入门教程与43条学习资料](../README.md)仍保留。
+
+## 2026-10-28审计增补
+
+本次保留38篇和既有题录，不重复检索凑数。每篇补入**输入→输出**、**未核验的工程细节**、**本次审计日期/范围**，Excel第二张表末尾可查看。原`checked`和`verification`仍代表2026-10-27历史核验；不能把它们当作本次在线复核。
+
+本次重新阅读C01/C03/C06/C07/C10/D07/S04的作者README，确认其声明的代码入口与覆盖范围，未执行模型。[审计证据与网络结果](AUDIT_EVIDENCE.json)记录请求入口、读取方式和摘要哈希。CS-SHAP作者README仍给2025预印本引文，可核对完整六位作者；本库2026期刊版来自原有Crossref快照。
+
+Crossref、DOI解析、中文期刊和ScienceDirect页面本次均受代理403限制，故**C12的In Press是2026-10-27历史状态，当前最终出版状态未确认**，其卷期仍留空；所有38篇均未重新逐页阅读全文。未知设备、故障、工况和数据条件明确写为未核验，不推测补齐。旧43条学习资料与其Excel继续保留为学习快照，正式引用优先使用本库，并在投稿前确认最终出版版本。
 
 ## 文件与使用方式
 
@@ -170,12 +181,15 @@ F09和F11可帮助你构造与机理有关的特征，但它们不等同于“�
                     ('研究内容', r['research_problem']), ('研究方法', r['method']),
                     ('原文报告的验证', r['reported_validation']), ('适合引用的位置/论点', r['citation_use']),
                     ('建议借鉴的实验', r['suggested_experiment']), ('复现难度（估计）', r['reproduction']),
-                    ('局限与使用边界', r['limitations'])]
+                    ('局限与使用边界', r['limitations']),
+                    ('输入与输出（导读摘要）', r['input_output']),
+                    ('未核验的工程细节', r['unverified_details']),
+                    ('本次审计', r['audit_date'] + '；' + r['audit_scope'])]
             chunks.append('| 项目 | 内容 |\n| --- | --- |\n' + ''.join(f'| {k} | {v} |\n' for k, v in rows))
             code = f"[{r['code_status']}]({r['code_url']})" if r['code_url'] else r['code_status']
             data = f"[数据入口]({r['data_url']})；" if r['data_url'] else ''
             chunks.append(f"\n代码：{code}；{r['code_scope']}。数据：{data}{r['data_status']}。\n\n")
-            chunks.append(f"核验范围：{r['verification']} [补充来源]({r['evidence_url']})。{r['metadata_note']}\n")
+            chunks.append(f"历史核验范围（{r['checked']}）：{r['verification']} [补充来源]({r['evidence_url']})。{r['metadata_note']}\n")
     (OUT / 'README.md').write_text(''.join(chunks), encoding='utf-8')
     print(json.dumps({'papers': len(records), 'groups': {t: sum(selected(r['id'], s) for r in records) for t, _, s in GROUPS}}, ensure_ascii=False))
 

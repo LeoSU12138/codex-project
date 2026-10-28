@@ -1,0 +1,98 @@
+{
+  "checked": "2026-10-28",
+  "metadata_baseline": "76be00349de7386258cf206a6bbbd13048316d4a",
+  "scope": "Snapshot consistency and author README review; not full-text verification or experiment reproduction.",
+  "author_readmes": [
+    {
+      "id": "C01",
+      "repository": "https://github.com/ChenQian0618/TFN",
+      "url": "https://raw.githubusercontent.com/ChenQian0618/TFN/main/README.md",
+      "status": "retrieved",
+      "sha256": "33caee3a2d0c0c182c90f56ff1bf7bd8ebf7003f54a42072760c0e247178f84b",
+      "bytes": 5667
+    },
+    {
+      "id": "C03",
+      "repository": "https://github.com/HazeDT/WaveletKernelNet",
+      "url": "https://raw.githubusercontent.com/HazeDT/WaveletKernelNet/master/README.md",
+      "status": "retrieved",
+      "sha256": "8ea26d51d56613a98b90981e4c23dca8ae5b0cb9aff44248ae57170793b34183",
+      "bytes": 1063
+    },
+    {
+      "id": "C06",
+      "repository": "https://github.com/ChenQian0618/CS-SHAP",
+      "url": "https://raw.githubusercontent.com/ChenQian0618/CS-SHAP/main/README.md",
+      "status": "retrieved",
+      "sha256": "ac5f7a95b06c7336ada713c64cadbd64dbdccac2fdbd9eb378e217b720d4d6fb",
+      "bytes": 8764
+    },
+    {
+      "id": "C07",
+      "repository": "https://github.com/asdvfghg/ClassBD",
+      "status": "retrieved",
+      "method": "HTTPS Git proxy: git show HEAD:readme.md",
+      "commit": "08530497e388ed691936f15d6c55267f277ed270",
+      "sha256": "cdf4d4ebb856e6da806f5a7ea825b30e829247cbe6318d2fd6d2e3381d8117b9",
+      "bytes": 5000
+    },
+    {
+      "id": "C10",
+      "repository": "https://github.com/o-mey/xai-vibration-fault-detection",
+      "url": "https://raw.githubusercontent.com/o-mey/xai-vibration-fault-detection/main/README.md",
+      "status": "retrieved",
+      "sha256": "0d87384ac2fe676635e33ce23bba45f5485e2391ba40e4fcaec892c120120901",
+      "bytes": 729
+    },
+    {
+      "id": "D07",
+      "repository": "https://github.com/ZhaoZhibin/DL-based-Intelligent-Diagnosis-Benchmark",
+      "status": "retrieved",
+      "method": "HTTPS Git proxy: git show HEAD:README.md",
+      "commit": "dd49b077984d15802681a9be723937342d6b59e3",
+      "sha256": "8e822ca1ad8bcee5502cfc96da80715dbd616a77b93df3bc476623780aa95db8",
+      "bytes": 4318
+    },
+    {
+      "id": "S04",
+      "repository": "https://github.com/ZhaoZhibin/UDTL",
+      "url": "https://raw.githubusercontent.com/ZhaoZhibin/UDTL/master/README.md",
+      "status": "retrieved",
+      "sha256": "a5858ca9eb57a1452ee5d9092f11c52366e84fdc9b77481576cf077ef00e2c48",
+      "bytes": 5371
+    }
+  ],
+  "network_checks": [
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.ymssp.2026.114495",
+      "status": "blocked",
+      "error": "URLError: Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.ymssp.2012.06.010",
+      "status": "blocked",
+      "error": "URLError: Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.ymssp.2026.114495",
+      "status": "blocked",
+      "error": "URLError: Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://qikan.cmes.org/jxgcxb/CN/10.3901/JME.2024.12.065",
+      "status": "blocked",
+      "error": "URLError: Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1000934526001161",
+      "status": "blocked",
+      "error": "URLError: Tunnel connection failed: 403 Forbidden"
+    }
+  ],
+  "limitations": [
+    "All 38 publisher/DOI records retain the historical verification date; none was newly verified against a live metadata database.",
+    "C12 In Press status is the 2026-10-27 observation; current final publication status is unconfirmed.",
+    "C06 author README still cites the 2025 preprint and confirms six authors; journal metadata here comes from the historical Crossref snapshot.",
+    "No model training, full datasets, full-text rereading, native Excel or Zotero execution."
+  ]
+}

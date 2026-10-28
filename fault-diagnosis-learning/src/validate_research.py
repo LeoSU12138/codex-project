@@ -7,6 +7,9 @@ from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
 import zipfile
+from datetime import datetime, timezone
+from research_audit import AUDIT_DATE, DETAILS
+from build_research_catalog import bib_escape
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'research-papers'
@@ -19,7 +22,7 @@ PAPER_KEYS = ['id','short_name','title','authors','year','journal','volume','iss
               'priority','reading_status','publication_status']
 RESOURCE_KEYS = ['id','short_name','reported_validation','suggested_experiment','limitations','reproduction',
                  'code_status','code_url','code_scope','data_status','data_url','verification','evidence_url',
-                 'metadata_note','checked','run_status']
+                 'metadata_note','checked','run_status','input_output','unverified_details','audit_date','audit_scope']
 
 def column(i):
     result = ''
@@ -34,11 +37,25 @@ def main():
     assert len(records) == 38
     assert len({r['id'] for r in records}) == len({r['doi'].lower() for r in records}) == 38
     required = ['title','authors','journal','year','method','reported_validation','citation_use',
-                'suggested_experiment','limitations','reproduction','verification','evidence_url']
+                'suggested_experiment','limitations','reproduction','verification','evidence_url',
+                'input_output','unverified_details','audit_date','audit_scope']
     for r in records:
         assert all(r[k] for k in required), r['id']
         assert r['doi'].lower() == meta[r['id']]['DOI'].lower()
         assert r['run_status'] == '未运行论文实验'
+        assert r['audit_date'] == AUDIT_DATE
+        assert (r['input_output'], r['unverified_details']) == DETAILS[r['id']]
+        m = meta[r['id']]
+        expected_names = '; '.join(a.get('name') or ' '.join(filter(None, [a.get('given'), a.get('family')])) for a in r['author_structured'])
+        assert r['authors'] == expected_names
+        if r['id'] != 'C02':
+            assert r['title'] == m['title'][0]
+            assert r['author_structured'] == m['author']
+            assert r['journal'] == m['container-title'][0]
+            assert r['pages'] == (m.get('page') or m.get('article-number') or '')
+        date = m.get('published-print') or m.get('published') or m.get('published-online')
+        assert r['year'] == date['date-parts'][0][0]
+        assert r['volume'] == (m.get('volume') or '') and r['issue'] == (m.get('issue') or '')
         assert re.fullmatch(r'10\.\d{4,9}/\S+', r['doi'])
         assert not any(c in json.dumps(r, ensure_ascii=False) for c in ['\ufffd'])
     indexed = {r['id']: r for r in records}
@@ -47,6 +64,14 @@ def main():
     assert indexed['F11']['year'] == 2024 and indexed['F11']['online_year'] == 2023
     assert indexed['C12']['publication_status'] == '期刊在线预校样（In Press）'
     assert indexed['C12']['volume'] == ''
+    assert indexed['F04']['doi'] == '10.1016/j.ymssp.2012.06.010'
+    assert indexed['S04']['doi'] == '10.1109/tim.2021.3116309'
+    assert indexed['C06']['doi'] == '10.1016/j.ymssp.2026.114495'
+    assert indexed['C06']['year'] == 2026
+    evidence = json.loads((OUT/'AUDIT_EVIDENCE.json').read_text())
+    assert evidence['checked'] == AUDIT_DATE
+    assert {r['id'] for r in evidence['author_readmes']} == {'C01','C03','C06','C07','C10','D07','S04'}
+    assert all(r['status'] == 'retrieved' and re.fullmatch('[0-9a-f]{64}',r['sha256']) for r in evidence['author_readmes'])
 
     with (OUT / '工程科研论文.csv').open(encoding='utf-8-sig', newline='') as f:
         csv_rows = list(csv.DictReader(f))
@@ -70,6 +95,13 @@ def main():
         assert values['doi'] == r['doi'] and values['year'] == str(r['year'])
         assert len(values['author'].split(' and ')) == len(r['author_structured'])
         assert values['url'] == r['source_url']
+        assert values['title'] == '{' + bib_escape(r['title']) + '}'
+        assert values['journal'] == bib_escape(r['journal'])
+        assert values.get('volume', '') == r['volume']
+        assert values.get('number', '') == r['issue']
+        assert values.get('pages', '') == r['pages'].replace('-', '--')
+        expected_authors = [('{'+a['name']+'}') if a.get('name') else a['family']+(', '+a['given'] if a.get('given') else '') for a in r['author_structured']]
+        assert values['author'].split(' and ') == expected_authors
     ris = (OUT / 'engineering_references.ris').read_text().strip().split('\n\n')
     assert len(ris) == 38
     for block in ris:
@@ -81,11 +113,22 @@ def main():
         assert fields['TY'] == ['JOUR'] and 'ER' in fields
         assert fields['TI'] == [r['title']] and fields['DO'] == [r['doi']]
         assert fields['PY'] == [str(r['year'])]
-        assert len(fields['AU']) == len(r['author_structured'])
+        expected_authors = [a['name'] if a.get('name') else a['family']+(', '+a['given'] if a.get('given') else '') for a in r['author_structured']]
+        assert fields['AU'] == expected_authors
+        assert fields['JO'] == [r['journal']]
+        assert fields.get('VL', ['']) == [r['volume']]
+        assert fields.get('IS', ['']) == [r['issue']]
+        assert fields['UR'] == [r['source_url']]
+        parts = r['pages'].split('-', 1)
+        assert fields.get('SP', ['']) == [parts[0]]
+        assert fields.get('EP', ['']) == [parts[1] if len(parts) == 2 else '']
 
-    report = {'checked':'2026-10-27','result':'passed','papers':38,'unique_doi':38,
+    report = {'checked':datetime.now(timezone.utc).date().isoformat(),
+              'executed_at_utc':datetime.now(timezone.utc).isoformat(),'result':'passed','papers':38,'unique_doi':38,
               'bibtex_entries':38,'ris_entries':38,'csv_records':38,
-              'model_experiments_run':False, 'checks':[], 'artifacts':[]}
+              'model_experiments_run':False, 'snapshot_records_checked':38,
+              'live_metadata_records_verified':0, 'author_readmes_reviewed':7,
+              'metadata_network_status':'blocked: proxy HTTP 403', 'checks':[], 'artifacts':[]}
     for theme, filename, expected_count in GROUPS:
         expected = [r for r in records if r['theme'] == theme]
         assert len(expected) == expected_count
@@ -113,7 +156,7 @@ def main():
                 for row, r in enumerate(expected,7):
                     for j,k in enumerate(keys,1):
                         value=cells.get(f'{column(j)}{row}','')
-                        if k=='checked':
+                        if k in ['checked','audit_date']:
                             assert value.startswith(r[k]+'T00:00:00') and types[f'{column(j)}{row}']=='d', (filename,k,value)
                         else: assert value == str(r[k]), (filename,row,k,value,r[k])
                 if sn==1: assert xml.find('.//s:dataValidations',NS) is not None

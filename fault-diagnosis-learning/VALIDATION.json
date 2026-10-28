@@ -1,5 +1,6 @@
 {
-  "checked": "2026-10-27",
+  "checked": "2026-10-28",
+  "executed_at_utc": "2026-10-28T06:22:59.450965+00:00",
   "literature_entries": 43,
   "model_experiments_run": false,
   "artifacts": [
@@ -7,19 +8,19 @@
       "file": "guides/01_故障诊断深度学习入门.pdf",
       "pages": 24,
       "links": 29,
-      "sha256": "c3d43d7238ef194177e983a2cf8fb83def830b7f27c93fbca7043ca80eeea304"
+      "sha256": "26c79aef5951ca86e3cb79cc819bf37b9709d4dd59d326291703ca1f17490fdc"
     },
     {
       "file": "guides/02_特征挖掘入门.pdf",
-      "pages": 13,
-      "links": 14,
-      "sha256": "d897dd809eeb3645131feacfdb01cf0251252ba5be16bbc2e0ddb110bcf79976"
+      "pages": 15,
+      "links": 15,
+      "sha256": "8acc91084344fc9cc8df986a31b1d1c53b8bd0c9c10ede672ac1ee7f8a092edf"
     },
     {
       "file": "guides/03_深度学习与特征挖掘结合.pdf",
       "pages": 11,
       "links": 17,
-      "sha256": "df39c8a420c0dae0cddab2a6df998ae284a59659c56d69c4ba4fd5cd430f4ab9"
+      "sha256": "ab9044e434b79a066d4b85d7a49efaa03dbb3f66d16263ecdffce58372f6cf49"
     },
     {
       "file": "references/01_深度学习参考文献.xlsx",

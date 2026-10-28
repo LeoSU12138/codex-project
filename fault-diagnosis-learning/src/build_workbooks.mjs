@@ -1,11 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {Workbook,SpreadsheetFile} from '@oai/artifact-tool';
+const {Workbook,SpreadsheetFile} = await import(process.env.ARTIFACT_TOOL_MODULE || '@oai/artifact-tool');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const records=JSON.parse(await fs.readFile(path.join(root,'references/catalog.json'),'utf8'));
 const out=path.join(root,'references');
-const previews=path.join(root,'..','tmp','previews');
+const previews=path.join(root,'build','reference-previews');
 await fs.mkdir(previews,{recursive:true});
 function col(n){let s='';for(n++;n;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s;}
 const groups=[['D','01_深度学习参考文献','深度学习'],['F','02_特征挖掘参考文献','特征挖掘'],['C','03_融合研究参考文献','融合研究']];

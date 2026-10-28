@@ -1,5 +1,6 @@
 {
-  "checked": "2026-10-27",
+  "checked": "2026-10-28",
+  "executed_at_utc": "2026-10-28T06:22:59.701789+00:00",
   "result": "passed",
   "papers": 38,
   "unique_doi": 38,
@@ -7,6 +8,10 @@
   "ris_entries": 38,
   "csv_records": 38,
   "model_experiments_run": false,
+  "snapshot_records_checked": 38,
+  "live_metadata_records_verified": 0,
+  "author_readmes_reviewed": 7,
+  "metadata_network_status": "blocked: proxy HTTP 403",
   "checks": [
     {
       "file": "01_深度学习科研论文.xlsx",
@@ -39,28 +44,33 @@
   "artifacts": [
     {
       "file": "01_深度学习科研论文.xlsx",
-      "bytes": 16102,
-      "sha256": "52dcddba40c0bef4b629567001fedc0c3cb17f569c7a6c35d75b2b6e4f10589c"
+      "bytes": 17519,
+      "sha256": "72245c6f949a8e2c09aebbb894ad267ee1af7f68e9659047d4d238099024a1b8"
     },
     {
       "file": "02_特征挖掘科研论文.xlsx",
-      "bytes": 16207,
-      "sha256": "f6cb6177e218a2dce70aca206dafab9edc4675d9f6990e88612c1592e48791da"
+      "bytes": 17602,
+      "sha256": "dd41212f4ae612617f59e5425f9feff9d89fcd1973f903c2db4120b083214d62"
     },
     {
       "file": "03_融合与解释科研论文.xlsx",
-      "bytes": 16148,
-      "sha256": "1b8965ab577a316da4fb3dfe81490c0d34002a41e4ed05dbc97c2eca48239c53"
+      "bytes": 17578,
+      "sha256": "d1948212ded2b973327bd294f825d961fc5f03b969d990c7b937df6598ecf3e0"
+    },
+    {
+      "file": "AUDIT_EVIDENCE.json",
+      "bytes": 3990,
+      "sha256": "1fe21e16e613f9e509449b95c04347e35eeae8826820dad4d91ee4102d5b519c"
     },
     {
       "file": "README.md",
-      "bytes": 60897,
-      "sha256": "0a87b5fc5eca52858ef9109429680540e15f25571966f354645561b2f7b2f555"
+      "bytes": 79071,
+      "sha256": "92be140ebfff676e0081349a6d7e59fb3ccff035ce7a185ac60eb5555e6eb0d4"
     },
     {
       "file": "catalog.json",
-      "bytes": 87958,
-      "sha256": "de3f9bf15094ae4e887d2c84e4c25bfe747ed729e5571c1bb0fec68bcd9f614f"
+      "bytes": 104266,
+      "sha256": "137e7da495e3359eaeaa9a69ffed5115ed9b004f444987d65c6e1c089744c7f7"
     },
     {
       "file": "engineering_references.bib",
@@ -79,8 +89,8 @@
     },
     {
       "file": "工程科研论文.csv",
-      "bytes": 47483,
-      "sha256": "155b1a4b2326840bf475e462707510467b006d0f79e07845339b3b72a95ec2c4"
+      "bytes": 60199,
+      "sha256": "ee54a9efe688da16c3fa9c6a51c09aa5f2a8e32de86f7c29830fe85fa595ddd4"
     }
   ],
   "limits": "Document and metadata consistency only; no model training, external dataset download or native Excel/Zotero execution."

@@ -58,3 +58,17 @@
 
 ---
 
+
+## 2026-10-28任务书复核
+
+执行范围：先同步到`552f417`并阅读三册、旧43条目录、新38篇目录与构建脚本；没有发现需要靠增添论文数量解决的方向缺项，因此保留38篇、34篇原始方法/应用/基准研究及4篇综述/教程/比较研究。任务对应关系见[TASK_PROGRESS.md](TASK_PROGRESS.md)。本次采用nature-academic-search的citation-verification流程；当前未挂载文献检索MCP，改用标准库HTTP请求和已有题录快照逐条比较。
+
+实时预检对Crossref（CS-SHAP和MCKD）、DOI解析（CS-SHAP）、中文期刊C02及ScienceDirect C12发起只读请求，均得到代理`Tunnel connection failed: 403 Forbidden`；提权请求Crossref仍为403，未绕过代理或TLS验证。不能据此断言论文不存在、DOI无效或C12仍处于预校样。未进行大批量无效重试，也未将旧核验日期改为本次日期。
+
+可访问作者来源：通过raw.githubusercontent.com读取TFN、WaveletKernelNet、CS-SHAP、振动解释评估及UDTL的README。ClassBD因文件为小写`readme.md`，初始标准README路径404后改用HTTPS Git代理读取；诊断基准的raw入口503后亦改用HTTPS Git读取，7项均取得。证据入口、正文摘要哈希及两个Git读取的提交号保存在[审计证据](research-papers/AUDIT_EVIDENCE.json)，第三方README正文只留临时目录，不提交仓库。
+
+实际观察：TFN明确提供CWRU准确率训练/统计流程；WaveletKernelNet指向模型和另一个基准工程；CS-SHAP有模拟/CWRU的训练、解释、绘图演示及环境版本，仍引用2025预印本，完整作者为Qian Chen、Xingjian Dong、Kui Hu、Kangkang Chen、Zhike Peng、Guang Meng；ClassBD有`train_local.py`、PU/JNU组织和[batch,1,2048]输入说明；振动解释评估库README只声明代码与notebook；UDTL列出Base/AdaBN/DANN/MK-MMD训练入口。诊断基准明确有random/order划分，不能直接当无泄漏协议。这里只核对作者声明，没有运行训练或下载全量数据。
+
+C02中文题名/六作者/65–76页、C06期刊DOI、MCKD与UDTL的DOI、F11在线2023/卷期2024、本地C12空卷期与In Press状态均与原始快照和已保存补全逻辑一致。**这属于本地一致性复核，不是本次在线题录确认。** C12最终出版状态等外部问题保留为未确认。所有38篇均补明输入输出摘要和具体未核验的工程条件；不根据笼统摘要编造故障尺寸、转速、负载或现场验证。
+
+本次教学新增内容为标准概念导读：方差/量纲、窗函数/泄漏、FMD/MCKD/MOMEDA参数、阶次条件和设备机理边界；原始算法出处沿用科研F04/F05/F07/F08、轴承教程S03与柴油机/喷油器F09–F11/C12，不将本次导读视为新论文实验证据。仅新增资料说明，无需模型训练或教学示例代码测试。

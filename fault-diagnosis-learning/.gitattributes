@@ -1,0 +1,3 @@
+# Treat generated document formats as binary even when PDF streams are ASCII.
+*.pdf binary
+*.xlsx binary
