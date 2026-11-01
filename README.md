@@ -2,6 +2,22 @@
 
 刘昌顺的故障诊断学习与科研资料仓库。
 
+## 最新：调研补充、方法详解与下一步研究（2026-11-01）
+
+**特征挖掘的入门整理已完成，面向论文的证据调研仍需继续；现在可以开始可信基线与小规模实验。** 本轮把重点推进到三个问题：解释是否忠实反映模型依赖，候选特征在不同工况下是否稳定，以及这些特征在独立数据上是否有用。详细结论见[调研补充专区](fault-diagnosis-learning/research-update-2026-11/README.md)。
+
+| 你要查看的内容 | 直接入口 | 具体包含什么 |
+| --- | --- | --- |
+| 深度学习各种方法的详细说明 | [45页方法合订本PDF](fault-diagnosis-learning/deep-learning-methods/00_故障诊断深度学习方法详解_合订本.pdf) · [8个分类分册](fault-diagnosis-learning/deep-learning-methods/README.md) | 35张独立方法卡：31项建模/训练路线与4项解释方法；逐项解释逻辑、输入输出、公式、示例、注意事项、验证与研究着眼点 |
+| 特征挖掘调研还缺什么 | [5页调研补充PDF](fault-diagnosis-learning/research-update-2026-11/调研补充与缺口分析.pdf) · [在线文字版](fault-diagnosis-learning/research-update-2026-11/调研补充与缺口分析.md) | 六条路线取舍、解释评价维度、CS-SHAP变换/背景/块归因/缓存检查、跨域选模和未核验问题 |
+| 下一步怎么开展研究 | [5页研究方案PDF](fault-diagnosis-learning/research-update-2026-11/下一步研究方案.pdf) · [在线文字版](fault-diagnosis-learning/research-update-2026-11/下一步研究方案.md) | 三个可证伪假设、数据清单、独立划分、基线、干预对照、跨工况与特征重训、阶段交付和柴油机分支 |
+
+方法分册分别覆盖基础CNN、序列/图模型、重构生成、少标签学习、迁移泛化、物理先验与条件建模、多模态/基础模型/压缩、冻结模型解释。推荐先读小型CNN与IG/Grad-CAM，再按具体失败选择SHAP/CS-SHAP、跨工况或物理结构；不需要把所有模型都训练一遍。PDF含书签、中文可搜索；点击文件预览，或点击下载按钮离线阅读。
+
+下一步优先填写[原始记录清单](fault-diagnosis-learning/research-update-2026-11/data_manifest_template.csv)，确认设备、记录、标签、转速与负载，建立人工特征+浅层分类器和小CNN基线。模型可靠后再冻结解释，通过重要/随机/低重要区域干预、跨工况稳定性和候选特征独立测试形成证据。另提供[实验协议模板](fault-diagnosis-learning/research-update-2026-11/experiment_protocol_template.json)与[结果记录表](fault-diagnosis-learning/research-update-2026-11/experiment_results_template.csv)，尚未填入任何实验成绩。
+
+本轮实际读取20个作者/工具来源文件，其中3份为选定源码；学术数据库与两篇候选页面请求受限，未取得新论文全文。新内容是定向补充、方法教材和研究方案，未运行模型实验，也不宣称穷尽调研或方法性能排名。原38篇工程书目与31篇阅读子集继续保留，不能与工具来源数量相加当作独立论文总数。
+
 ## 如何查看故障诊断资料
 
 **从[学习资料总目录](fault-diagnosis-learning/README.md)开始。** 无需运行程序或安装依赖，可直接在GitHub阅读。

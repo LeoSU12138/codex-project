@@ -49,3 +49,24 @@
 ## GitHub交付
 
 本次按仓库现有main分支策略提交；不强推、不改写历史、不覆盖无关项目。此文件随成果同一提交保存，具体提交号和链接在交付回复中提供。
+
+## 2026-11-01：继续调研、方法详解与下一步研究
+
+**结论：入门整理可阶段性收束，论文证据调研尚未结束；现在可以进入独立数据上的基线实验。** 本轮开始时GitHub与本地均为fefc6d1，工作区干净。原始任务书、原三册PDF、六份既有Excel、38篇工程书目和31篇索引均复用，未重复生成或追加未经核验的正式论文。
+
+新增[调研补充专区](research-update-2026-11/README.md)，包含5页调研补充PDF和5页下一步研究方案PDF、对应Markdown、证据映射、真实来源请求记录、原始记录清单/协议/结果表模板。研究重点为解释忠实度、跨工况稳定性及候选特征的独立可用性；柴油机分支另列机理与数据条件。
+
+新增[方法详解专区](deep-learning-methods/README.md)，含45页合订本及8个分类分册，共35张方法卡（31项建模/训练路线+4项解释方法），每卡单页，统一9个字段。提供中文搜索、书签、方法索引CSV、参考来源、内容源稿与构建脚本。分册内容与合订本重复，不以PDF页数相加充当独立内容量。
+
+来源请求25项，20项取得（17份README+3份选定源码）；另5项受代理403限制，未绕过网络策略。静态检查涉及CS-SHAP变换、patch、背景/近似/缓存和DomainBed选模；未审计全部代码、未取新全文、未训练模型。两篇既有候选保持待核验，来源记录不表示新工程论文数量。
+
+实际验证：
+
+- `python fault-diagnosis-learning/src/validate_artifacts.py`通过：原三册50页、3份旧参考工作簿、43条学习资源。
+- `python fault-diagnosis-learning/src/validate_research.py`通过：38条题录/唯一DOI及CSV、BibTeX、RIS、科研Excel一致性；历史作者README审计字段继续沿用2026-10-28证据，不当成本轮全量文献复核。
+- `python fault-diagnosis-learning/feature-mining-progress/validate_progress.py`通过：原上传文件哈希不变、31篇索引与正式库一致、本地链接有效。
+- `python fault-diagnosis-learning/src/validate_research_update.py`通过：35卡完整文字与来源、11份PDF中文文本/字体/书签/边界、CSV页码、25项来源记录、空模板及链接一致。
+- 新PDF全页渲染并用缩略图筛查，CNN、FNO、CS-SHAP及研究方案表格等代表页放大查看；修正中文紧邻来源编号导致的索引遗漏，调整调研PDF末页，未见明显乱码或截断。渲染预览未提交。
+- 新产物重复生成按SHA-256比较，PDF、CSV和参考来源字节一致；最终`git diff --check`检查空白格式。
+
+以上均为资料与文件验证；没有实验性能结果。准确的本轮机器检查与来源哈希见[DOCUMENT_VALIDATION.json](research-update-2026-11/DOCUMENT_VALIDATION.json)。后续先填写设备/记录清单、锁定分组与基线，再按方案进行解释和独立特征验证。

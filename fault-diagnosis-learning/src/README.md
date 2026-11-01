@@ -75,3 +75,16 @@ python fault-diagnosis-learning/src/validate_research.py
 ```
 
 验证新增：PDF/Markdown关键概念、学习资源CSV与JSON一致性；38篇题名、完整作者顺序、卷期、页码、年份及BibTeX/RIS字段一致性；Excel新增审计字段和日期类型。运行记录写入真实执行时间，不更改历史核验日期。脚本不访问论文网站、不执行模型；网络和人工视觉检查在`TASK_PROGRESS.md`另记。
+
+## 2026-11方法详解与研究方案
+
+`build_research_update.py`读取`deep-learning-methods/方法详解.md`和`阅读与选型.md`，生成45页方法合订本、8个分类分册、方法索引CSV和参考来源；同时将`research-update-2026-11/`两份研究文稿生成两份各5页PDF。35张方法卡使用固定字段，每卡单页，超出可用页面高度会报错；所有PDF带中文字体与章节书签。
+
+```bash
+python fault-diagnosis-learning/src/build_research_update.py
+python fault-diagnosis-learning/src/validate_research_update.py
+```
+
+从仓库根目录运行；依赖`reportlab`、`PyMuPDF`，实际版本见`research-update-2026-11/DOCUMENT_VALIDATION.json`。临时字体与构建清单在已忽略的`build/research-update/`。生成器不联网、不运行模型；再次生成应保持PDF/CSV/参考来源字节一致。
+
+`validate_research_update.py`核查35卡字段及完整正文在合订本/分册对应页面出现、11份PDF字体嵌入/书签/文本边界、索引页码、本地链接、25项来源记录、空白实验模板和原任务书哈希；不证明科学结论。`research-update-2026-11/collect_sources.py`仅在明确刷新来源时使用，记录失败而不绕过代理；上游变更后应人工重读并同步证据说明，不能自动改日期当作核验完成。
