@@ -1,5 +1,18 @@
 # 可编辑源文件与重新生成
 
+本目录用于维护学习资料；做研究请从[首页六步路线](../../README.md)开始。这里没有故障诊断模型的训练入口。以下旧日期记录对应历史构建；只修改导航或模板时，无需重新生成PDF/Excel。
+
+## 一次检查全部资料（2026-11-07新增）
+
+从仓库根目录执行，依赖见[requirements.txt](requirements.txt)：
+
+```bash
+python -m pip install -r fault-diagnosis-learning/src/requirements.txt
+python fault-diagnosis-learning/src/validate_all.py
+```
+
+`validate_all.py`先检查全部版本管理范围内的Markdown本地目标/标题、14份PDF与6份Excel清单、六步导航和5份CSV空模板的字段说明，再依次调用下方四个既有校验器，写入[总检查报告](../REPOSITORY_CHECK.json)。不会联网、训练模型或读取个人实验数据；会更新各份本地验证报告的实际执行时间。文献日期仍保留历史含义。原始数据/窗口跨集合泄漏需在自己的研究代码中另行检查。
+
 2026-10-28维护：三册PDF当前为24/15/11页；科研论文保持38篇。原43条入门工作簿未重建、文件保持不变。
 
 主内容位于`build_deep_learning.py`、`deep_extra.py`、`build_features.py`、`build_combined.py`；书目内容位于`catalog.py`。修改这些文件后可重新生成PDF、Markdown、JSON与CSV。

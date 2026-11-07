@@ -103,7 +103,7 @@ def main():
             if resolved==UPDATE/'DOCUMENT_VALIDATION.json':continue
             assert resolved.exists(),(md,target)
             links+=1
-    for filename in ['data_manifest_template.csv','experiment_results_template.csv']:
+    for filename in ['data_manifest_template.csv','experiment_results_template.csv','window_manifest_template.csv','feature_candidates_template.csv','literature_review_template.csv']:
         with (UPDATE/filename).open(encoding='utf-8-sig',newline='') as f:r=list(csv.reader(f))
         assert len(r)==1 and len(r[0])==len(set(r[0]))
     protocol=json.loads((UPDATE/'experiment_protocol_template.json').read_text())

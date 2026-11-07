@@ -1,5 +1,5 @@
 {
-  "executed_at_utc": "2026-11-01T03:22:08.929968+00:00",
+  "executed_at_utc": "2026-11-07T05:55:43.264355+00:00",
   "result": "passed",
   "original_byte_identical": true,
   "original_sha256": "03d64ad39808fde2977d8af574f39cd251a50db7dd650a0fc29c09bd9118aa33",
@@ -9,7 +9,7 @@
   "candidates_not_added": 2,
   "authors_titles_years_doi_match_catalog": true,
   "csv_all_fields_match_sources": true,
-  "local_links_checked": 59,
+  "local_links_checked": 73,
   "external_link_syntax_checked": 66,
   "live_external_links_checked": 0,
   "model_experiments_run": false,
@@ -17,7 +17,7 @@
   "artifacts": {
     "研究进展与任务书.md": "03d64ad39808fde2977d8af574f39cd251a50db7dd650a0fc29c09bd9118aa33",
     "特征挖掘阅读索引.csv": "93a1dd6ebdb86acdc7f0af9d5d0f0328eda37063f60a2c4ff10c21b6f09d6910",
-    "README.md": "81f65ac2bdae404879850a2f6bbe17fa4cfdf1b7e93adc1551a7eb91f4b91649",
+    "README.md": "2546834d70a520dec3369b89db3577de10c47420a3c0489f53eca4e13ce2ac80",
     "IMPORT_MANIFEST.json": "4c82d00a2179ba1891815237e99fb1d7f025d4745d4b3499424ae3a35c389e77"
   }
 }

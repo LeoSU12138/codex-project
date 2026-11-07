@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Personal research notes, raw data and experiment outputs (not published by default)
+/local-research/

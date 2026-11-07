@@ -20,5 +20,9 @@
   "feature_selection_scope": "training_only; validation selects settings; final test remains held out",
   "uncertainty_unit": null,
   "decision_and_stop_rules": null,
-  "locked_at": null
+  "locked_at": null,
+  "window_manifest": null,
+  "feature_manifest": null,
+  "literature_review_manifest": null,
+  "test_usage_log": null
 }

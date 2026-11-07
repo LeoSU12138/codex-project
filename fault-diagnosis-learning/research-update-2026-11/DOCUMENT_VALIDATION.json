@@ -1,5 +1,5 @@
 {
-  "validated_at": "2026-11-01T03:25:50.301745+00:00",
+  "validated_at": "2026-11-07T05:55:43.496380+00:00",
   "scope": "File, source and rendering consistency; no model experiments",
   "model_experiments_run": false,
   "methods": 35,
@@ -100,7 +100,7 @@
     "selected_code_files": 3,
     "new_full_papers": 0
   },
-  "local_links_checked": 91,
+  "local_links_checked": 126,
   "external_link_syntax_checked": 22,
   "archived_brief_unchanged": true,
   "versions": {
@@ -118,24 +118,29 @@
     "deep-learning-methods/06_物理先验与条件建模.pdf": "c0e178b055be2eb9efccabe1e71efa0d17273a47fcb3993c46d70d46d72e7d29",
     "deep-learning-methods/07_融合基础模型与压缩.pdf": "0a7ef1a4449fce791e8805c1d71752d934c0febb1bb8027c37c6c0ab07121f78",
     "deep-learning-methods/08_冻结模型后的解释.pdf": "d22db76850bb5dc69774801dd7752423b5b4046977c0180bd5f730df18cb9d27",
-    "deep-learning-methods/README.md": "9a28e5587a38a39f118c45972dd501cbc3d1e96c6b65a846359ff323bdb8c03c",
+    "deep-learning-methods/README.md": "72984870e9c391c00f6d1bd3a47997384a3790807c1239c68ac81775f2c4e77b",
     "deep-learning-methods/参考来源.md": "130b639a54196a3c2ade26343b091f3ffeb67eb8461d2925dd975f4e9cac4524",
     "deep-learning-methods/方法索引.csv": "7cc7bcb4ba356fb8d1787779810f286f2dd8a96636be07158016498cae51db47",
     "deep-learning-methods/方法详解.md": "28676415884e641de1f299ad7450fa43fc08034ebea2e73e8d99b187a4fd31fd",
     "deep-learning-methods/阅读与选型.md": "d16f8c13c458e772610f6d2224a4e23fb7473e0a317da0215e77b91343a204d3",
     "research-update-2026-11/DELIVERY_CHECKS.json": "4687ef0cf97b94cbc9a92116538e3860de99a44a06b94bdea2bc41e130a0ffbf",
-    "research-update-2026-11/README.md": "19866b889a889dd2540f2db3d3d97e5401fb39119362669de43940a2c1b6605c",
+    "research-update-2026-11/README.md": "81025f4f17210d1f1de5861e1a9de829efd91e5ea3f4f69558da11e5b101d701",
     "research-update-2026-11/SOURCE_RETRIEVAL.json": "80b5c1578482b19b1e0baf66d190ebcabf6ac7cb1538874c6b8e6a05bda3402c",
     "research-update-2026-11/collect_sources.py": "ef14bffc70866614a22af4333c8512bd26bdda3cf00a9059a637619a02a38165",
-    "research-update-2026-11/data_manifest_template.csv": "71541e80215b7b8d59e0251fb6213f86890c7bb8534582d341ad6fb1bb450efa",
-    "research-update-2026-11/experiment_protocol_template.json": "385df3884e4df19c4cf7c3c7936c2872fb0b35f3a571c5f2a469c955b492ab65",
-    "research-update-2026-11/experiment_results_template.csv": "48aff3bfe2387ccafd9978ec3faaa1f19dd68fefadd6dc72237674ec53571851",
+    "research-update-2026-11/data_manifest_template.csv": "ad2cd71e2ace8452bc29cfd3f8e45bedc6614bec722d9592da75edeeb58de78a",
+    "research-update-2026-11/experiment_protocol_template.json": "94862555b387a83b50a545db27f5758d7855fa0e5033122bef5efe50beaaac4e",
+    "research-update-2026-11/experiment_results_template.csv": "5b32a804c0f0b374407016143bf56abdb881106653d490bd3ceaa697fa035c9d",
+    "research-update-2026-11/feature_candidates_template.csv": "eb89f5889663212a084b7fb74825e27725f2827d84662eeaec940ade7fc72b40",
+    "research-update-2026-11/literature_review_template.csv": "a0e481b18f7d0ba4aea3c05cd6bb2dbf5e5a449a4de77cc0382dd622d20b4762",
+    "research-update-2026-11/window_manifest_template.csv": "30de8cfec2316e9a7736904812564fb89d5432fbafde92506d62366a77d349ab",
     "research-update-2026-11/下一步研究方案.md": "2a8c1ab767275bf39ae8b67db68821ed196eec87c87ab7da46d5506ba9737036",
     "research-update-2026-11/下一步研究方案.pdf": "266428db02a0b69cd1e9ade505bea55ade3ee9bc5f7ec0788ad0f8833ae4e789",
     "research-update-2026-11/来源与证据映射.md": "b1cc391895a91649c3f21a1dbbc12ff865624cf14e9abaf98439290f0fa42000",
+    "research-update-2026-11/模板填写指南.md": "caa12705655ab1ab504144e4c09cec211669f19a862006972eeb14ae6bda67c7",
+    "research-update-2026-11/研究执行清单.md": "f5adf686de72c0a65895b9732e736f502f6da469529d93fb482d2eddcb2b0d53",
     "research-update-2026-11/调研补充与缺口分析.md": "0af7eeb09aae083f04de2d903a4647d0129152753e30749c27fbe4f9fd35d5ea",
     "research-update-2026-11/调研补充与缺口分析.pdf": "aec6df34073c11c53c2bc64309c087fb2dfe60e373647f04b2cd3f650a7f2c06",
     "src/build_research_update.py": "98f70a2bd2e0f64cd41fc2a18517ca40863a9bfb7b91ba602c13f8279bb99ced",
-    "src/validate_research_update.py": "ab32a0b6394a2e3434e4b258e9c7b88b16cb2c79602f4302c16d42a52262b828"
+    "src/validate_research_update.py": "91c1eb6c7decca19764dfefa2e4b27ba3aa4bf8a4721587b53079e80bdd655ec"
   }
 }

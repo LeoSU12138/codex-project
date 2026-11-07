@@ -1,56 +1,79 @@
-# codex-project
+# codex-project｜故障诊断学习与研究
 
-刘昌顺的故障诊断学习与科研资料仓库。
+刘昌顺的故障诊断学习与科研资料仓库。目标是：**建立可靠的诊断模型，查清模型依赖什么信息，再验证挖出的特征是否与机理相容、能否在独立数据上使用。**
 
-## 最新：调研补充、方法详解与下一步研究（2026-11-01）
+**从本页按步骤做；需要找文件时用[资料总目录](fault-diagnosis-learning/README.md)。** 仓库已有教学PDF、文献索引、方法详解和研究方案；个人数据、训练工程、权重与实验结果还需要实际建立。`src/`中的程序用于生成和检查资料，不是故障诊断训练入口。
 
-**特征挖掘的入门整理已完成，面向论文的证据调研仍需继续；现在可以开始可信基线与小规模实验。** 本轮把重点推进到三个问题：解释是否忠实反映模型依赖，候选特征在不同工况下是否稳定，以及这些特征在独立数据上是否有用。详细结论见[调研补充专区](fault-diagnosis-learning/research-update-2026-11/README.md)。
+## 你现在从哪里开始
 
-| 你要查看的内容 | 直接入口 | 具体包含什么 |
+| 当前状态 | 开始位置 | 这次先完成的一件事 |
 | --- | --- | --- |
-| 深度学习各种方法的详细说明 | [45页方法合订本PDF](fault-diagnosis-learning/deep-learning-methods/00_故障诊断深度学习方法详解_合订本.pdf) · [8个分类分册](fault-diagnosis-learning/deep-learning-methods/README.md) | 35张独立方法卡：31项建模/训练路线与4项解释方法；逐项解释逻辑、输入输出、公式、示例、注意事项、验证与研究着眼点 |
-| 特征挖掘调研还缺什么 | [5页调研补充PDF](fault-diagnosis-learning/research-update-2026-11/调研补充与缺口分析.pdf) · [在线文字版](fault-diagnosis-learning/research-update-2026-11/调研补充与缺口分析.md) | 六条路线取舍、解释评价维度、CS-SHAP变换/背景/块归因/缓存检查、跨域选模和未核验问题 |
-| 下一步怎么开展研究 | [5页研究方案PDF](fault-diagnosis-learning/research-update-2026-11/下一步研究方案.pdf) · [在线文字版](fault-diagnosis-learning/research-update-2026-11/下一步研究方案.md) | 三个可证伪假设、数据清单、独立划分、基线、干预对照、跨工况与特征重训、阶段交付和柴油机分支 |
+| 尚无数据、模型，或不确定研究什么 | 第1步 | 写清设备、故障任务、信号、数据来源和一个研究问题 |
+| 已有原始数据，但没有可信划分 | 第2步 | 建立原始记录清单，确定独立分组与测试集 |
+| 已有数据与划分，尚无可靠模型 | 第3步 | 跑通传统特征和小CNN的公平基线 |
+| 已有模型、权重、划分与评估记录 | 先核对第2–3步，再到第4步 | 固定模型与解释目标，在开发数据上做解释对照 |
 
-方法分册分别覆盖基础CNN、序列/图模型、重构生成、少标签学习、迁移泛化、物理先验与条件建模、多模态/基础模型/压缩、冻结模型解释。推荐先读小型CNN与IG/Grad-CAM，再按具体失败选择SHAP/CS-SHAP、跨工况或物理结构；不需要把所有模型都训练一遍。PDF含书签、中文可搜索；点击文件预览，或点击下载按钮离线阅读。
+**今天建议只做：** 复制[研究执行清单](fault-diagnosis-learning/research-update-2026-11/研究执行清单.md)，填完“项目卡”；再按[模板填写指南](fault-diagnosis-learning/research-update-2026-11/模板填写指南.md)准备个人记录。无需先读完所有论文或尝试所有网络。
 
-下一步优先填写[原始记录清单](fault-diagnosis-learning/research-update-2026-11/data_manifest_template.csv)，确认设备、记录、标签、转速与负载，建立人工特征+浅层分类器和小CNN基线。模型可靠后再冻结解释，通过重要/随机/低重要区域干预、跨工况稳定性和候选特征独立测试形成证据。另提供[实验协议模板](fault-diagnosis-learning/research-update-2026-11/experiment_protocol_template.json)与[结果记录表](fault-diagnosis-learning/research-update-2026-11/experiment_results_template.csv)，尚未填入任何实验成绩。
+## 按六步推进
 
-本轮实际读取20个作者/工具来源文件，其中3份为选定源码；学术数据库与两篇候选页面请求受限，未取得新论文全文。新内容是定向补充、方法教材和研究方案，未运行模型实验，也不宣称穷尽调研或方法性能排名。原38篇工程书目与31篇阅读子集继续保留，不能与工具来源数量相加当作独立论文总数。
+### 第1步：明确问题，补足最少的基础
 
-## 如何查看故障诊断资料
+先定一种设备和一个任务，例如轴承故障分类，或柴油机喷油器故障识别；写明输入信号、标签来源、已有数据和部署时可获得的信息。暂未确定就标“待确定”，不要先选复杂网络。
 
-**从[学习资料总目录](fault-diagnosis-learning/README.md)开始。** 无需运行程序或安装依赖，可直接在GitHub阅读。
+按需阅读：[深度学习入门](fault-diagnosis-learning/guides/01_故障诊断深度学习入门.md) → [特征挖掘入门](fault-diagnosis-learning/guides/02_特征挖掘入门.md) → [两者结合](fault-diagnosis-learning/guides/03_深度学习与特征挖掘结合.md)。先弄懂训练/验证/测试、频谱/包络和模型解释的区别。PDF在[总目录](fault-diagnosis-learning/README.md)下载。
 
-1. **学习基础：** 打开[教学手册目录](fault-diagnosis-learning/guides)，按“01 深度学习入门 → 02 特征挖掘入门 → 03 二者结合”阅读。三份PDF分别为24、15、11页，共50页；同名Markdown（`.md`）可直接在线阅读。
-2. **查看科研论文：** 打开[38篇工程科研论文库](fault-diagnosis-learning/research-papers/README.md)，在线查看完整题录、引用用途、工程验证、代码和数据入口。
-3. **下载Excel筛选文献：** 在[科研论文文件目录](fault-diagnosis-learning/research-papers)选择三份`.xlsx`之一，点击文件页的下载按钮，用Excel或WPS打开。“论文与引用”和“工程验证与复现”两张表按编号对应。旧版[43条入门参考资源](fault-diagnosis-learning/references/README.md)继续用于基础学习。
-4. **导入参考文献：** 下载[BibTeX](fault-diagnosis-learning/research-papers/engineering_references.bib)或[RIS](fault-diagnosis-learning/research-papers/engineering_references.ris)，导入Zotero、EndNote等文献管理软件。
+**交付与完成条件：** 一张项目卡、一句话研究问题，能说清最终要预测什么、希望解释什么。柴油机需要单独核对曲轴角和工作事件；轴承的故障频率不能直接套用。
 
-PDF可在GitHub预览；若无法预览或希望离线阅读，点击文件页的下载按钮保存。也可以在仓库首页选择 **Code → Download ZIP** 下载全部资料，解压后打开PDF和Excel。
+### 第2步：整理数据，先分组再切片
 
-## 新增：特征挖掘研究进展与阅读路线
+填写[原始记录清单](fault-diagnosis-learning/research-update-2026-11/data_manifest_template.csv)，记录设备、运行/批次、转速、负载、采样率、单位、标签依据和来源。没有自己的数据时，从[基础资源目录](fault-diagnosis-learning/references/README.md)的CWRU/Paderborn入口了解条件，再决定是否适合你的任务。
 
-[进入特征挖掘研究进展专区](fault-diagnosis-learning/feature-mining-progress/README.md)。这一部分面向准备开展振动故障诊断研究的学习者，重点回答：**模型预测了故障以后，怎样检查它真正依赖的时间片、频带或内部特征，并判断这些依据是否符合设备机理？**
+按设备或独立运行分组，划分训练、验证、最终测试；然后生成[窗口清单](fault-diagnosis-learning/research-update-2026-11/window_manifest_template.csv)，记录每片来自哪个原始文件和区间。标准化参数只由训练集拟合。最终测试集锁定；模型、频带和解释参数的选择在训练/验证范围完成。
 
-专区完整收录2026-10-29提供的[研究进展与任务书](fault-diagnosis-learning/feature-mining-progress/研究进展与任务书.md)，包括六类研究方向、31篇逐篇论文导读、两篇待核验候选以及第一个实验的实施顺序。另提供[31篇阅读索引CSV](fault-diagnosis-learning/feature-mining-progress/特征挖掘阅读索引.csv)，可下载到Excel/WPS中筛选方法、学习重点、限制、代码和数据入口。31篇均来自已有38篇论文库，是按研究目标组织的阅读子集。
+**交付与完成条件：** 原始记录清单、划分协议、窗口清单和基本信号检查图；没有同源重叠片段跨集合，能报告独立设备/记录数。元数据不足时缩小结论范围，并记录限制。
 
-| 你想解决的问题 | 专区介绍的内容 |
-| --- | --- |
-| 信号里有哪些故障线索？ | 从频谱、包络、谱峭度、MCKD/MOMEDA理解冲击与调制；用VMD/FMD等分析候选模态及参数敏感性 |
-| 网络学到什么、依据是否可靠？ | 从普通CNN基线进入Grad-CAM、SHAP/CS-SHAP，固定模型、解释目标和背景，比较重要/低重要/随机区域干预 |
-| 需要怎样改模型？ | 了解TFN、小波核和物理信息结构，区分事后解释与ClassBD等联合训练路线，再根据失败案例决定是否改结构 |
-| 怎样连接柴油机或喷油器？ | 用曲轴角、喷油、燃烧和气门事件解释特征，控制转速与负载；区分仿真、实验台和现场证据 |
-| 如何形成可检验的研究？ | 分开报告预测性能、解释忠实度和物理一致性；验证跨工况稳定性，再比较候选、传统与随机特征的独立测试表现 |
+### 第3步：先做两个可信基线
 
-**建议先读：S03轴承教程 → F12数据基准 → F03/F06信号分析 → D07模型基准 → C10解释评价 → C09多层Grad-CAM → C06 CS-SHAP。** 柴油机方向再读F09、F11、C12。编号沿用科研论文库；逐篇“建议实验”用于设计自己的研究，不代表原论文做过或本仓库已执行。
+先用RMS、峭度、预定包络能量等人工特征搭配浅层分类器，再做小型1D-CNN。网络原理优先查[方法详解](fault-diagnosis-learning/deep-learning-methods/README.md)的M01、M03、M05；工程阅读查[科研论文库](fault-diagnosis-learning/research-papers/README.md)的D02、D07。作者代码需要核对数据接口、划分、依赖和训练入口后才能接入。
 
-第一项实验可按“原始记录清单 → 独立分组后切片 → 简单特征与CNN基线 → 冻结模型解释 → 已知真值模拟和合理扰动对照 → 跨工况验证 → 候选特征比较”推进。选择参数、特征及解释设置在训练/验证范围内完成，最终测试集保持独立。每一步应保存哪些信息、如何避免信号扰动造成误判，详见专区介绍。
+按[实验协议模板](fault-diagnosis-learning/research-update-2026-11/experiment_protocol_template.json)固定预处理、预算和种子，在验证数据选模；保存权重、类别映射、配置、训练日志、混淆矩阵与每类召回。用[结果记录表](fault-diagnosis-learning/research-update-2026-11/experiment_results_template.csv)登记结果。
 
-这一部分可以直接在线阅读，无需先运行模型。原文和CSV中的核验日期保留其历史含义；两篇候选仍待核验，未加入正式引文库。归档与文件验证通过不等于论文实验复现成功。
+**交付与完成条件：** 两个可重复基线及错误分析，能排除明显泄漏和标签错误；不以“必须达到99%”作为门槛。表现异常先检查数据与协议，再考虑加深网络。
 
-## 核查记录与使用边界
+### 第4步：冻结模型，验证解释
 
-[任务核查与验证结果](fault-diagnosis-learning/TASK_PROGRESS.md)记录已完成内容和未核验项；[检索说明](fault-diagnosis-learning/SEARCH_NOTES.md)说明来源与限制；[构建说明](fault-diagnosis-learning/src/README.md)用于修改后重新生成资料。
+固定权重、预处理、目标类别和输出（如logit）。先试IG或Grad-CAM，确有频域问题再尝试SHAP/CS-SHAP；查[解释分册](fault-diagnosis-learning/deep-learning-methods/08_冻结模型后的解释.pdf)和[调研补充](fault-diagnosis-learning/research-update-2026-11/调研补充与缺口分析.md)。论文顺序为C10 → C09 → C06。
 
-本仓库提供学习导读与文献资料，不包含已复现的论文模型实验。部分出版商实时信息因访问限制未确认，正式引用前请核对最终出版版本。
+在开发数据上比较重要、低重要和随机区域的合理干预；记录背景、粒度、变换、重构误差、种子和缓存版本。分别检查模型依赖、解释稳定性与机理一致性；热图本身不是通过条件。
+
+**交付与完成条件：** 原始归因、对照结果与失败案例；能够说明解释为什么可信或在哪里失效。涉及选特征/改结构的发现仍属于开发过程，不能使用最终测试来挑选。
+
+### 第5步：把发现写成特征，锁定后独立测试
+
+用[候选特征记录表](fault-diagnosis-learning/research-update-2026-11/feature_candidates_template.csv)把频带、阶次或事件写成公式，注明它从哪些训练记录中发现、如何由验证集选参。用相同维度、分类器和调参预算比较传统、随机与候选特征。
+
+模型、特征、解释设置及评价方案全部锁定后，再使用最终留出数据做预定评价。按工况分别报告预测、忠实度、物理一致性和成本；只有目标域完全未用于开发时才可声称相应的未见域验证。详细对照和指标见[下一步研究方案](fault-diagnosis-learning/research-update-2026-11/下一步研究方案.md)。
+
+**交付与完成条件：** 冻结特征定义、独立比较和不确定性/逐组结果。没有收益也记录；查看最终测试后改方案，应另设新的未见测试或明确后续为探索性分析。
+
+### 第6步：收束结论，再决定下一项研究
+
+汇总“问题 → 方法 → 对照 → 证据 → 限制”，完成执行清单末尾的研究小结。用[全文核验记录表](fault-diagnosis-learning/research-update-2026-11/literature_review_template.csv)对核心文献记录版本、原文位置、实验条件和引用用途，再从正式库导出BibTeX/RIS。
+
+根据已观察到的问题选一个分支：标签少再考虑自监督；长上下文不足再考虑TCN/Transformer；机理明确再试可解释前端。柴油机的额外数据条件见研究方案第7节。
+
+**交付与完成条件：** 可复查的实验材料、证据对应的结论、未解决问题和一个下一步假设。当前资料支持开展研究，论文新颖性、全文核验和真实实验仍需继续。
+
+## 文件如何打开，哪些只需按需查
+
+- Markdown（`.md`）在GitHub直接阅读；PDF可预览或点击下载，预览失败时离线打开。
+- CSV/Excel下载后用Excel或WPS打开；BibTeX/RIS导入Zotero等文献管理器。全部资料可用 **Code → Download ZIP** 下载。
+- [35张方法卡与8个分册](fault-diagnosis-learning/deep-learning-methods/README.md)用作选型词典；[38篇科研论文库](fault-diagnosis-learning/research-papers/README.md)用于研究阅读与引用；[31篇导读](fault-diagnosis-learning/feature-mining-progress/README.md)是其中的阅读子集。
+- [历史任务与核查记录](fault-diagnosis-learning/TASK_PROGRESS.md)、[检索说明](fault-diagnosis-learning/SEARCH_NOTES.md)、[维护脚本说明](fault-diagnosis-learning/src/README.md)按需查看。个人下一步以本页和执行清单为准。
+
+## 本次检查与仍待完成的工作
+
+2026-11-07重排导航，补充执行清单、模板字段说明、窗口追溯、候选特征及全文核验记录。文件核查结果见[仓库检查报告](fault-diagnosis-learning/REPOSITORY_CHECK.json)，具体差距与处理见[任务记录](fault-diagnosis-learning/TASK_PROGRESS.md)。
+
+已有14份PDF（含重复编排的合订本/分册）、6份Excel，正文与书目继续保留。35张方法卡不等于35种互斥网络；43条基础资源与38篇科研论文有重复，31篇导读也是子集。两篇候选文献、C12最新出版状态、完整全文核验及用户数据条件仍待补齐；历史来源访问限制不是本轮重新检索的结果。文件检查通过不代表模型实验已完成。
