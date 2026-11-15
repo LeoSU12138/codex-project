@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://proceedings.mlr.press/v70/sundararajan17a.html",
+    "checked_on": "2026-11-15",
+    "scope": "landing_page_metadata_only",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://arxiv.org/abs/1705.07874",
+    "checked_on": "2026-11-15",
+    "scope": "landing_page_metadata_only",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://arxiv.org/abs/1810.03292",
+    "checked_on": "2026-11-15",
+    "scope": "landing_page_metadata_only",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.00065",
+    "checked_on": "2026-11-15",
+    "scope": "landing_page_metadata_only",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

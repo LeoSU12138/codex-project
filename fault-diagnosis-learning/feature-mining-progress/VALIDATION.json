@@ -1,5 +1,5 @@
 {
-  "executed_at_utc": "2026-11-07T05:55:43.264355+00:00",
+  "executed_at_utc": "2026-11-15T06:50:15.804094+00:00",
   "result": "passed",
   "original_byte_identical": true,
   "original_sha256": "03d64ad39808fde2977d8af574f39cd251a50db7dd650a0fc29c09bd9118aa33",
@@ -9,7 +9,7 @@
   "candidates_not_added": 2,
   "authors_titles_years_doi_match_catalog": true,
   "csv_all_fields_match_sources": true,
-  "local_links_checked": 73,
+  "local_links_checked": 81,
   "external_link_syntax_checked": 66,
   "live_external_links_checked": 0,
   "model_experiments_run": false,

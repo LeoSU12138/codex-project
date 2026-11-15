@@ -51,7 +51,9 @@ def repository_checks():
                 assert unquote(u.fragment) in heading_ids(q.read_text()),('missing heading',p,value)
                 anchors+=1
     pdfs=[p for p in files if p.suffix=='.pdf'];books=[p for p in files if p.suffix=='.xlsx']
-    assert len(pdfs)==14 and len(books)==6
+    legacy_pdfs=[p for p in pdfs if ROOT/'manuscript' not in p.parents]
+    assert len(legacy_pdfs)==14 and len(books)==6
+    assert len(pdfs)==19, '14 legacy documents + manuscript + 4 vector figures'
     expected={
         'data_manifest_template.csv':{'record_id','group_id','file_sha256','split','sample_rate_hz'},
         'window_manifest_template.csv':{'window_id','record_id','group_id','file_sha256','channel','start_sample','end_sample_exclusive','sample_rate_hz','split','preprocessing_version'},
@@ -90,7 +92,7 @@ def main():
         report['checks']=repository_checks()
         # Other validators follow README links to this report on a fresh checkout.
         REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-        for rel in ['src/validate_artifacts.py','src/validate_research.py','feature-mining-progress/validate_progress.py','src/validate_research_update.py']:
+        for rel in ['src/validate_artifacts.py','src/validate_research.py','feature-mining-progress/validate_progress.py','src/validate_research_update.py','manuscript/validate.py']:
             result=subprocess.run([sys.executable,str(ROOT/rel)],cwd=REPO,text=True,capture_output=True)
             report['commands'].append({'script':str(Path('fault-diagnosis-learning')/rel),'returncode':result.returncode,'stdout':result.stdout.strip(),'stderr':result.stderr.strip()})
             print(rel, 'PASS' if result.returncode==0 else 'FAIL')
@@ -102,7 +104,7 @@ def main():
     finally:
         report['finished_at_utc']=datetime.now(timezone.utc).isoformat()
         REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    print('PASS: repository navigation, six-step workflow, five CSV templates and all four artifact validators')
+    print('PASS: repository navigation, six-step workflow, five CSV templates and all five artifact validators')
 
 
 if __name__=='__main__':main()

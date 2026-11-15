@@ -1,0 +1,27 @@
+{
+  "fs_hz": 12800,
+  "duration_s": 1.0,
+  "repetition_hz": 100.0,
+  "carrier_hz": 2400.0,
+  "decay_per_s": 900.0,
+  "impulse_start_s": 0.02,
+  "impulse_stop_exclusive_s": 0.98,
+  "impulse_amplitude": 1.0,
+  "sine_hz": 30.0,
+  "sine_amplitude": 0.12,
+  "noise_sd": 0.08,
+  "seed": 20261115,
+  "units": "arbitrary",
+  "filter": "4th-order Butterworth bandpass; scipy sosfiltfilt",
+  "band_hz": [
+    1800,
+    3000
+  ],
+  "envelope": "abs(scipy.signal.hilbert(filtered))",
+  "spectrum": "one-sided Hann-window amplitude; coherent-gain correction",
+  "envelope_spectrum_interval_s": [
+    0.1,
+    0.9
+  ],
+  "band_selection": "predefined from synthetic generator; not attribution discovery"
+}

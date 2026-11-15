@@ -1,13 +1,13 @@
 {
-  "executed_at_utc": "2026-11-07T05:55:42.766825+00:00",
+  "executed_at_utc": "2026-11-15T06:50:15.349173+00:00",
   "result": "passed",
   "scope": "Published artifacts, navigation and blank templates; no live literature retrieval or model experiments",
   "checks": {
-    "markdown_files": 23,
-    "local_targets_checked": 148,
+    "markdown_files": 25,
+    "local_targets_checked": 186,
     "heading_targets_checked": 0,
-    "external_urls_syntax_only": 310,
-    "pdf_count": 14,
+    "external_urls_syntax_only": 317,
+    "pdf_count": 19,
     "xlsx_count": 6,
     "template_schemas": {
       "data_manifest_template.csv": [
@@ -121,6 +121,11 @@
       "fault-diagnosis-learning/guides/01_故障诊断深度学习入门.pdf": "26c79aef5951ca86e3cb79cc819bf37b9709d4dd59d326291703ca1f17490fdc",
       "fault-diagnosis-learning/guides/02_特征挖掘入门.pdf": "8acc91084344fc9cc8df986a31b1d1c53b8bd0c9c10ede672ac1ee7f8a092edf",
       "fault-diagnosis-learning/guides/03_深度学习与特征挖掘结合.pdf": "ab9044e434b79a066d4b85d7a49efaa03dbb3f66d16263ecdffce58372f6cf49",
+      "fault-diagnosis-learning/manuscript/figures/fig1_workflow.pdf": "6101597103842b86e389cdf80c017fc6f2d1e34d575da8c3715f84cc80345e15",
+      "fault-diagnosis-learning/manuscript/figures/fig2_attribution.pdf": "8f994852fad00e7a7b9fe32509ff14af11502cb37258cfa41904d1b7b4e81ef5",
+      "fault-diagnosis-learning/manuscript/figures/fig3_synthetic.pdf": "67fc925f2017fe89b7757b4012bf821d540868ec5ae941d9b1857129aca8a7ab",
+      "fault-diagnosis-learning/manuscript/figures/fig4_validation.pdf": "a29d063127923ca1b4cfcff99ce0dad79669675c407613a1974602a49fe7e85c",
+      "fault-diagnosis-learning/manuscript/paper.pdf": "e4c1848da79dbd819841f050eed1ef5e481a76c6d149251c2acb8734462cdea5",
       "fault-diagnosis-learning/research-update-2026-11/下一步研究方案.pdf": "266428db02a0b69cd1e9ade505bea55ade3ee9bc5f7ec0788ad0f8833ae4e789",
       "fault-diagnosis-learning/research-update-2026-11/调研补充与缺口分析.pdf": "aec6df34073c11c53c2bc64309c087fb2dfe60e373647f04b2cd3f650a7f2c06",
       "fault-diagnosis-learning/references/01_深度学习参考文献.xlsx": "ef54c9f490fd11122e60c78ee78d53233db72ff74b50c82d2370595276b4e61c",
@@ -144,13 +149,13 @@
     {
       "script": "fault-diagnosis-learning/src/validate_research.py",
       "returncode": 0,
-      "stdout": "{\"checked\": \"2026-11-07\", \"executed_at_utc\": \"2026-11-07T05:55:43.175897+00:00\", \"result\": \"passed\", \"papers\": 38, \"unique_doi\": 38, \"bibtex_entries\": 38, \"ris_entries\": 38, \"csv_records\": 38, \"model_experiments_run\": false, \"snapshot_records_checked\": 38, \"live_metadata_records_verified\": 0, \"author_readmes_reviewed\": 7, \"metadata_network_status\": \"blocked: proxy HTTP 403\", \"limits\": \"Document and metadata consistency only; no model training, external dataset download or native Excel/Zotero execution.\"}",
+      "stdout": "{\"checked\": \"2026-11-15\", \"executed_at_utc\": \"2026-11-15T06:50:15.724639+00:00\", \"result\": \"passed\", \"papers\": 38, \"unique_doi\": 38, \"bibtex_entries\": 38, \"ris_entries\": 38, \"csv_records\": 38, \"model_experiments_run\": false, \"snapshot_records_checked\": 38, \"live_metadata_records_verified\": 0, \"author_readmes_reviewed\": 7, \"metadata_network_status\": \"blocked: proxy HTTP 403\", \"limits\": \"Document and metadata consistency only; no model training, external dataset download or native Excel/Zotero execution.\"}",
       "stderr": ""
     },
     {
       "script": "fault-diagnosis-learning/feature-mining-progress/validate_progress.py",
       "returncode": 0,
-      "stdout": "{\"executed_at_utc\": \"2026-11-07T05:55:43.264355+00:00\", \"result\": \"passed\", \"original_byte_identical\": true, \"original_sha256\": \"03d64ad39808fde2977d8af574f39cd251a50db7dd650a0fc29c09bd9118aa33\", \"indexed_existing_papers\": 31, \"unique_doi\": 31, \"formal_catalog_papers\": 38, \"candidates_not_added\": 2, \"authors_titles_years_doi_match_catalog\": true, \"csv_all_fields_match_sources\": true, \"local_links_checked\": 73, \"external_link_syntax_checked\": 66, \"live_external_links_checked\": 0, \"model_experiments_run\": false, \"scope\": \"Document import and local consistency only. Source verification claims remain historical or user-supplied.\"}",
+      "stdout": "{\"executed_at_utc\": \"2026-11-15T06:50:15.804094+00:00\", \"result\": \"passed\", \"original_byte_identical\": true, \"original_sha256\": \"03d64ad39808fde2977d8af574f39cd251a50db7dd650a0fc29c09bd9118aa33\", \"indexed_existing_papers\": 31, \"unique_doi\": 31, \"formal_catalog_papers\": 38, \"candidates_not_added\": 2, \"authors_titles_years_doi_match_catalog\": true, \"csv_all_fields_match_sources\": true, \"local_links_checked\": 81, \"external_link_syntax_checked\": 66, \"live_external_links_checked\": 0, \"model_experiments_run\": false, \"scope\": \"Document import and local consistency only. Source verification claims remain historical or user-supplied.\"}",
       "stderr": ""
     },
     {
@@ -158,7 +163,13 @@
       "returncode": 0,
       "stdout": "PASS: 35 complete method cards; 11 searchable PDFs; CSV/bookmarks; 25 source records; templates; local links; archived brief",
       "stderr": ""
+    },
+    {
+      "script": "fault-diagnosis-learning/manuscript/validate.py",
+      "returncode": 0,
+      "stdout": "PASS: 9 PDF pages, 4 embedded Word figures, 2 tables, formulas, fonts, figure rendering and synthetic source",
+      "stderr": ""
     }
   ],
-  "finished_at_utc": "2026-11-07T05:55:44.136248+00:00"
+  "finished_at_utc": "2026-11-15T06:50:18.518631+00:00"
 }

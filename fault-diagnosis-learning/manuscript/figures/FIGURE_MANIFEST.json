@@ -1,0 +1,103 @@
+{
+  "kind": "method_schematics_and_synthetic_demonstration",
+  "real_device_experiments": false,
+  "model_trained": false,
+  "shap_computed": false,
+  "seed": 20261115,
+  "versions": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "figures": [
+    {
+      "id": "fig1_workflow",
+      "meaning": "Method schematic, not experimental results",
+      "size_inches": [
+        7.1,
+        4.5
+      ],
+      "files": [
+        {
+          "path": "figures/fig1_workflow.png",
+          "sha256": "41e09f7bf45902d770db2c2f8bcdb4df4f8beae0fc0b592982dc4dad0b246a5d"
+        },
+        {
+          "path": "figures/fig1_workflow.svg",
+          "sha256": "0321e16257748204f7efe5cc6fad3a14c625c604a05c201442d09ea2ebbb95e0"
+        },
+        {
+          "path": "figures/fig1_workflow.pdf",
+          "sha256": "6101597103842b86e389cdf80c017fc6f2d1e34d575da8c3715f84cc80345e15"
+        }
+      ]
+    },
+    {
+      "id": "fig2_attribution",
+      "meaning": "Proposed complex-spectrum grouping; no SHAP values computed",
+      "size_inches": [
+        7.1,
+        4.5
+      ],
+      "files": [
+        {
+          "path": "figures/fig2_attribution.png",
+          "sha256": "487a87f1681d19c7c6b48c53a72320e6119b22a0ac9ba192e089b0d6be84be34"
+        },
+        {
+          "path": "figures/fig2_attribution.svg",
+          "sha256": "9d63ddad62b4c7d9d28f3563581b1f499f81fd6c208ef5011137f2292d900438"
+        },
+        {
+          "path": "figures/fig2_attribution.pdf",
+          "sha256": "8f994852fad00e7a7b9fe32509ff14af11502cb37258cfa41904d1b7b4e81ef5"
+        }
+      ]
+    },
+    {
+      "id": "fig4_validation",
+      "meaning": "Prospective controls and failure criteria, not validation outcomes",
+      "size_inches": [
+        7.1,
+        4.7
+      ],
+      "files": [
+        {
+          "path": "figures/fig4_validation.png",
+          "sha256": "a725a39cc909706c9e25f01943460259b7d200dbcb7aee55064d1e9ee90b0cb8"
+        },
+        {
+          "path": "figures/fig4_validation.svg",
+          "sha256": "be653c6c93de7f6c1c78932214c79db2064ba6eae30cdd1c2595ba2fa20fed87"
+        },
+        {
+          "path": "figures/fig4_validation.pdf",
+          "sha256": "a29d063127923ca1b4cfcff99ce0dad79669675c407613a1974602a49fe7e85c"
+        }
+      ]
+    },
+    {
+      "id": "fig3_synthetic",
+      "meaning": "Computed synthetic signal demo, predefined band, not real device validation",
+      "size_inches": [
+        7.1,
+        5.1
+      ],
+      "files": [
+        {
+          "path": "figures/fig3_synthetic.png",
+          "sha256": "b0bd203862022aa8cfea20bc037e3844e89da6ac403778145ec212d4a03d9f41"
+        },
+        {
+          "path": "figures/fig3_synthetic.svg",
+          "sha256": "8230ff219aad6b6606d1d09a434e68437e704eaf80cac01799d23450a1abf728"
+        },
+        {
+          "path": "figures/fig3_synthetic.pdf",
+          "sha256": "67fc925f2017fe89b7757b4012bf821d540868ec5ae941d9b1857129aca8a7ab"
+        }
+      ]
+    }
+  ]
+}

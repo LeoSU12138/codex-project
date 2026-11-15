@@ -1,5 +1,5 @@
 {
-  "validated_at": "2026-11-07T05:55:43.496380+00:00",
+  "validated_at": "2026-11-15T06:50:16.031898+00:00",
   "scope": "File, source and rendering consistency; no model experiments",
   "model_experiments_run": false,
   "methods": 35,
@@ -100,7 +100,7 @@
     "selected_code_files": 3,
     "new_full_papers": 0
   },
-  "local_links_checked": 126,
+  "local_links_checked": 134,
   "external_link_syntax_checked": 22,
   "archived_brief_unchanged": true,
   "versions": {

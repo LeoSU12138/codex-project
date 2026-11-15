@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-11-15T06:50:18.404916+00:00",
+  "result": "passed",
+  "pdf_pages": 9,
+  "embedded_docx_figures": 4,
+  "docx_tables": 2,
+  "figures": [
+    {
+      "id": "fig1_workflow",
+      "png_px": [
+        2130,
+        1350
+      ],
+      "pdf_dark_content_retention": 0.9999842069520997
+    },
+    {
+      "id": "fig2_attribution",
+      "png_px": [
+        2130,
+        1350
+      ],
+      "pdf_dark_content_retention": 0.9994215473608098
+    },
+    {
+      "id": "fig4_validation",
+      "png_px": [
+        2130,
+        1410
+      ],
+      "pdf_dark_content_retention": 0.9559239964548972
+    },
+    {
+      "id": "fig3_synthetic",
+      "png_px": [
+        2130,
+        1530
+      ],
+      "pdf_dark_content_retention": 0.9967467467467468
+    }
+  ],
+  "synthetic_signal_reconstruction": "passed",
+  "envelope_peak_hz": 100.0,
+  "real_device_experiments": false,
+  "native_word_visual_review": false,
+  "sha256": {
+    "paper.md": "0f71c1dc595ba5969a0384cdc055900a048da6fd8b22e18d33dda0f4e9b652b4",
+    "paper.pdf": "e4c1848da79dbd819841f050eed1ef5e481a76c6d149251c2acb8734462cdea5",
+    "paper.docx": "754124ac793cb798e8b2d4c103a2638b777d2356228d7f6343db186ad2f9bd43",
+    "build.py": "2e78e3dd99fa183da59f84fc0ce223b3f726d2ceacfcdf47ff29241ec2ab7aaa"
+  }
+}
