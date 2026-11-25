@@ -2,7 +2,13 @@
 
 刘昌顺的故障诊断学习与科研资料仓库。目标是：**建立可靠的诊断模型，查清模型依赖什么信息，再验证挖出的特征是否与机理相容、能否在独立数据上使用。**
 
-**从本页按步骤做；需要找文件时用[资料总目录](fault-diagnosis-learning/README.md)。** 仓库已有教学PDF、文献索引、方法详解和研究方案；个人数据、训练工程、权重与实验结果还需要实际建立。`src/`中的程序用于生成和检查资料，不是故障诊断训练入口。
+**从本页按步骤做；需要找文件时用[资料总目录](fault-diagnosis-learning/README.md)。** 仓库已有教学PDF、文献索引、方法详解、研究方案与柴油机专题特征挖掘调研；个人数据、训练工程、权重与实验结果还需要实际建立。`src/`中的程序用于生成和检查资料，不是故障诊断训练入口。
+
+## 新增：柴油机与发动机特征挖掘专题调研
+
+**[在线阅读专题调研报告](gemini特征挖掘调研/README.md) · [下载结构化文献表(Excel)](gemini特征挖掘调研/diesel_feature_mining_papers.xlsx) · [查看CSV文献清单](gemini特征挖掘调研/diesel_feature_mining_papers.csv) · [导入Zotero引用库(BibTeX)](gemini特征挖掘调研/references.bib)**
+
+`gemini特征挖掘调研/` 面向往复式动力设备（柴油机/内燃机）的跨工况故障诊断特征挖掘需求，衔接原库 `F09–F11` 并补充核验 8 篇 *MSSP* / *JSV* / *Measurement* 高影响力文献（`D01–D08`），覆盖燃烧失火、喷油器、配气机构（气门间隙/弹簧）与活塞敲击等故障。报告系统拆解了角度-循环平稳分析、曲轴瞬时角速度（IAS）与机理模型、盲源分离与局部 RMS 冲击强度、缸压路径对数签名、先验引导稀疏注意力五大范式，并给出与下方六步路线结合的落地建议。
 
 ## 新增：带科研图的小论文
 
@@ -13,13 +19,13 @@
 ## 你现在从哪里开始
 
 | 当前状态 | 开始位置 | 这次先完成的一件事 |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 尚无数据、模型，或不确定研究什么 | 第1步 | 写清设备、故障任务、信号、数据来源和一个研究问题 |
 | 已有原始数据，但没有可信划分 | 第2步 | 建立原始记录清单，确定独立分组与测试集 |
 | 已有数据与划分，尚无可靠模型 | 第3步 | 跑通传统特征和小CNN的公平基线 |
 | 已有模型、权重、划分与评估记录 | 先核对第2–3步，再到第4步 | 固定模型与解释目标，在开发数据上做解释对照 |
 
-**今天建议只做：** 复制[研究执行清单](fault-diagnosis-learning/research-update-2026-11/研究执行清单.md)，填完“项目卡”；再按[模板填写指南](fault-diagnosis-learning/research-update-2026-11/模板填写指南.md)准备个人记录。无需先读完所有论文或尝试所有网络。
+**今天建议只做：** 复制[研究执行清单](fault-diagnosis-learning/research-update-2026-11/%E7%A0%94%E7%A9%B6%E6%89%A7%E8%A1%8C%E6%B8%85%E5%8D%95.md)，填完“项目卡”；再按[模板填写指南](fault-diagnosis-learning/research-update-2026-11/%E6%A8%A1%E6%9D%BF%E5%A1%AB%E5%86%99%E6%8C%87%E5%8D%97.md)准备个人记录。无需先读完所有论文或尝试所有网络。
 
 ## 按六步推进
 
@@ -27,7 +33,7 @@
 
 先定一种设备和一个任务，例如轴承故障分类，或柴油机喷油器故障识别；写明输入信号、标签来源、已有数据和部署时可获得的信息。暂未确定就标“待确定”，不要先选复杂网络。
 
-按需阅读：[深度学习入门](fault-diagnosis-learning/guides/01_故障诊断深度学习入门.md) → [特征挖掘入门](fault-diagnosis-learning/guides/02_特征挖掘入门.md) → [两者结合](fault-diagnosis-learning/guides/03_深度学习与特征挖掘结合.md)。先弄懂训练/验证/测试、频谱/包络和模型解释的区别。PDF在[总目录](fault-diagnosis-learning/README.md)下载。
+按需阅读：[深度学习入门](fault-diagnosis-learning/guides/01_%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.md) → [特征挖掘入门](fault-diagnosis-learning/guides/02_%E7%89%B9%E5%BE%81%E6%8C%96%E6%8E%98%E5%85%A5%E9%97%A8.md) → [两者结合](fault-diagnosis-learning/guides/03_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%8E%E7%89%B9%E5%BE%81%E6%8C%96%E6%8E%98%E7%BB%93%E5%90%88.md)；若聚焦柴油机与发动机对象，可同步查阅[柴油机特征挖掘专题调研](gemini特征挖掘调研/README.md)。先弄懂训练/验证/测试、频谱/包络和模型解释的区别。PDF在[总目录](fault-diagnosis-learning/README.md)下载。
 
 **交付与完成条件：** 一张项目卡、一句话研究问题，能说清最终要预测什么、希望解释什么。柴油机需要单独核对曲轴角和工作事件；轴承的故障频率不能直接套用。
 
@@ -49,7 +55,7 @@
 
 ### 第4步：冻结模型，验证解释
 
-固定权重、预处理、目标类别和输出（如logit）。先试IG或Grad-CAM，确有频域问题再尝试SHAP/CS-SHAP；查[解释分册](fault-diagnosis-learning/deep-learning-methods/08_冻结模型后的解释.pdf)和[调研补充](fault-diagnosis-learning/research-update-2026-11/调研补充与缺口分析.md)。论文顺序为C10 → C09 → C06。
+固定权重、预处理、目标类别和输出（如logit）。先试IG或Grad-CAM，确有频域问题再尝试SHAP/CS-SHAP；查[解释分册](fault-diagnosis-learning/deep-learning-methods/08_%E5%86%BB%E7%BB%93%E6%A8%A1%E5%9E%8B%E5%90%8E%E7%9A%84%E8%A7%A3%E9%87%8A.pdf)和[调研补充](fault-diagnosis-learning/research-update-2026-11/%E8%B0%83%E7%A0%94%E8%A1%A5%E5%85%85%E4%B8%8E%E7%BC%BA%E5%8F%A3%E5%88%86%E6%9E%90.md)。论文顺序为C10 → C09 → C06。
 
 在开发数据上比较重要、低重要和随机区域的合理干预；记录背景、粒度、变换、重构误差、种子和缓存版本。分别检查模型依赖、解释稳定性与机理一致性；热图本身不是通过条件。
 
@@ -59,7 +65,7 @@
 
 用[候选特征记录表](fault-diagnosis-learning/research-update-2026-11/feature_candidates_template.csv)把频带、阶次或事件写成公式，注明它从哪些训练记录中发现、如何由验证集选参。用相同维度、分类器和调参预算比较传统、随机与候选特征。
 
-模型、特征、解释设置及评价方案全部锁定后，再使用最终留出数据做预定评价。按工况分别报告预测、忠实度、物理一致性和成本；只有目标域完全未用于开发时才可声称相应的未见域验证。详细对照和指标见[下一步研究方案](fault-diagnosis-learning/research-update-2026-11/下一步研究方案.md)。
+模型、特征、解释设置及评价方案全部锁定后，再使用最终留出数据做预定评价。按工况分别报告预测、忠实度、物理一致性和成本；只有目标域完全未用于开发时才可声称相应的未见域验证。详细对照和指标见[下一步研究方案](fault-diagnosis-learning/research-update-2026-11/%E4%B8%8B%E4%B8%80%E6%AD%A5%E7%A0%94%E7%A9%B6%E6%96%B9%E6%A1%88.md)。
 
 **交付与完成条件：** 冻结特征定义、独立比较和不确定性/逐组结果。没有收益也记录；查看最终测试后改方案，应另设新的未见测试或明确后续为探索性分析。
 
@@ -67,18 +73,20 @@
 
 汇总“问题 → 方法 → 对照 → 证据 → 限制”，完成执行清单末尾的研究小结。用[全文核验记录表](fault-diagnosis-learning/research-update-2026-11/literature_review_template.csv)对核心文献记录版本、原文位置、实验条件和引用用途，再从正式库导出BibTeX/RIS。
 
-根据已观察到的问题选一个分支：标签少再考虑自监督；长上下文不足再考虑TCN/Transformer；机理明确再试可解释前端。柴油机的额外数据条件见研究方案第7节。
+根据已观察到的问题选一个分支：标签少再考虑自监督；长上下文不足再考虑TCN/Transformer；机理明确再试可解释前端。柴油机的额外数据条件见研究方案第7节及[柴油机特征挖掘专题调研](gemini特征挖掘调研/README.md)。
 
 **交付与完成条件：** 可复查的实验材料、证据对应的结论、未解决问题和一个下一步假设。当前资料支持开展研究，论文新颖性、全文核验和真实实验仍需继续。
 
 ## 文件如何打开，哪些只需按需查
 
-- Markdown（`.md`）在GitHub直接阅读；PDF可预览或点击下载，预览失败时离线打开。
-- CSV/Excel下载后用Excel或WPS打开；BibTeX/RIS导入Zotero等文献管理器。全部资料可用 **Code → Download ZIP** 下载。
-- [35张方法卡与8个分册](fault-diagnosis-learning/deep-learning-methods/README.md)用作选型词典；[38篇科研论文库](fault-diagnosis-learning/research-papers/README.md)用于研究阅读与引用；[31篇导读](fault-diagnosis-learning/feature-mining-progress/README.md)是其中的阅读子集。
-- [历史任务与核查记录](fault-diagnosis-learning/TASK_PROGRESS.md)、[检索说明](fault-diagnosis-learning/SEARCH_NOTES.md)、[维护脚本说明](fault-diagnosis-learning/src/README.md)按需查看。个人下一步以本页和执行清单为准。
+* Markdown（`.md`）在GitHub直接阅读；PDF可预览或点击下载，预览失败时离线打开。
+* CSV/Excel下载后用Excel或WPS打开；BibTeX/RIS导入Zotero等文献管理器。全部资料可用 **Code → Download ZIP** 下载。
+* [35张方法卡与8个分册](fault-diagnosis-learning/deep-learning-methods/README.md)用作选型词典；[38篇科研论文库](fault-diagnosis-learning/research-papers/README.md)用于研究阅读与引用；[31篇导读](fault-diagnosis-learning/feature-mining-progress/README.md)是其中的阅读子集；[柴油机特征挖掘专题调研](gemini特征挖掘调研/README.md)聚焦往复式发动机的专项特征挖掘。
+* [历史任务与核查记录](fault-diagnosis-learning/TASK_PROGRESS.md)、[检索说明](fault-diagnosis-learning/SEARCH_NOTES.md)、[维护脚本说明](fault-diagnosis-learning/src/README.md)按需查看。个人下一步以本页和执行清单为准。
 
 ## 本次检查与仍待完成的工作
+
+2026-11-24补充 `gemini特征挖掘调研/`（含柴油机与发动机特征挖掘专题报告、11篇已核验DOI文献的CSV/Excel清单与BibTeX引用库），并在根目录导航补充入口。
 
 2026-11-07重排导航，补充执行清单、模板字段说明、窗口追溯、候选特征及全文核验记录。文件核查结果见[仓库检查报告](fault-diagnosis-learning/REPOSITORY_CHECK.json)，具体差距与处理见[任务记录](fault-diagnosis-learning/TASK_PROGRESS.md)。
 
